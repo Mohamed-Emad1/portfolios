@@ -205,18 +205,39 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
   width: 100%;
   aspect-ratio: 16 / 10;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: linear-gradient(135deg, #1c1b3a, #322b6b);
 }
-.tpl-card__thumb iframe {
-  position: absolute;
-  top: 0; left: 0;
-  width: 1440px;
-  height: 900px;
-  border: 0;
-  transform-origin: top left;
-  pointer-events: none;
-  background: #fff;
+.tpl-card__icon {
+  font-size: 4.2rem;
+  filter: drop-shadow(0 8px 18px rgba(0,0,0,.35));
 }
+.tpl-card__thumb-chrome {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 12px;
+  background: rgba(0,0,0,.18);
+}
+.tpl-card__thumb-chrome span {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.35);
+}
+
+.tpl-card[data-category="accountants"] .tpl-card__thumb { background: linear-gradient(135deg, #0f766e, #0b3b37); }
+.tpl-card[data-category="doctors"] .tpl-card__thumb { background: linear-gradient(135deg, #0ea5e9, #075985); }
+.tpl-card[data-category="engineers"] .tpl-card__thumb { background: linear-gradient(135deg, #f59e0b, #7c2d12); }
+.tpl-card[data-category="graphic_designers"] .tpl-card__thumb { background: linear-gradient(135deg, #ec4899, #5b21b6); }
+.tpl-card[data-category="gym"] .tpl-card__thumb { background: linear-gradient(135deg, #ef4444, #7f1d1d); }
+.tpl-card[data-category="interior_design"] .tpl-card__thumb { background: linear-gradient(135deg, #d97706, #451a03); }
+.tpl-card[data-category="lawyers"] .tpl-card__thumb { background: linear-gradient(135deg, #334155, #0f172a); }
+.tpl-card[data-category="photographers"] .tpl-card__thumb { background: linear-gradient(135deg, #6366f1, #1e1b4b); }
 .tpl-card__overlay {
   position: absolute; inset: 0;
   display: flex;
@@ -230,7 +251,7 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
 .tpl-card:hover .tpl-card__overlay { opacity: 1; }
 .tpl-card__price-tag {
   position: absolute;
-  top: 12px; inset-inline-end: 12px;
+  top: 40px; inset-inline-end: 12px;
   background: #fff;
   color: var(--primary-dark);
   font-weight: 800;
@@ -242,7 +263,7 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
 }
 .tpl-card__cat-tag {
   position: absolute;
-  top: 12px; inset-inline-start: 12px;
+  top: 40px; inset-inline-start: 12px;
   background: rgba(255,255,255,.92);
   color: var(--ink);
   font-weight: 700;

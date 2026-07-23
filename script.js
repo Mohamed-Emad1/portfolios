@@ -10,6 +10,17 @@ const CATEGORY_LABELS = {
   photographers: 'مصورون',
 };
 
+const CATEGORY_ICONS = {
+  accountants: '🧮',
+  doctors: '🩺',
+  engineers: '⚙️',
+  graphic_designers: '🎨',
+  gym: '🏋️',
+  interior_design: '🛋️',
+  lawyers: '⚖️',
+  photographers: '📷',
+};
+
 const TEMPLATES = [
   { id: 'acc-1', title: 'محاسب — تصميم كلاسيكي', category: 'accountants', path: 'accountants/first_design', price: 25, desc: 'تصميم بسيط وموثوق لصفحة واحدة للمحاسبين والمستشارين الماليين.' },
   { id: 'acc-2', title: 'محاسب — تصميم عصري', category: 'accountants', path: 'accountants/second_design', price: 25, desc: 'تصميم بديل عصري للمستشارين الماليين والمحاسبين القانونيين.' },
@@ -51,9 +62,10 @@ function renderCards(list) {
 
     card.innerHTML = `
       <div class="tpl-card__thumb">
+        <div class="tpl-card__thumb-chrome" aria-hidden="true"><span></span><span></span><span></span></div>
         <span class="tpl-card__cat-tag">${CATEGORY_LABELS[tpl.category]}</span>
         <span class="tpl-card__price-tag">${tpl.price}$</span>
-        <iframe data-src="${href}" title="معاينة ${tpl.title}" loading="lazy" sandbox="allow-same-origin"></iframe>
+        <span class="tpl-card__icon" aria-hidden="true">${CATEGORY_ICONS[tpl.category]}</span>
         <a class="tpl-card__overlay" href="${href}" target="_blank" rel="noopener noreferrer" aria-label="فتح المعاينة الحية لِـ ${tpl.title}">
           <span class="btn btn--primary btn--sm">معاينة حية</span>
         </a>
@@ -72,8 +84,6 @@ function renderCards(list) {
     `;
     grid.appendChild(card);
   });
-
-  observeThumbs();
 }
 
 function populateTemplateSelect() {
@@ -82,36 +92,6 @@ function populateTemplateSelect() {
     opt.value = tpl.id;
     opt.textContent = `${tpl.title} (${tpl.price}$)`;
     cfTemplate.appendChild(opt);
-  });
-}
-
-/* ===================== Lazy-load + scale iframes ===================== */
-function scaleThumb(wrap) {
-  const iframe = wrap.querySelector('iframe');
-  if (!iframe) return;
-  const scale = wrap.clientWidth / 1440;
-  iframe.style.transform = `scale(${scale})`;
-}
-
-function observeThumbs() {
-  const thumbs = document.querySelectorAll('.tpl-card__thumb');
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        const iframe = entry.target.querySelector('iframe');
-        if (iframe && !iframe.src) {
-          iframe.src = iframe.dataset.src;
-          scaleThumb(entry.target);
-        }
-        io.unobserve(entry.target);
-      }
-    });
-  }, { rootMargin: '200px' });
-
-  thumbs.forEach((t) => io.observe(t));
-
-  window.addEventListener('resize', () => {
-    thumbs.forEach(scaleThumb);
   });
 }
 
