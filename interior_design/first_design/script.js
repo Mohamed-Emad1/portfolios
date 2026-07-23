@@ -1,5 +1,5 @@
 // =========================================================
-// أحمد خالد — Luxury Interior Design Portfolio — Interactions
+// أحمد محمد — Luxury Interior Design Portfolio — Interactions
 // =========================================================
 
 document.addEventListener('DOMContentLoaded', () => {
