@@ -1,0 +1,57 @@
+:root {
+  --color-bg: #0d1117;
+  --color-surface: #161b22;
+  --color-card: #1f2937;
+  --color-panel: #202938;
+  --color-text: #ffffff;
+  --color-text-secondary: #b8c2cc;
+  --color-gold: #e2a93b;
+  --color-blue: #4da3ff;
+  --color-purple: #7b61ff;
+  --color-green: #46c37b;
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-shadow: rgba(0, 0, 0, 0.45);
+
+  --gradient-gold-blue: linear-gradient(135deg, var(--color-gold), var(--color-blue));
+  --gradient-purple-blue: linear-gradient(135deg, var(--color-purple), var(--color-blue));
+
+  --font-heading: "Alexandria", "Cairo", sans-serif;
+  --font-body: "IBM Plex Sans Arabic", "Readex Pro", sans-serif;
+
+  --fs-hero: clamp(2.4rem, 5vw, 4.5rem);
+  --fs-h1: clamp(2rem, 3.5vw, 3rem);
+  --fs-h2: clamp(1.5rem, 2.5vw, 2.1rem);
+  --fs-h3: clamp(1.15rem, 2vw, 1.5rem);
+  --fs-body: 1rem;
+  --fs-small: 0.875rem;
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --radius-pill: 999px;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2.5rem;
+  --space-6: 4rem;
+  --space-7: 6rem;
+
+  --shadow-sm: 0 4px 12px var(--color-shadow);
+  --shadow-md: 0 12px 32px var(--color-shadow);
+  --shadow-lg: 0 24px 64px var(--color-shadow);
+  --shadow-glow-gold: 0 0 24px rgba(226, 169, 59, 0.35);
+  --shadow-glow-blue: 0 0 24px rgba(77, 163, 255, 0.35);
+
+  --transition-fast: 0.2s ease;
+  --transition-base: 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+  --transition-slow: 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+
+  --container-width: 1320px;
+
+  --z-nav: 1000;
+  --z-cursor: 2000;
+  --z-modal: 3000;
+  --z-toast: 4000;
+}

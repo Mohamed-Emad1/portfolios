@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>محمد أحمد | مصمم جرافيك وهوية بصرية</title>
+<meta name="description" content="محمد أحمد، مصمم جرافيك ومصمم هوية بصرية. تصميم الشعارات، الهوية البصرية، واجهات المستخدم، الموشن جرافيك والمطبوعات.">
+<link rel="icon" href="favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="image" href="assets/placeholder.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- SVG sprite: original geometric icons, reused via <use> -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="icon-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="icon-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 12 2a7 7 0 0 1 7 7.5C19 14.8 12 21 12 21z" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="9.5" r="2.4" fill="currentColor"/></symbol>
+    <symbol id="icon-briefcase" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 8V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+    <symbol id="icon-folder" viewBox="0 0 24 24"><path d="M3 6a1 1 0 0 1 1-1h5l2 2h9a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6z" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+    <symbol id="icon-pulse" viewBox="0 0 24 24"><path d="M3 12h4l2 7 4-14 2 7h6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-mark" viewBox="0 0 24 24"><rect x="3" y="3" width="8" height="8" rx="2" fill="currentColor" opacity=".5"/><circle cx="16" cy="16" r="5" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+    <symbol id="icon-swatches" viewBox="0 0 24 24"><circle cx="7" cy="12" r="4" fill="currentColor" opacity=".9"/><circle cx="12" cy="8" r="4" fill="currentColor" opacity=".6"/><circle cx="17" cy="12" r="4" fill="currentColor" opacity=".3"/></symbol>
+    <symbol id="icon-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3 9h18M3 15h18M9 3v18M15 3v18" stroke="currentColor" stroke-width="1.2"/></symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><line x1="10" y1="18" x2="14" y2="18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="icon-play" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M10 8.5l6 3.5-6 3.5v-7z" fill="currentColor"/></symbol>
+    <symbol id="icon-doc" viewBox="0 0 24 24"><path d="M6 2h9l4 4v16H6V2z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M9 12h7M9 16h7M9 8h3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></symbol>
+    <symbol id="icon-network" viewBox="0 0 24 24"><circle cx="6" cy="7" r="3" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="18" cy="7" r="3" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="18" r="3" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8.5 8.5L10 16M15.5 8.5L14 16M9 7h6" stroke="currentColor" stroke-width="1.4"/></symbol>
+    <symbol id="icon-pen" viewBox="0 0 24 24"><path d="M4 20l1-4.5L15.5 5 19 8.5 8.5 19 4 20z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M13 7l4 4" stroke="currentColor" stroke-width="1.8"/></symbol>
+    <symbol id="icon-star" viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .9-5.1 4.9L18.2 21 12 17.4 5.8 21l1.3-6.7L2 9.4l7-.9L12 2z" fill="currentColor"/></symbol>
+    <symbol id="icon-quote" viewBox="0 0 24 24"><path d="M7 8c-2.2 0-4 1.8-4 4v5h6v-6H6.2C6.4 9.6 7.7 8.8 9 8.6V6.4C7.9 6.6 7 7.2 7 8zm10 0c-2.2 0-4 1.8-4 4v5h6v-6h-2.8c.2-1.4 1.5-2.2 2.8-2.4V6.4c-1.1.2-2 .8-2 1.6z" fill="currentColor"/></symbol>
+    <symbol id="icon-chevron" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24"><path d="M5 5l14 14M19 5L5 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="icon-download" viewBox="0 0 24 24"><path d="M12 3v12m0 0l-4-4m4 4l4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 19h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="icon-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24"><path d="M4 12l5 5L20 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-award" viewBox="0 0 24 24"><circle cx="12" cy="9" r="6" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8.5 14.5L7 22l5-3 5 3-1.5-7.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-book" viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h6v18H6a2 2 0 0 0-2 2V5z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M20 5a2 2 0 0 0-2-2h-6v18h6a2 2 0 0 1 2 2V5z" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+  </defs>
+</svg>
+
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+<div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+<div class="mouse-glow" id="mouseGlow" aria-hidden="true"></div>
+
+<header class="navbar" id="navbar">
+  <div class="container">
+    <a href="#home" class="nav-logo" aria-label="الصفحة الرئيسية">
+      <strong style="font-family:var(--font-heading);font-size:1.3rem;color:var(--color-text)">محمد<span style="color:var(--color-gold)">.</span>أحمد</strong>
+    </a>
+    <nav aria-label="التنقل الرئيسي">
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active" data-section="home">الرئيسية</a></li>
+        <li><a href="#about" class="nav-link" data-section="about">نبذة عني</a></li>
+        <li><a href="#services" class="nav-link" data-section="services">الخدمات</a></li>
+        <li><a href="#portfolio" class="nav-link" data-section="portfolio">الأعمال</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills">المهارات</a></li>
+        <li><a href="#experience" class="nav-link" data-section="experience">الخبرات</a></li>
+        <li><a href="#education" class="nav-link" data-section="education">الشهادات</a></li>
+        <li><a href="#blog" class="nav-link" data-section="blog">المدونة</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">تواصل معي</a></li>
+      </ul>
+    </nav>
+    <a href="#contact" class="btn btn-primary" style="padding:.7rem 1.4rem">لنتحدث</a>
+    <button class="nav-toggle" id="navToggle" aria-label="فتح القائمة" aria-expanded="false" aria-controls="navMobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<nav class="nav-mobile-menu" id="navMobileMenu" aria-label="القائمة الرئيسية للجوال">
+  <a href="#home" class="nav-link">الرئيسية</a>
+  <a href="#about" class="nav-link">نبذة عني</a>
+  <a href="#services" class="nav-link">الخدمات</a>
+  <a href="#portfolio" class="nav-link">الأعمال</a>
+  <a href="#skills" class="nav-link">المهارات</a>
+  <a href="#experience" class="nav-link">الخبرات</a>
+  <a href="#education" class="nav-link">الشهادات</a>
+  <a href="#blog" class="nav-link">المدونة</a>
+  <a href="#contact" class="nav-link">تواصل معي</a>
+</nav>
+
+<main id="mainContent">
+
+  <!-- 1. Hero Dashboard -->
+  <section class="hero" id="home">
+    <div class="floating-shapes" aria-hidden="true">
+      <div class="floating-card"><svg width="28" height="28"><use href="#icon-mark" style="color:var(--color-gold)"/></svg></div>
+      <div class="floating-card"><svg width="24" height="24"><use href="#icon-swatches" style="color:var(--color-blue)"/></svg></div>
+      <div class="floating-card"><svg width="26" height="26"><use href="#icon-grid" style="color:var(--color-purple)"/></svg></div>
+      <div class="floating-card"><svg width="22" height="22"><use href="#icon-pen" style="color:var(--color-green)"/></svg></div>
+      <div class="floating-card"><svg width="20" height="20"><use href="#icon-play" style="color:var(--color-gold)"/></svg></div>
+    </div>
+    <div class="container">
+      <div class="hero-text">
+        <span class="section-eyebrow reveal fade-up">مصمم جرافيك ومصمم هوية بصرية</span>
+        <h1 class="reveal fade-up split-text" id="heroTitle">محمد أحمد</h1>
+        <p class="section-subtitle reveal fade-up">أصمم هويات بصرية وتجارب رقمية تساعد العلامات التجارية على النمو والتميز.</p>
+        <div class="hero-actions reveal fade-up">
+          <a href="#portfolio" class="btn btn-primary" data-ripple>استعرض أعمالي</a>
+          <a href="assets/cv.pdf" download class="btn btn-outline" data-ripple>
+            <svg width="18" height="18"><use href="#icon-download"/></svg>
+            تحميل السيرة الذاتية
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="counter-card reveal fade-up">
+            <div class="counter-number" data-counter="420">0</div>
+            <div class="counter-label">مشروع</div>
+          </div>
+          <div class="counter-card reveal fade-up">
+            <div class="counter-number" data-counter="180">0</div>
+            <div class="counter-label">عميل</div>
+          </div>
+          <div class="counter-card reveal fade-up">
+            <div class="counter-number" data-counter="9">0</div>
+            <div class="counter-label">سنوات خبرة</div>
+          </div>
+          <div class="counter-card reveal fade-up">
+            <div class="counter-number" data-counter="35">0</div>
+            <div class="counter-label">علامة تجارية</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-portrait reveal zoom">
+        <div class="hero-portrait-frame">
+          <img src="assets/placeholder.png" alt="صورة شخصية لمحمد أحمد، مصمم جرافيك" width="420" height="560">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Designer Dashboard -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-head center reveal fade-up">
+        <span class="section-eyebrow">نبذة عني</span>
+        <h2 class="section-title">لوحة المصمم</h2>
+        <p class="section-subtitle" style="margin-inline:auto">نظرة سريعة على من أنا وما الذي أعمل عليه الآن، بأسلوب لوحة تحكم تفاعلية.</p>
+      </div>
+      <div class="dashboard-grid">
+        <div class="dashboard-widget widget-wide widget-tall reveal fade-up">
+          <div class="widget-label"><svg width="18" height="18"><use href="#icon-user"/></svg> نبذة شخصية</div>
+          <p style="color:var(--color-text);line-height:1.9">
+            مصمم جرافيك وهوية بصرية بخبرة تمتد لتسع سنوات، أساعد العلامات التجارية والشركات الناشئة على بناء حضور بصري قوي ومتماسك عبر الشعارات، الهوية، وواجهات المستخدم.
+          </p>
+          <div class="mini-bars" aria-hidden="true">
+            <span data-height="40"></span><span data-height="70"></span><span data-height="55"></span>
+            <span data-height="90"></span><span data-height="65"></span><span data-height="80"></span>
+            <span data-height="45"></span><span data-height="60"></span>
+          </div>
+        </div>
+        <div class="dashboard-widget reveal fade-up">
+          <div class="widget-label"><svg width="18" height="18"><use href="#icon-pin"/></svg> الموقع</div>
+          <div class="widget-value">إسطنبول، تركيا</div>
+        </div>
+        <div class="dashboard-widget reveal fade-up">
+          <div class="widget-label"><svg width="18" height="18"><use href="#icon-briefcase"/></svg> سنوات الخبرة</div>
+          <div class="widget-value">+9 سنوات</div>
+        </div>
+        <div class="dashboard-widget reveal fade-up">
+          <div class="widget-label"><svg width="18" height="18"><use href="#icon-folder"/></svg> آخر مشروع</div>
+          <div class="widget-value">هوية بصرية لمقهى NOIR</div>
+        </div>
+        <div class="dashboard-widget reveal fade-up">
+          <div class="widget-label"><svg width="18" height="18"><use href="#icon-pulse"/></svg> الحالة الحالية</div>
+          <div class="status-pill">متاح لعمل جديد</div>
+        </div>
+        <div class="dashboard-widget widget-wide reveal fade-up">
+          <div class="widget-label"><svg width="18" height="18"><use href="#icon-network"/></svg> العميل الحالي</div>
+          <div class="widget-value">وكالة إبداعية — مشروع إعادة تصميم الهوية البصرية</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Services -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-head reveal fade-up">
+        <span class="section-eyebrow">ماذا أقدم</span>
+        <h2 class="section-title">الخدمات</h2>
+        <p class="section-subtitle">مجموعة متكاملة من خدمات التصميم لبناء هوية بصرية متكاملة لعلامتك التجارية.</p>
+      </div>
+      <div class="grid-4">
+        <div class="card service-card reveal fade-up">
+          <div class="service-icon"><svg width="26" height="26"><use href="#icon-mark"/></svg></div>
+          <h3>تصميم الشعارات</h3>
+          <p>شعارات مميزة تعكس هوية علامتك التجارية وتبقى في ذاكرة عملائك.</p>
+        </div>
+        <div class="card service-card reveal fade-up">
+          <div class="service-icon"><svg width="26" height="26"><use href="#icon-swatches"/></svg></div>
+          <h3>الهوية البصرية</h3>
+          <p>أنظمة هوية متكاملة تشمل الألوان والخطوط وأدلة الاستخدام.</p>
+        </div>
+        <div class="card service-card reveal fade-up">
+          <div class="service-icon"><svg width="26" height="26"><use href="#icon-grid"/></svg></div>
+          <h3>واجهات المستخدم</h3>
+          <p>تصميم واجهات رقمية أنيقة وسهلة الاستخدام للمواقع والتطبيقات.</p>
+        </div>
+        <div class="card service-card reveal fade-up">
+          <div class="service-icon"><svg width="26" height="26"><use href="#icon-phone"/></svg></div>
+          <h3>تصميم التطبيقات</h3>
+          <p>تجارب مستخدم متكاملة لتطبيقات الجوال من الفكرة إلى الإطلاق.</p>
+        </div>
+        <div class="card service-card reveal fade-up">
+          <div class="service-icon"><svg width="26" height="26"><use href="#icon-play"/></svg></div>
+          <h3>الموشن جرافيك</h3>
+          <p>رسوم متحركة تحكي قصة علامتك التجارية بطريقة جذابة.</p>
+        </div>
+        <div class="card service-card reveal fade-up">
+          <div class="service-icon"><svg width="26" height="26"><use href="#icon-doc"/></svg></div>
+          <h3>المطبوعات</h3>
+          <p>تصميم كتالوجات، بروشورات، وبطاقات أعمال احترافية.</p>
+        </div>
+        <div class="card service-card reveal fade-up">
+          <div class="service-icon"><svg width="26" height="26"><use href="#icon-network"/></svg></div>
+          <h3>تصميم السوشيال ميديا</h3>
+          <p>محتوى بصري متكامل لمنصات التواصل الاجتماعي.</p>
+        </div>
+        <div class="card service-card reveal fade-up">
+          <div class="service-icon"><svg width="26" height="26"><use href="#icon-pen"/></svg></div>
+          <h3>الرسوم التوضيحية</h3>
+          <p>رسوم توضيحية مخصصة تضيف طابعاً مميزاً لمشروعك.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Portfolio -->
+  <section class="section" id="portfolio">
+    <div class="container">
+      <div class="section-head center reveal fade-up">
+        <span class="section-eyebrow">أعمالي</span>
+        <h2 class="section-title">معرض الأعمال</h2>
+        <p class="section-subtitle" style="margin-inline:auto">مجموعة مختارة من المشاريع التي عملت عليها عبر مختلف المجالات.</p>
+      </div>
+      <div class="portfolio-filters reveal fade-up" role="tablist" aria-label="تصفية الأعمال">
+        <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">الكل</button>
+        <button class="filter-btn" data-filter="logo" role="tab" aria-selected="false">الشعارات</button>
+        <button class="filter-btn" data-filter="identity" role="tab" aria-selected="false">الهوية البصرية</button>
+        <button class="filter-btn" data-filter="ui" role="tab" aria-selected="false">واجهات المستخدم</button>
+        <button class="filter-btn" data-filter="ads" role="tab" aria-selected="false">الإعلانات</button>
+        <button class="filter-btn" data-filter="print" role="tab" aria-selected="false">المطبوعات</button>
+        <button class="filter-btn" data-filter="social" role="tab" aria-selected="false">السوشيال ميديا</button>
+        <button class="filter-btn" data-filter="illustration" role="tab" aria-selected="false">الرسوم التوضيحية</button>
+      </div>
+      <div class="portfolio-grid" id="portfolioGrid">
+        <!-- items injected identically here for static fallback + JS filtering -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Featured Case Study -->
+  <section class="section" id="case-study" style="background:var(--color-surface)">
+    <div class="container">
+      <div class="section-head center reveal fade-up">
+        <span class="section-eyebrow">مشروع مميز</span>
+        <h2 class="section-title">دراسة حالة</h2>
+      </div>
+      <div class="window-frame reveal fade-up">
+        <div class="window-titlebar">
+          <div class="window-dots"><span></span><span></span><span></span></div>
+          <span class="window-title">Case-Study / NOIR-Cafe.fig</span>
+        </div>
+        <div class="window-body">
+          <div class="case-study">
+            <div>
+              <h3 style="font-size:1.8rem;margin-bottom:.5rem">هوية بصرية متكاملة لمقهى NOIR</h3>
+              <div class="case-meta">
+                <div><span>العميل</span><strong>مقهى NOIR</strong></div>
+                <div><span>الخدمات</span><strong>هوية بصرية، شعار، مطبوعات</strong></div>
+                <div><span>مدة التنفيذ</span><strong>6 أسابيع</strong></div>
+                <div><span>النتائج</span><strong>+40% تفاعل على السوشيال ميديا</strong></div>
+              </div>
+              <p><strong>المشكلة:</strong> افتقر المقهى إلى هوية بصرية مميزة تعكس طابعه الفاخر والبسيط في آنٍ واحد.</p>
+              <p style="margin-top:.75rem"><strong>الحل:</strong> تصميم هوية بصرية داكنة أنيقة تعتمد على التباين والتفاصيل الذهبية، مع نظام تطبيقات متكامل من المطبوعات إلى السوشيال ميديا.</p>
+              <a href="#portfolio" class="btn btn-outline" style="margin-top:1.5rem">استكشف المشروع</a>
+            </div>
+            <div class="case-study-media">
+              <img src="assets/placeholder.png" alt="عرض تصميم هوية بصرية لمقهى NOIR" loading="lazy" width="600" height="450">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 & 8. Skills -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="grid-2" style="align-items:start;gap:var(--space-6)">
+        <div>
+          <div class="section-head reveal fade-up">
+            <span class="section-eyebrow">الأدوات</span>
+            <h2 class="section-title">المهارات البرمجية</h2>
+          </div>
+          <div class="card reveal fade-up" id="softwareSkills">
+            <div class="skill-bar-item" data-skill="90">
+              <div class="skill-bar-head"><span>Adobe Photoshop</span><span class="skill-percent">90%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+            </div>
+            <div class="skill-bar-item" data-skill="95">
+              <div class="skill-bar-head"><span>Adobe Illustrator</span><span class="skill-percent">95%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+            </div>
+            <div class="skill-bar-item" data-skill="80">
+              <div class="skill-bar-head"><span>Adobe InDesign</span><span class="skill-percent">80%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+            </div>
+            <div class="skill-bar-item" data-skill="75">
+              <div class="skill-bar-head"><span>Adobe XD</span><span class="skill-percent">75%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+            </div>
+            <div class="skill-bar-item" data-skill="85">
+              <div class="skill-bar-head"><span>Figma</span><span class="skill-percent">85%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+            </div>
+            <div class="skill-bar-item" data-skill="70">
+              <div class="skill-bar-head"><span>After Effects</span><span class="skill-percent">70%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+            </div>
+            <div class="skill-bar-item" data-skill="65">
+              <div class="skill-bar-head"><span>Premiere Pro</span><span class="skill-percent">65%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+            </div>
+            <div class="skill-bar-item" data-skill="50">
+              <div class="skill-bar-head"><span>Blender</span><span class="skill-percent">50%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+            </div>
+            <div class="skill-bar-item" data-skill="55">
+              <div class="skill-bar-head"><span>Cinema 4D</span><span class="skill-percent">55%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="section-head reveal fade-up">
+            <span class="section-eyebrow">القدرات</span>
+            <h2 class="section-title">المهارات المهنية</h2>
+          </div>
+          <div class="grid-3" id="professionalSkills">
+            <div class="progress-circle-wrap reveal fade-up">
+              <div class="progress-circle" data-progress="95">
+                <svg viewBox="0 0 120 120"><circle class="bg-ring" cx="60" cy="60" r="54"></circle><circle class="fg-ring" cx="60" cy="60" r="54"></circle></svg>
+                <div class="progress-value">0%</div>
+              </div>
+              <span>الإبداع</span>
+            </div>
+            <div class="progress-circle-wrap reveal fade-up">
+              <div class="progress-circle" data-progress="88">
+                <svg viewBox="0 0 120 120"><circle class="bg-ring" cx="60" cy="60" r="54"></circle><circle class="fg-ring" cx="60" cy="60" r="54"></circle></svg>
+                <div class="progress-value">0%</div>
+              </div>
+              <span>التواصل</span>
+            </div>
+            <div class="progress-circle-wrap reveal fade-up">
+              <div class="progress-circle" data-progress="92">
+                <svg viewBox="0 0 120 120"><circle class="bg-ring" cx="60" cy="60" r="54"></circle><circle class="fg-ring" cx="60" cy="60" r="54"></circle></svg>
+                <div class="progress-value">0%</div>
+              </div>
+              <span>حل المشكلات</span>
+            </div>
+            <div class="progress-circle-wrap reveal fade-up">
+              <div class="progress-circle" data-progress="85">
+                <svg viewBox="0 0 120 120"><circle class="bg-ring" cx="60" cy="60" r="54"></circle><circle class="fg-ring" cx="60" cy="60" r="54"></circle></svg>
+                <div class="progress-value">0%</div>
+              </div>
+              <span>إدارة الوقت</span>
+            </div>
+            <div class="progress-circle-wrap reveal fade-up">
+              <div class="progress-circle" data-progress="90">
+                <svg viewBox="0 0 120 120"><circle class="bg-ring" cx="60" cy="60" r="54"></circle><circle class="fg-ring" cx="60" cy="60" r="54"></circle></svg>
+                <div class="progress-value">0%</div>
+              </div>
+              <span>إدارة المشاريع</span>
+            </div>
+            <div class="progress-circle-wrap reveal fade-up">
+              <div class="progress-circle" data-progress="93">
+                <svg viewBox="0 0 120 120"><circle class="bg-ring" cx="60" cy="60" r="54"></circle><circle class="fg-ring" cx="60" cy="60" r="54"></circle></svg>
+                <div class="progress-value">0%</div>
+              </div>
+              <span>العمل الجماعي</span>
+            </div>
+          </div>
+          <svg width="0" height="0" style="position:absolute">
+            <defs>
+              <linearGradient id="gradient-ring" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#e2a93b"/>
+                <stop offset="100%" stop-color="#4da3ff"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Chart: software / category distribution -->
+      <div class="grid-2 reveal fade-up" style="margin-top:var(--space-6)">
+        <div class="card chart-card">
+          <h3 style="margin-bottom:1rem">توزيع استخدام البرامج</h3>
+          <svg id="softwareChart" viewBox="0 0 300 220" role="img" aria-label="مخطط توزيع استخدام البرامج"></svg>
+        </div>
+        <div class="card chart-card">
+          <h3 style="margin-bottom:1rem">توزيع فئات المشاريع</h3>
+          <svg id="categoryChart" viewBox="0 0 300 220" role="img" aria-label="مخطط توزيع فئات المشاريع"></svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. Career Timeline -->
+  <section class="section" id="experience" style="background:var(--color-surface)">
+    <div class="container">
+      <div class="section-head center reveal fade-up">
+        <span class="section-eyebrow">المسيرة المهنية</span>
+        <h2 class="section-title">الخبرات</h2>
+      </div>
+      <div class="timeline" id="timeline">
+        <div class="timeline-item">
+          <span class="timeline-year">2025</span>
+          <h3>مدير إبداعي</h3>
+          <p>قيادة فريق التصميم الإبداعي وتطوير هويات بصرية لعلامات تجارية كبرى.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-year">2023</span>
+          <h3>مصمم جرافيك أول</h3>
+          <p>الإشراف على مشاريع الهوية البصرية وتوجيه فريق من المصممين المبتدئين.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-year">2021</span>
+          <h3>مصمم واجهات مستخدم</h3>
+          <p>تصميم واجهات تطبيقات ومواقع لعملاء محليين وعالميين.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-year">2019</span>
+          <h3>مصمم جرافيك</h3>
+          <p>العمل على تصميم الشعارات والمطبوعات والحملات الإعلانية.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-year">2017</span>
+          <h3>مصمم مبتدئ</h3>
+          <p>بداية المسيرة المهنية في وكالة إعلانية محلية.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. Education -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-head center reveal fade-up">
+        <span class="section-eyebrow">التعليم والشهادات</span>
+        <h2 class="section-title">المؤهلات</h2>
+      </div>
+      <div class="grid-3">
+        <div class="card reveal fade-up" style="text-align:center">
+          <div class="service-icon" style="margin-inline:auto"><svg width="24" height="24"><use href="#icon-book"/></svg></div>
+          <h3>بكالوريوس التصميم</h3>
+          <p class="section-subtitle" style="margin-inline:auto">كلية الفنون الجميلة، 2016</p>
+        </div>
+        <div class="card reveal fade-up" style="text-align:center">
+          <div class="service-icon" style="margin-inline:auto"><svg width="24" height="24"><use href="#icon-award"/></svg></div>
+          <h3>دبلوم التصميم الجرافيكي</h3>
+          <p class="section-subtitle" style="margin-inline:auto">معهد التصميم الإبداعي، 2015</p>
+        </div>
+        <div class="card reveal fade-up" style="text-align:center">
+          <div class="service-icon" style="margin-inline:auto"><svg width="24" height="24"><use href="#icon-check"/></svg></div>
+          <h3>Google UX Design</h3>
+          <p class="section-subtitle" style="margin-inline:auto">شهادة معتمدة، 2021</p>
+        </div>
+        <div class="card reveal fade-up" style="text-align:center">
+          <div class="service-icon" style="margin-inline:auto"><svg width="24" height="24"><use href="#icon-check"/></svg></div>
+          <h3>Adobe Certified Expert</h3>
+          <p class="section-subtitle" style="margin-inline:auto">شهادة معتمدة، 2020</p>
+        </div>
+        <div class="card reveal fade-up" style="text-align:center">
+          <div class="service-icon" style="margin-inline:auto"><svg width="24" height="24"><use href="#icon-check"/></svg></div>
+          <h3>Figma Advanced</h3>
+          <p class="section-subtitle" style="margin-inline:auto">شهادة معتمدة، 2022</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. Design Workflow -->
+  <section class="section" id="workflow" style="background:var(--color-surface)">
+    <div class="container">
+      <div class="section-head center reveal fade-up">
+        <span class="section-eyebrow">منهجية العمل</span>
+        <h2 class="section-title">آلية التصميم</h2>
+      </div>
+      <div class="workflow-track">
+        <div class="workflow-step reveal fade-up"><div class="step-num">1</div><h3 style="font-size:1rem">استلام المشروع</h3></div>
+        <div class="workflow-step reveal fade-up"><div class="step-num">2</div><h3 style="font-size:1rem">تحليل المتطلبات</h3></div>
+        <div class="workflow-step reveal fade-up"><div class="step-num">3</div><h3 style="font-size:1rem">البحث</h3></div>
+        <div class="workflow-step reveal fade-up"><div class="step-num">4</div><h3 style="font-size:1rem">رسم الأفكار</h3></div>
+        <div class="workflow-step reveal fade-up"><div class="step-num">5</div><h3 style="font-size:1rem">التصميم</h3></div>
+        <div class="workflow-step reveal fade-up"><div class="step-num">6</div><h3 style="font-size:1rem">المراجعة</h3></div>
+        <div class="workflow-step reveal fade-up"><div class="step-num">7</div><h3 style="font-size:1rem">التسليم</h3></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. Statistics -->
+  <section class="section" id="stats">
+    <div class="container">
+      <div class="grid-4">
+        <div class="counter-card reveal fade-up">
+          <div class="counter-number" data-counter="500">0</div>
+          <div class="counter-label">مشروع</div>
+        </div>
+        <div class="counter-card reveal fade-up">
+          <div class="counter-number" data-counter="220">0</div>
+          <div class="counter-label">عميل</div>
+        </div>
+        <div class="counter-card reveal fade-up">
+          <div class="counter-number" data-counter="98" data-suffix="%">0</div>
+          <div class="counter-label">رضا العملاء</div>
+        </div>
+        <div class="counter-card reveal fade-up">
+          <div class="counter-number" data-counter="14">0</div>
+          <div class="counter-label">جائزة</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 13. Client Logos -->
+  <section class="section" id="clients" style="background:var(--color-surface)">
+    <div class="container">
+      <div class="section-head center reveal fade-up">
+        <span class="section-eyebrow">ثقة العملاء</span>
+        <h2 class="section-title">عملاء عملت معهم</h2>
+      </div>
+      <div class="logo-grid reveal fade-up">
+        <div class="logo-item"><img src="assets/placeholder.png" alt="شعار عميل 1" loading="lazy" width="120" height="40"></div>
+        <div class="logo-item"><img src="assets/placeholder.png" alt="شعار عميل 2" loading="lazy" width="120" height="40"></div>
+        <div class="logo-item"><img src="assets/placeholder.png" alt="شعار عميل 3" loading="lazy" width="120" height="40"></div>
+        <div class="logo-item"><img src="assets/placeholder.png" alt="شعار عميل 4" loading="lazy" width="120" height="40"></div>
+        <div class="logo-item"><img src="assets/placeholder.png" alt="شعار عميل 5" loading="lazy" width="120" height="40"></div>
+        <div class="logo-item"><img src="assets/placeholder.png" alt="شعار عميل 6" loading="lazy" width="120" height="40"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 14. Testimonials -->
+  <section class="section" id="testimonials">
+    <div class="container">
+      <div class="section-head center reveal fade-up">
+        <span class="section-eyebrow">آراء العملاء</span>
+        <h2 class="section-title">شهادات</h2>
+      </div>
+      <div class="testimonial-slider reveal fade-up">
+        <div class="testimonial-track" id="testimonialTrack">
+          <div class="testimonial-card glass-card">
+            <svg width="30" height="30" style="color:var(--color-gold);margin-bottom:1rem"><use href="#icon-quote"/></svg>
+            <p class="review">"عمل محمد معنا على إعادة تصميم هويتنا البصرية بالكامل، والنتيجة تجاوزت توقعاتنا. احترافية عالية والتزام تام بالمواعيد."</p>
+            <div class="avatar"><img src="assets/placeholder.png" alt="صورة العميل أحمد سالم" width="72" height="72"></div>
+            <strong>أحمد سالم</strong>
+            <div style="color:var(--color-text-secondary);font-size:.85rem">مؤسس، شركة نوفا</div>
+          </div>
+          <div class="testimonial-card glass-card">
+            <svg width="30" height="30" style="color:var(--color-gold);margin-bottom:1rem"><use href="#icon-quote"/></svg>
+            <p class="review">"إبداع وسرعة استجابة نادراً ما نجدهما معاً. أنصح به بشدة لكل من يبحث عن هوية بصرية مميزة."</p>
+            <div class="avatar"><img src="assets/placeholder.png" alt="صورة العميلة سارة الحمدان" width="72" height="72"></div>
+            <strong>سارة الحمدان</strong>
+            <div style="color:var(--color-text-secondary);font-size:.85rem">مديرة تسويق، مقهى NOIR</div>
+          </div>
+          <div class="testimonial-card glass-card">
+            <svg width="30" height="30" style="color:var(--color-gold);margin-bottom:1rem"><use href="#icon-quote"/></svg>
+            <p class="review">"تعامل احترافي من البداية حتى التسليم، مع فهم عميق لاحتياجات العلامة التجارية."</p>
+            <div class="avatar"><img src="assets/placeholder.png" alt="صورة العميل خالد يوسف" width="72" height="72"></div>
+            <strong>خالد يوسف</strong>
+            <div style="color:var(--color-text-secondary);font-size:.85rem">مدير عام، وكالة بروميديا</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-controls" id="testimonialControls"></div>
+    </div>
+  </section>
+
+  <!-- 15. Awards -->
+  <section class="section" id="awards" style="background:var(--color-surface)">
+    <div class="container">
+      <div class="section-head center reveal fade-up">
+        <span class="section-eyebrow">التقدير</span>
+        <h2 class="section-title">الجوائز</h2>
+      </div>
+      <div class="grid-4">
+        <div class="card award-card reveal fade-up">
+          <div class="award-icon"><svg width="26" height="26"><use href="#icon-award"/></svg></div>
+          <h3 style="font-size:1rem">أفضل هوية بصرية</h3>
+        </div>
+        <div class="card award-card reveal fade-up">
+          <div class="award-icon"><svg width="26" height="26"><use href="#icon-award"/></svg></div>
+          <h3 style="font-size:1rem">أفضل تجربة مستخدم</h3>
+        </div>
+        <div class="card award-card reveal fade-up">
+          <div class="award-icon"><svg width="26" height="26"><use href="#icon-award"/></svg></div>
+          <h3 style="font-size:1rem">أفضل حملة إعلانية</h3>
+        </div>
+        <div class="card award-card reveal fade-up">
+          <div class="award-icon"><svg width="26" height="26"><use href="#icon-award"/></svg></div>
+          <h3 style="font-size:1rem">أفضل مشروع لعام 2025</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 16. Blog -->
+  <section class="section" id="blog">
+    <div class="container">
+      <div class="section-head center reveal fade-up">
+        <span class="section-eyebrow">المدونة</span>
+        <h2 class="section-title">أحدث المقالات</h2>
+      </div>
+      <div class="grid-4">
+        <article class="card blog-card reveal fade-up">
+          <img src="assets/placeholder.png" alt="مقال: كيف تبني هوية بصرية؟" loading="lazy" width="300" height="188">
+          <div class="blog-meta">2026-06-10 · تصميم</div>
+          <h3 style="font-size:1.05rem">كيف تبني هوية بصرية؟</h3>
+        </article>
+        <article class="card blog-card reveal fade-up">
+          <img src="assets/placeholder.png" alt="مقال: أخطاء تصميم الشعارات" loading="lazy" width="300" height="188">
+          <div class="blog-meta">2026-05-22 · شعارات</div>
+          <h3 style="font-size:1.05rem">أخطاء تصميم الشعارات</h3>
+        </article>
+        <article class="card blog-card reveal fade-up">
+          <img src="assets/placeholder.png" alt="مقال: أفضل أدوات المصممين" loading="lazy" width="300" height="188">
+          <div class="blog-meta">2026-04-15 · أدوات</div>
+          <h3 style="font-size:1.05rem">أفضل أدوات المصممين</h3>
+        </article>
+        <article class="card blog-card reveal fade-up">
+          <img src="assets/placeholder.png" alt="مقال: نصائح لتطوير Portfolio" loading="lazy" width="300" height="188">
+          <div class="blog-meta">2026-03-02 · مسيرة مهنية</div>
+          <h3 style="font-size:1.05rem">نصائح لتطوير Portfolio</h3>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 17. Contact -->
+  <section class="section" id="contact" style="background:var(--color-surface)">
+    <div class="container">
+      <div class="contact-layout">
+        <div class="reveal fade-right">
+          <span class="section-eyebrow">تواصل معي</span>
+          <h2 class="section-title">لنعمل على مشروعك القادم</h2>
+          <p class="section-subtitle">أرسل تفاصيل مشروعك وسأقوم بالتواصل معك خلال 24 ساعة.</p>
+          <div style="display:flex;flex-direction:column;gap:1rem;margin-top:2rem">
+            <div style="display:flex;align-items:center;gap:.75rem"><svg width="20" height="20" style="color:var(--color-gold)"><use href="#icon-mail"/></svg> mohamed.emad45621@gmail.com</div>
+            <div style="display:flex;align-items:center;gap:.75rem"><svg width="20" height="20" style="color:var(--color-gold)"><use href="#icon-phone"/></svg> +90 536 793 04 79</div>
+            <div style="display:flex;align-items:center;gap:.75rem"><svg width="20" height="20" style="color:var(--color-gold)"><use href="#icon-pin"/></svg> إسطنبول، تركيا</div>
+          </div>
+        </div>
+        <form class="contact-form card reveal fade-left" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">الاسم</label>
+            <input type="text" id="name" name="name" required autocomplete="name">
+            <span class="form-error-msg">الرجاء إدخال الاسم</span>
+          </div>
+          <div class="form-group">
+            <label for="email">البريد الإلكتروني</label>
+            <input type="email" id="email" name="email" required autocomplete="email">
+            <span class="form-error-msg">الرجاء إدخال بريد إلكتروني صحيح</span>
+          </div>
+          <div class="form-group">
+            <label for="company">اسم الشركة</label>
+            <input type="text" id="company" name="company" autocomplete="organization">
+          </div>
+          <div class="form-group">
+            <label for="projectType">نوع المشروع</label>
+            <select id="projectType" name="projectType">
+              <option value="logo">شعار</option>
+              <option value="identity">هوية بصرية</option>
+              <option value="ui">واجهات مستخدم</option>
+              <option value="motion">موشن جرافيك</option>
+              <option value="other">أخرى</option>
+            </select>
+          </div>
+          <div class="form-group full">
+            <label for="budget">الميزانية</label>
+            <select id="budget" name="budget">
+              <option value="lt1000">أقل من 1000$</option>
+              <option value="1000-5000">1000$ - 5000$</option>
+              <option value="5000-10000">5000$ - 10000$</option>
+              <option value="gt10000">أكثر من 10000$</option>
+            </select>
+          </div>
+          <div class="form-group full">
+            <label for="message">الرسالة</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <span class="form-error-msg">الرجاء كتابة رسالتك</span>
+          </div>
+          <button type="submit" class="btn btn-primary form-group full" id="contactSubmit" style="justify-content:center">
+            <span class="btn-text">إرسال الرسالة</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <strong style="font-family:var(--font-heading);font-size:1.4rem;color:var(--color-text)">محمد<span style="color:var(--color-gold)">.</span>أحمد</strong>
+        <p style="margin-top:1rem;max-width:280px">مصمم جرافيك ومصمم هوية بصرية، أساعد العلامات التجارية على النمو من خلال تصميم بصري متميز.</p>
+        <div class="social-icons" style="margin-top:1.5rem">
+          <a href="https://behance.net" target="_blank" rel="noopener noreferrer" aria-label="Behance">Be</a>
+          <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer" aria-label="Dribbble">Dr</a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Ig</a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">In</a>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">Gh</a>
+        </div>
+      </div>
+      <div>
+        <h3 style="font-size:1.05rem;margin-bottom:1rem">روابط سريعة</h3>
+        <ul style="display:flex;flex-direction:column;gap:.6rem">
+          <li><a href="#about">نبذة عني</a></li>
+          <li><a href="#services">الخدمات</a></li>
+          <li><a href="#portfolio">الأعمال</a></li>
+          <li><a href="#skills">المهارات</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 style="font-size:1.05rem;margin-bottom:1rem">المزيد</h3>
+        <ul style="display:flex;flex-direction:column;gap:.6rem">
+          <li><a href="#experience">الخبرات</a></li>
+          <li><a href="#education">الشهادات</a></li>
+          <li><a href="#blog">المدونة</a></li>
+          <li><a href="#contact">تواصل معي</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 style="font-size:1.05rem;margin-bottom:1rem">تواصل</h3>
+        <ul style="display:flex;flex-direction:column;gap:.6rem">
+          <li>mohamed.emad45621@gmail.com</li>
+          <li>+90 536 793 04 79</li>
+          <li>إسطنبول، تركيا</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 محمد أحمد. جميع الحقوق محفوظة.</span>
+      <span>صُمم بشغف ❤ في إسطنبول</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="عرض المشروع">
+  <div class="lightbox-content">
+    <button class="lightbox-close" id="lightboxClose" aria-label="إغلاق"><svg width="18" height="18"><use href="#icon-close"/></svg></button>
+    <button class="lightbox-prev" id="lightboxPrev" aria-label="السابق"><svg width="20" height="20" style="transform:rotate(180deg)"><use href="#icon-chevron"/></svg></button>
+    <img id="lightboxImg" src="" alt="">
+    <button class="lightbox-next" id="lightboxNext" aria-label="التالي"><svg width="20" height="20"><use href="#icon-chevron"/></svg></button>
+    <p class="lightbox-caption" id="lightboxCaption"></p>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/navbar.js" defer></script>
+<script src="js/cursor.js" defer></script>
+<script src="js/animations.js" defer></script>
+<script src="js/counters.js" defer></script>
+<script src="js/skills.js" defer></script>
+<script src="js/timeline.js" defer></script>
+<script src="js/portfolio.js" defer></script>
+<script src="js/charts.js" defer></script>
+<script src="js/dashboard.js" defer></script>
+<script src="js/contact.js" defer></script>
+<script src="js/script.js" defer></script>
+
+<!-- portfolio-buy-badge:start -->
+<style>
+  #portfolio-buy-badge { position: fixed; z-index: 999999; bottom: 18px; right: 18px; direction: rtl; font-family: 'Cairo', Tahoma, Arial, sans-serif; }
+  #portfolio-buy-badge a { display: flex; align-items: center; gap: 10px; background: #14142b; color: #fff; padding: 10px 16px; border-radius: 999px; box-shadow: 0 10px 25px -8px rgba(0,0,0,.5); text-decoration: none; font-size: 14px; font-weight: 700; border: 1px solid rgba(255,255,255,.15); transition: transform .15s ease, background .15s ease; }
+  #portfolio-buy-badge a:hover { background: #312e81; transform: translateY(-2px); }
+  #portfolio-buy-badge .pbb-price { background: #4f46e5; color: #fff; padding: 4px 10px; border-radius: 999px; font-size: 13px; direction: ltr; }
+  @media (max-width: 480px) { #portfolio-buy-badge a span:not(.pbb-price) { display: none; } #portfolio-buy-badge { bottom: 12px; right: 12px; } }
+</style>
+<div id="portfolio-buy-badge">
+  <a href="../../index.html?template=gfx-2#contact">
+    <span class="pbb-price">$29</span>
+    <span>اشترِ هذا القالب</span>
+  </a>
+</div>
+<!-- portfolio-buy-badge:end -->
+</body>
+</html>

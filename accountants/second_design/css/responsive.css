@@ -1,0 +1,62 @@
+/* ==========================================================================
+   Responsive breakpoints — 1600 / 1400 / 1200 / 992 / 768 / 480
+   ========================================================================== */
+
+@media (max-width: 1600px) {
+  :root { --container-max: 1200px; }
+}
+
+@media (max-width: 1400px) {
+  :root { --container-max: 1080px; }
+  .dashboard-charts { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 1200px) {
+  :root { --container-max: 960px; }
+  .hero-stats { grid-template-columns: repeat(2, 1fr); }
+  .dashboard-grid { grid-template-columns: repeat(2, 1fr); }
+  .portfolio-grid { grid-template-columns: repeat(2, 1fr); }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 992px) {
+  .split { grid-template-columns: 1fr; }
+  .split.hero-split { text-align: center; }
+  .hero-content .hero-desc { margin-inline: auto; }
+  .hero-actions { justify-content: center; }
+  .contact-grid { grid-template-columns: 1fr; }
+  .progress-circle-grid { grid-template-columns: repeat(2, 1fr); }
+  .tools-grid { grid-template-columns: repeat(3, 1fr); }
+  .timeline::before { inset-inline-start: 20px; transform: none; }
+  .timeline-item,
+  .timeline-item:nth-child(odd),
+  .timeline-item:nth-child(even) {
+    width: 100%;
+    margin-inline-start: 0;
+    padding-inline-start: 3rem;
+    padding-inline-end: 0;
+    text-align: start;
+  }
+  .timeline-dot { inset-inline-start: 20px; transform: translateX(0); }
+}
+
+@media (max-width: 768px) {
+  .nav-links, .nav-actions .btn-outline { display: none; }
+  .nav-toggle { display: flex; }
+  .hero-stats { grid-template-columns: repeat(2, 1fr); }
+  .dashboard-grid { grid-template-columns: 1fr; }
+  .portfolio-grid { grid-template-columns: 1fr; }
+  .contact-form { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .tools-grid { grid-template-columns: repeat(2, 1fr); }
+  .cursor-dot, .cursor-ring { display: none !important; }
+}
+
+@media (max-width: 480px) {
+  .hero-stats { grid-template-columns: 1fr 1fr; }
+  .progress-circle-grid { grid-template-columns: 1fr 1fr; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .about-stats { flex-wrap: wrap; gap: var(--space-lg); }
+  .btn { width: 100%; }
+  .hero-actions { flex-direction: column; }
+}

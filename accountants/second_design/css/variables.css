@@ -1,0 +1,90 @@
+/* ==========================================================================
+   Design Tokens — colors, typography scale, spacing, radii, shadows, blur,
+   transitions, z-index. Single source of truth for the whole site.
+   ========================================================================== */
+
+:root {
+  /* Colors */
+  --color-bg: #F4F8FC;
+  --color-bg-alt: #E9F1FB;
+  --color-surface: rgba(255, 255, 255, .70);
+  --color-glass: rgba(255, 255, 255, .55);
+  --color-glass-strong: rgba(255, 255, 255, .82);
+  --color-primary: #2563EB;
+  --color-primary-dark: #1D4ED8;
+  --color-secondary: #38BDF8;
+  --color-success: #10B981;
+  --color-gold: #F5B335;
+  --color-danger: #EF4444;
+  --color-text: #0F172A;
+  --color-subtitle: #64748B;
+  --color-border: rgba(255, 255, 255, .45);
+  --color-border-dark: rgba(15, 23, 42, .08);
+  --color-shadow: rgba(0, 0, 0, .08);
+
+  --gradient-primary: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  --gradient-gold: linear-gradient(135deg, var(--color-gold), #FFD98A);
+  --gradient-success: linear-gradient(135deg, var(--color-success), #34D399);
+  --gradient-bg: radial-gradient(120% 120% at 10% 0%, #FFFFFF 0%, var(--color-bg) 45%, var(--color-bg-alt) 100%);
+
+  /* Typography */
+  --font-primary: 'Cairo', 'Alexandria', 'IBM Plex Sans Arabic', 'Readex Pro', sans-serif;
+  --font-display: 'Alexandria', 'Cairo', 'IBM Plex Sans Arabic', sans-serif;
+
+  --fs-xs: .75rem;
+  --fs-sm: .875rem;
+  --fs-base: 1rem;
+  --fs-md: 1.125rem;
+  --fs-lg: 1.375rem;
+  --fs-xl: 1.75rem;
+  --fs-2xl: 2.25rem;
+  --fs-3xl: 3rem;
+  --fs-4xl: 3.75rem;
+
+  /* Spacing scale */
+  --space-2xs: .25rem;
+  --space-xs: .5rem;
+  --space-sm: .75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+
+  /* Radii */
+  --radius-sm: .5rem;
+  --radius-md: 1rem;
+  --radius-lg: 1.5rem;
+  --radius-xl: 2rem;
+  --radius-full: 999px;
+
+  /* Shadows */
+  --shadow-sm: 0 4px 12px var(--color-shadow);
+  --shadow-md: 0 12px 32px var(--color-shadow);
+  --shadow-lg: 0 24px 60px rgba(15, 23, 42, .12);
+  --shadow-glow: 0 0 40px rgba(37, 99, 235, .25);
+
+  /* Blur */
+  --blur-sm: 8px;
+  --blur-md: 16px;
+  --blur-lg: 24px;
+
+  /* Transitions */
+  --ease-soft: cubic-bezier(.22, .61, .36, 1);
+  --transition-fast: .2s var(--ease-soft);
+  --transition-base: .35s var(--ease-soft);
+  --transition-slow: .6s var(--ease-soft);
+
+  /* Layout */
+  --container-max: 1320px;
+  --header-height: 84px;
+
+  /* Z-index scale */
+  --z-bg: 0;
+  --z-content: 10;
+  --z-nav: 100;
+  --z-overlay: 200;
+  --z-modal: 300;
+  --z-cursor: 400;
+  --z-toast: 500;
+}

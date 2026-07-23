@@ -1,0 +1,219 @@
+/* ==========================================================================
+   Electrical Engineering Decorative System — PCB, Circuits, Grids, Nodes
+   ========================================================================== */
+
+/* Digital grid background */
+.circuit-grid {
+  position: absolute;
+  inset: 0;
+  z-index: var(--z-decor);
+  pointer-events: none;
+  background-image:
+    linear-gradient(var(--border-color) 1px, transparent 1px),
+    linear-gradient(90deg, var(--border-color) 1px, transparent 1px);
+  background-size: 42px 42px;
+  -webkit-mask-image: radial-gradient(ellipse 70% 70% at 50% 30%, #000 20%, transparent 80%);
+  mask-image: radial-gradient(ellipse 70% 70% at 50% 30%, #000 20%, transparent 80%);
+  opacity: 0.6;
+}
+
+.section {
+  isolation: isolate;
+}
+
+/* PCB base backdrop for dark sections */
+.pcb-backdrop {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.pcb-backdrop svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* Circuit trace lines drawn via SVG stroke-dashoffset animation */
+.circuit-trace {
+  fill: none;
+  stroke: url(#traceGradient);
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-dasharray: 6 10;
+  opacity: 0.55;
+}
+
+.circuit-trace--glow {
+  stroke: var(--color-electric-blue);
+  stroke-width: 2;
+  stroke-dasharray: 400;
+  stroke-dashoffset: 400;
+  opacity: 0.9;
+  filter: drop-shadow(0 0 6px var(--glow-blue));
+}
+
+.circuit-trace--glow.is-drawn {
+  animation: draw-trace 2.4s ease forwards;
+}
+
+.circuit-node {
+  fill: var(--color-neon-cyan);
+  filter: drop-shadow(0 0 4px var(--glow-cyan));
+}
+
+.circuit-node--pulse {
+  animation: node-pulse 2.4s ease-in-out infinite;
+}
+
+/* Energy pulse traveling along a path (JS-driven offset-path or SMIL) */
+.energy-pulse {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-neon-cyan);
+  box-shadow: 0 0 12px 4px var(--glow-cyan);
+  position: absolute;
+  offset-rotate: 0deg;
+}
+
+/* Oscilloscope wave */
+.oscilloscope {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.oscilloscope path {
+  fill: none;
+  stroke: var(--color-neon-cyan);
+  stroke-width: 2;
+  filter: drop-shadow(0 0 6px var(--glow-cyan));
+}
+
+/* Voltage indicator chip */
+.voltage-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2xs);
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  color: var(--color-energy-yellow);
+  border: 1px solid rgba(255, 213, 74, 0.3);
+  background: rgba(255, 213, 74, 0.08);
+  border-radius: var(--radius-full);
+  padding: 0.3rem 0.8rem;
+}
+
+.voltage-indicator__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-energy-yellow);
+  animation: node-pulse 1.8s ease-in-out infinite;
+}
+
+/* Chip / IC illustration */
+.chip-icon {
+  width: 48px;
+  height: 48px;
+  position: relative;
+  border-radius: 6px;
+  background: var(--bg-surface-alt);
+  border: 1px solid var(--border-color-strong);
+}
+
+.chip-icon::before,
+.chip-icon::after {
+  content: "";
+  position: absolute;
+  inset-inline: 8px;
+  height: 2px;
+  background: var(--color-steel-gray);
+}
+
+.chip-icon::before { top: -4px; }
+.chip-icon::after { bottom: -4px; }
+
+/* Glowing connector dot used across cards/nav */
+.connector-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-electric-blue);
+  box-shadow: 0 0 10px 3px var(--glow-blue);
+}
+
+/* Hero circuit canvas wrapper */
+.hero__circuit-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  opacity: 0.75;
+}
+
+/* PCB frame around hero portrait */
+.pcb-frame {
+  position: relative;
+  border-radius: var(--radius-xl);
+  padding: var(--space-md);
+}
+
+.pcb-frame::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, var(--color-electric-blue), transparent 40%, var(--color-neon-cyan));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0.6;
+}
+
+.pcb-frame img {
+  width: 100%;
+  border-radius: calc(var(--radius-xl) - var(--space-md));
+  display: block;
+}
+
+.pcb-frame__corner {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--color-neon-cyan);
+}
+
+.pcb-frame__corner--tl { top: -2px; inset-inline-start: -2px; border-inline-end: none; border-bottom: none; }
+.pcb-frame__corner--tr { top: -2px; inset-inline-end: -2px; border-inline-start: none; border-bottom: none; }
+.pcb-frame__corner--bl { bottom: -2px; inset-inline-start: -2px; border-inline-end: none; border-top: none; }
+.pcb-frame__corner--br { bottom: -2px; inset-inline-end: -2px; border-inline-start: none; border-top: none; }
+
+/* Floating electronic icon chips (about/services decor) */
+.floating-icon {
+  position: absolute;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color-strong);
+  border-radius: var(--radius-md);
+  padding: var(--space-2xs) var(--space-sm);
+  font-size: var(--fs-xs);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2xs);
+  box-shadow: var(--shadow-md);
+  animation: float-y 5s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .circuit-trace--glow,
+  .circuit-node--pulse,
+  .voltage-indicator__dot,
+  .floating-icon,
+  .skill-bar__fill::after {
+    animation: none !important;
+  }
+}

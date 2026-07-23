@@ -1,0 +1,30 @@
+@import "variables.css";
+@import "typography.css";
+@import "layout.css";
+@import "components.css";
+@import "dashboard.css";
+@import "animations.css";
+@import "responsive.css";
+
+::selection {
+  background: var(--color-gold);
+  color: #0d1117;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-card);
+  border-radius: var(--radius-pill);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 2px;
+}

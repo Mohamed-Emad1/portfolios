@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>محمد أحمد | مهندس كهرباء — أنظمة القدرة والإلكترونيات والأنظمة الذكية</title>
+<meta name="description" content="محمد أحمد، مهندس كهرباء متخصص في أنظمة القدرة، الإلكترونيات، الأنظمة المدمجة، الأتمتة الصناعية، إنترنت الأشياء والطاقة المتجددة.">
+<link rel="icon" href="assets/placeholder.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;600;700;800;900&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a href="#main" class="skip-link">تخطى إلى المحتوى الرئيسي</a>
+
+<!-- ================= CUSTOM CURSOR ================= -->
+<div class="cursor-dot" aria-hidden="true"></div>
+<div class="cursor-ring" aria-hidden="true"></div>
+
+<!-- ================= HEADER / NAV ================= -->
+<header class="site-header" id="siteHeader">
+  <div class="container navbar">
+    <a href="#home" class="brand">
+      <span class="brand__mark">م.أ</span>
+      <span>محمد أحمد</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks" aria-label="التنقل الرئيسي">
+      <a href="#home" class="nav-link is-active" data-nav>الرئيسية</a>
+      <a href="#about" class="nav-link" data-nav>نبذة عني</a>
+      <a href="#skills" class="nav-link" data-nav>المهارات</a>
+      <a href="#projects" class="nav-link" data-nav>المشاريع</a>
+      <a href="#experience" class="nav-link" data-nav>الخبرات</a>
+      <a href="#certifications" class="nav-link" data-nav>الشهادات</a>
+      <a href="#blog" class="nav-link" data-nav>المدونة</a>
+      <a href="#contact" class="nav-link" data-nav>تواصل معي</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="#contact" class="btn btn-primary btn-sm">تواصل معي</a>
+      <button class="nav-toggle" id="navToggle" aria-label="فتح قائمة التنقل" aria-expanded="false" aria-controls="navLinks">
+        <span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ================= 1. HERO ================= -->
+  <section class="hero" id="home">
+    <div class="hero__circuit-bg" aria-hidden="true">
+      <canvas id="circuitCanvas"></canvas>
+    </div>
+    <div class="circuit-grid" aria-hidden="true"></div>
+
+    <div class="container hero__grid">
+      <div class="hero__content" data-animate="fade-right">
+        <span class="hero__eyebrow voltage-indicator"><span class="voltage-indicator__dot"></span> متاح للعمل الآن</span>
+        <h1 class="hero__title">محمد أحمد<br><span class="highlight">مهندس كهرباء</span></h1>
+        <p class="hero__role">أنظمة القدرة • الإلكترونيات • الأنظمة الذكية</p>
+        <p class="hero__desc">أصمم وأطور الأنظمة الكهربائية والإلكترونية الذكية باستخدام أحدث التقنيات في الطاقة، التحكم، والأنظمة المدمجة.</p>
+
+        <div class="hero__actions">
+          <a href="#projects" class="btn btn-primary">استعرض المشاريع</a>
+          <a href="assets/placeholder.png" download class="btn btn-outline">تحميل السيرة الذاتية</a>
+        </div>
+
+        <div class="hero__stats">
+          <div class="stat-card">
+            <div class="stat-card__value" data-counter data-target="150" data-suffix="+">0</div>
+            <div class="stat-card__label">مشروع</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card__value" data-counter data-target="10">0</div>
+            <div class="stat-card__label">سنوات خبرة</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card__value" data-counter data-target="40" data-suffix="+">0</div>
+            <div class="stat-card__label">عميل</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card__value" data-counter data-target="15" data-suffix="+">0</div>
+            <div class="stat-card__label">شهادة</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__visual" data-animate="fade-left">
+        <div class="pcb-frame">
+          <span class="pcb-frame__corner pcb-frame__corner--tl" aria-hidden="true"></span>
+          <span class="pcb-frame__corner pcb-frame__corner--tr" aria-hidden="true"></span>
+          <span class="pcb-frame__corner pcb-frame__corner--bl" aria-hidden="true"></span>
+          <span class="pcb-frame__corner pcb-frame__corner--br" aria-hidden="true"></span>
+          <img src="assets/placeholder.png" alt="صورة شخصية للمهندس محمد أحمد">
+        </div>
+        <div class="floating-icon" style="top:10%; inset-inline-start:-8%;">⚡ PCB Design</div>
+        <div class="floating-icon" style="bottom:14%; inset-inline-end:-10%; animation-delay: -2.5s;">🔧 IoT Systems</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 2. ABOUT ================= -->
+  <section class="section" id="about">
+    <div class="section-number" aria-hidden="true">01</div>
+    <div class="container split">
+      <div class="pcb-frame" data-animate="fade-right">
+        <span class="pcb-frame__corner pcb-frame__corner--tl" aria-hidden="true"></span>
+        <span class="pcb-frame__corner pcb-frame__corner--tr" aria-hidden="true"></span>
+        <span class="pcb-frame__corner pcb-frame__corner--bl" aria-hidden="true"></span>
+        <span class="pcb-frame__corner pcb-frame__corner--br" aria-hidden="true"></span>
+        <img src="assets/placeholder.png" alt="مهندس الكهرباء أثناء العمل على لوحة دوائر إلكترونية">
+      </div>
+
+      <div data-animate="fade-left">
+        <span class="section-eyebrow">من أنا</span>
+        <h2 class="section-title">هندسة تجمع بين <span class="highlight">الدقة والابتكار</span></h2>
+        <p class="section-subtitle mb-lg">
+          مهندس كهرباء بخبرة تمتد لعشر سنوات في تصميم وتطوير أنظمة القدرة، الإلكترونيات، والأنظمة المدمجة.
+          عملت مع شركات صناعية وطاقة متجددة لتحويل الأفكار إلى حلول هندسية موثوقة وقابلة للتوسع،
+          من مرحلة التحليل والمحاكاة وحتى التصميم النهائي للوحات PCB والتنفيذ الميداني.
+        </p>
+        <p class="section-subtitle mb-lg">
+          فلسفتي الهندسية تقوم على الجمع بين الدقة التقنية والاستدامة، مع التركيز الدائم على حل المشكلات
+          الحقيقية للعملاء بأنظمة ذكية قابلة للقياس.
+        </p>
+
+        <div class="value-cards">
+          <div class="engineering-card value-card">
+            <h4>الابتكار</h4>
+          </div>
+          <div class="engineering-card value-card">
+            <h4>الدقة</h4>
+          </div>
+          <div class="engineering-card value-card">
+            <h4>الاستدامة</h4>
+          </div>
+          <div class="engineering-card value-card">
+            <h4>حل المشكلات</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 3. SERVICES ================= -->
+  <section class="section section--alt" id="services">
+    <div class="section-number" aria-hidden="true">02</div>
+    <div class="container">
+      <div class="section-heading text-center mx-auto" data-animate="fade-up">
+        <span class="section-eyebrow" style="justify-content:center">خدماتي الهندسية</span>
+        <h2 class="section-title">حلول هندسية <span class="highlight">شاملة</span></h2>
+        <p class="section-subtitle mx-auto">من التصميم إلى التنفيذ، أقدم مجموعة متكاملة من الخدمات الهندسية الكهربائية والإلكترونية.</p>
+      </div>
+
+      <div class="grid grid--4">
+        <div class="engineering-card service-card" data-animate="fade-up">
+          <div class="service-card__icon">⚡</div>
+          <h3>تصميم الأنظمة الكهربائية</h3>
+          <p>تصميم شبكات ولوحات كهربائية متكاملة وفق المعايير الهندسية الحديثة.</p>
+        </div>
+        <div class="engineering-card service-card" data-animate="fade-up" style="--delay:.05s">
+          <div class="service-card__icon">🎛️</div>
+          <h3>أنظمة التحكم</h3>
+          <p>تطوير أنظمة تحكم صناعية دقيقة باستخدام PLC وSCADA.</p>
+        </div>
+        <div class="engineering-card service-card" data-animate="fade-up" style="--delay:.1s">
+          <div class="service-card__icon">🔌</div>
+          <h3>الإلكترونيات</h3>
+          <p>تصميم دوائر إلكترونية ولوحات PCB احترافية وموثوقة.</p>
+        </div>
+        <div class="engineering-card service-card" data-animate="fade-up" style="--delay:.15s">
+          <div class="service-card__icon">🧩</div>
+          <h3>الأنظمة المدمجة</h3>
+          <p>برمجة وتطوير أنظمة مدمجة باستخدام ESP32 وSTM32 وArduino.</p>
+        </div>
+        <div class="engineering-card service-card" data-animate="fade-up" style="--delay:.2s">
+          <div class="service-card__icon">📡</div>
+          <h3>إنترنت الأشياء</h3>
+          <p>حلول متكاملة لربط الأجهزة ومراقبتها عن بعد في الزمن الحقيقي.</p>
+        </div>
+        <div class="engineering-card service-card" data-animate="fade-up" style="--delay:.25s">
+          <div class="service-card__icon">☀️</div>
+          <h3>الطاقة المتجددة</h3>
+          <p>تصميم وتحليل أنظمة الطاقة الشمسية ومحطات التوليد المتجددة.</p>
+        </div>
+        <div class="engineering-card service-card" data-animate="fade-up" style="--delay:.3s">
+          <div class="service-card__icon">🏭</div>
+          <h3>الأتمتة الصناعية</h3>
+          <p>أتمتة خطوط الإنتاج وتحسين كفاءة العمليات الصناعية.</p>
+        </div>
+        <div class="engineering-card service-card" data-animate="fade-up" style="--delay:.35s">
+          <div class="service-card__icon">📋</div>
+          <h3>الاستشارات الهندسية</h3>
+          <p>استشارات فنية متخصصة لدعم قرارات التصميم والتنفيذ.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 4. FEATURED PROJECTS ================= -->
+  <section class="section" id="projects">
+    <div class="section-number" aria-hidden="true">03</div>
+    <div class="container">
+      <div class="section-heading" data-animate="fade-up">
+        <span class="section-eyebrow">أعمال مختارة</span>
+        <h2 class="section-title">مشاريع <span class="highlight">هندسية بارزة</span></h2>
+        <p class="section-subtitle">مجموعة من أهم المشاريع التي جمعت بين التصميم الدقيق والتنفيذ الموثوق.</p>
+      </div>
+
+      <div class="grid grid--3">
+        <article class="project-card" data-animate="fade-up">
+          <div class="project-card__media">
+            <img src="assets/placeholder.png" alt="مخطط لوحة تحكم نظام الطاقة الشمسية الذكي" loading="lazy" width="480" height="360">
+            <div class="project-card__schematic">
+              <span class="voltage-indicator"><span class="voltage-indicator__dot"></span> عرض تفاصيل المشروع</span>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <h3>نظام مراقبة الطاقة الشمسية الذكي</h3>
+            <p>منصة IoT لمراقبة محطات الطاقة الشمسية وتحسين الكفاءة في الزمن الحقيقي.</p>
+            <div class="project-card__meta">
+              <span>العميل: شركة سولار جريد</span>
+              <span>القطاع: الطاقة المتجددة</span>
+            </div>
+            <a href="#" class="btn btn-outline btn-sm mt-lg" data-project-view data-project="solar">استكشف المشروع</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-animate="fade-up" style="--delay:.1s">
+          <div class="project-card__media">
+            <img src="assets/placeholder.png" alt="لوحة تحكم PLC لخط إنتاج صناعي" loading="lazy" width="480" height="360">
+            <div class="project-card__schematic">
+              <span class="voltage-indicator"><span class="voltage-indicator__dot"></span> عرض تفاصيل المشروع</span>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <h3>أتمتة خط إنتاج صناعي</h3>
+            <p>تصميم نظام تحكم PLC/SCADA لرفع كفاءة الإنتاج بنسبة 35%.</p>
+            <div class="project-card__meta">
+              <span>العميل: مصنع النور الصناعي</span>
+              <span>القطاع: الأتمتة الصناعية</span>
+            </div>
+            <a href="#" class="btn btn-outline btn-sm mt-lg" data-project-view data-project="plc">استكشف المشروع</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-animate="fade-up" style="--delay:.2s">
+          <div class="project-card__media">
+            <img src="assets/placeholder.png" alt="لوحة PCB لجهاز طبي مدمج" loading="lazy" width="480" height="360">
+            <div class="project-card__schematic">
+              <span class="voltage-indicator"><span class="voltage-indicator__dot"></span> عرض تفاصيل المشروع</span>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <h3>جهاز مراقبة حيوية مدمج</h3>
+            <p>تطوير جهاز طبي مدمج قائم على STM32 لمراقبة العلامات الحيوية.</p>
+            <div class="project-card__meta">
+              <span>العميل: مجموعة ميديكال تك</span>
+              <span>القطاع: الأنظمة المدمجة</span>
+            </div>
+            <a href="#" class="btn btn-outline btn-sm mt-lg" data-project-view data-project="medical">استكشف المشروع</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Project Viewer Modal ================= -->
+  <div class="project-viewer" id="projectViewer" role="dialog" aria-modal="true" aria-label="عارض تفاصيل المشروع">
+    <div class="project-viewer__panel">
+      <button class="project-viewer__close" id="viewerClose" aria-label="إغلاق">✕</button>
+      <button class="project-viewer__nav project-viewer__nav--prev" id="viewerPrev" aria-label="المشروع السابق">›</button>
+      <button class="project-viewer__nav project-viewer__nav--next" id="viewerNext" aria-label="المشروع التالي">‹</button>
+      <div class="project-viewer__image">
+        <img src="assets/placeholder.png" alt="تفاصيل المشروع" id="viewerImage">
+      </div>
+      <dl class="project-viewer__specs" id="viewerSpecs">
+        <h3 id="viewerTitle">اسم المشروع</h3>
+        <dt>العميل</dt><dd id="viewerClient">—</dd>
+        <dt>القطاع</dt><dd id="viewerSector">—</dd>
+        <dt>المدة</dt><dd id="viewerDuration">—</dd>
+        <dt>الأدوات المستخدمة</dt><dd id="viewerTools">—</dd>
+        <dt>المشكلة</dt><dd id="viewerProblem">—</dd>
+        <dt>الحل</dt><dd id="viewerSolution">—</dd>
+        <dt>النتائج</dt><dd id="viewerResults">—</dd>
+      </dl>
+    </div>
+  </div>
+
+  <!-- ================= 5. PORTFOLIO GALLERY ================= -->
+  <section class="section section--alt" id="portfolio">
+    <div class="section-number" aria-hidden="true">04</div>
+    <div class="container">
+      <div class="section-heading" data-animate="fade-up">
+        <span class="section-eyebrow">معرض الأعمال</span>
+        <h2 class="section-title">استكشف <span class="highlight">أرشيف المشاريع</span></h2>
+      </div>
+
+      <div class="portfolio-filters" role="tablist" aria-label="تصنيف المشاريع">
+        <button class="filter-chip is-active" data-filter="all" role="tab" aria-selected="true">الكل</button>
+        <button class="filter-chip" data-filter="electronics" role="tab" aria-selected="false">الإلكترونيات</button>
+        <button class="filter-chip" data-filter="power" role="tab" aria-selected="false">الطاقة</button>
+        <button class="filter-chip" data-filter="control" role="tab" aria-selected="false">أنظمة التحكم</button>
+        <button class="filter-chip" data-filter="embedded" role="tab" aria-selected="false">الأنظمة المدمجة</button>
+        <button class="filter-chip" data-filter="iot" role="tab" aria-selected="false">إنترنت الأشياء</button>
+        <button class="filter-chip" data-filter="robotics" role="tab" aria-selected="false">الروبوتات</button>
+        <button class="filter-chip" data-filter="solar" role="tab" aria-selected="false">الطاقة الشمسية</button>
+      </div>
+
+      <div class="portfolio-grid" id="portfolioGrid">
+        <!-- Items injected/managed by projects.js; static fallback below -->
+        <div class="portfolio-item" data-category="electronics">
+          <img src="assets/placeholder.png" alt="لوحة دوائر إلكترونية مخصصة" loading="lazy">
+          <div class="portfolio-item__overlay">
+            <strong>مضخم صوت رقمي</strong>
+            <span class="mono-tag">Electronics · 2025</span>
+          </div>
+        </div>
+        <div class="portfolio-item" data-category="power">
+          <img src="assets/placeholder.png" alt="لوحة توزيع كهربائي لمشروع طاقة" loading="lazy">
+          <div class="portfolio-item__overlay">
+            <strong>لوحة توزيع طاقة ذكية</strong>
+            <span class="mono-tag">Power · 2024</span>
+          </div>
+        </div>
+        <div class="portfolio-item" data-category="control">
+          <img src="assets/placeholder.png" alt="خزانة تحكم صناعية" loading="lazy">
+          <div class="portfolio-item__overlay">
+            <strong>خزانة تحكم PLC</strong>
+            <span class="mono-tag">Control · 2024</span>
+          </div>
+        </div>
+        <div class="portfolio-item" data-category="embedded">
+          <img src="assets/placeholder.png" alt="وحدة تحكم مدمجة قائمة على STM32" loading="lazy">
+          <div class="portfolio-item__overlay">
+            <strong>وحدة تحكم مدمجة</strong>
+            <span class="mono-tag">Embedded · 2023</span>
+          </div>
+        </div>
+        <div class="portfolio-item" data-category="iot">
+          <img src="assets/placeholder.png" alt="بوابة استشعار إنترنت الأشياء" loading="lazy">
+          <div class="portfolio-item__overlay">
+            <strong>بوابة استشعار IoT</strong>
+            <span class="mono-tag">IoT · 2025</span>
+          </div>
+        </div>
+        <div class="portfolio-item" data-category="robotics">
+          <img src="assets/placeholder.png" alt="ذراع روبوتية صناعية" loading="lazy">
+          <div class="portfolio-item__overlay">
+            <strong>ذراع آلية صناعية</strong>
+            <span class="mono-tag">Robotics · 2023</span>
+          </div>
+        </div>
+        <div class="portfolio-item" data-category="solar">
+          <img src="assets/placeholder.png" alt="ألواح طاقة شمسية مع وحدة تتبع" loading="lazy">
+          <div class="portfolio-item__overlay">
+            <strong>نظام تتبع شمسي</strong>
+            <span class="mono-tag">Solar · 2024</span>
+          </div>
+        </div>
+        <div class="portfolio-item" data-category="electronics power">
+          <img src="assets/placeholder.png" alt="محول جهد كهربائي مصغر" loading="lazy">
+          <div class="portfolio-item__overlay">
+            <strong>محول جهد ذكي</strong>
+            <span class="mono-tag">Electronics · 2022</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 6. TECHNICAL SKILLS ================= -->
+  <section class="section" id="skills">
+    <div class="section-number" aria-hidden="true">05</div>
+    <div class="container">
+      <div class="section-heading" data-animate="fade-up">
+        <span class="section-eyebrow">المهارات التقنية</span>
+        <h2 class="section-title">أدوات ولغات <span class="highlight">البرمجة الهندسية</span></h2>
+      </div>
+
+      <div class="split">
+        <div data-animate="fade-right">
+          <h3 class="mb-lg">البرمجيات الهندسية</h3>
+          <div class="skill-bar"><div class="skill-bar__head"><span>MATLAB</span><span>95%</span></div><div class="skill-bar__track"><div class="skill-bar__fill" data-skill="95"></div></div></div>
+          <div class="skill-bar"><div class="skill-bar__head"><span>Proteus</span><span>90%</span></div><div class="skill-bar__track"><div class="skill-bar__fill" data-skill="90"></div></div></div>
+          <div class="skill-bar"><div class="skill-bar__head"><span>Altium Designer</span><span>88%</span></div><div class="skill-bar__track"><div class="skill-bar__fill" data-skill="88"></div></div></div>
+          <div class="skill-bar"><div class="skill-bar__head"><span>AutoCAD Electrical</span><span>85%</span></div><div class="skill-bar__track"><div class="skill-bar__fill" data-skill="85"></div></div></div>
+          <div class="skill-bar"><div class="skill-bar__head"><span>KiCad</span><span>82%</span></div><div class="skill-bar__track"><div class="skill-bar__fill" data-skill="82"></div></div></div>
+          <div class="skill-bar"><div class="skill-bar__head"><span>LabVIEW</span><span>78%</span></div><div class="skill-bar__track"><div class="skill-bar__fill" data-skill="78"></div></div></div>
+        </div>
+
+        <div data-animate="fade-left">
+          <h3 class="mb-lg">لغات البرمجة والمنصات</h3>
+          <div class="grid grid--3" id="progressCircles">
+            <div class="progress-circle" data-progress="92" style="text-align:center">
+              <svg viewBox="0 0 120 120"><circle class="track" cx="60" cy="60" r="52"/><circle class="fill" cx="60" cy="60" r="52"/></svg>
+              <span class="progress-circle__label">92%</span>
+              <p class="mono-tag mt-lg">C / C++</p>
+            </div>
+            <div class="progress-circle" data-progress="88">
+              <svg viewBox="0 0 120 120"><circle class="track" cx="60" cy="60" r="52"/><circle class="fill" cx="60" cy="60" r="52"/></svg>
+              <span class="progress-circle__label">88%</span>
+              <p class="mono-tag mt-lg">Python</p>
+            </div>
+            <div class="progress-circle" data-progress="90">
+              <svg viewBox="0 0 120 120"><circle class="track" cx="60" cy="60" r="52"/><circle class="fill" cx="60" cy="60" r="52"/></svg>
+              <span class="progress-circle__label">90%</span>
+              <p class="mono-tag mt-lg">ESP32 / Arduino</p>
+            </div>
+            <div class="progress-circle" data-progress="85">
+              <svg viewBox="0 0 120 120"><circle class="track" cx="60" cy="60" r="52"/><circle class="fill" cx="60" cy="60" r="52"/></svg>
+              <span class="progress-circle__label">85%</span>
+              <p class="mono-tag mt-lg">STM32</p>
+            </div>
+            <div class="progress-circle" data-progress="80">
+              <svg viewBox="0 0 120 120"><circle class="track" cx="60" cy="60" r="52"/><circle class="fill" cx="60" cy="60" r="52"/></svg>
+              <span class="progress-circle__label">80%</span>
+              <p class="mono-tag mt-lg">PLC</p>
+            </div>
+            <div class="progress-circle" data-progress="70">
+              <svg viewBox="0 0 120 120"><circle class="track" cx="60" cy="60" r="52"/><circle class="fill" cx="60" cy="60" r="52"/></svg>
+              <span class="progress-circle__label">70%</span>
+              <p class="mono-tag mt-lg">VHDL</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 7. ENGINEERING WORKFLOW ================= -->
+  <section class="section section--alt" id="workflow">
+    <div class="section-number" aria-hidden="true">06</div>
+    <div class="container">
+      <div class="section-heading text-center mx-auto" data-animate="fade-up">
+        <span class="section-eyebrow" style="justify-content:center">منهجية العمل</span>
+        <h2 class="section-title">من الفكرة إلى <span class="highlight">التنفيذ</span></h2>
+      </div>
+
+      <div class="workflow" data-animate="fade-up">
+        <div class="workflow-step"><div class="workflow-step__num">1</div><h4>تحليل المتطلبات</h4></div>
+        <span class="workflow-arrow" aria-hidden="true">←</span>
+        <div class="workflow-step"><div class="workflow-step__num">2</div><h4>تصميم الدوائر</h4></div>
+        <span class="workflow-arrow" aria-hidden="true">←</span>
+        <div class="workflow-step"><div class="workflow-step__num">3</div><h4>المحاكاة</h4></div>
+        <span class="workflow-arrow" aria-hidden="true">←</span>
+        <div class="workflow-step"><div class="workflow-step__num">4</div><h4>تصميم PCB</h4></div>
+        <span class="workflow-arrow" aria-hidden="true">←</span>
+        <div class="workflow-step"><div class="workflow-step__num">5</div><h4>البرمجة</h4></div>
+        <span class="workflow-arrow" aria-hidden="true">←</span>
+        <div class="workflow-step"><div class="workflow-step__num">6</div><h4>الاختبارات</h4></div>
+        <span class="workflow-arrow" aria-hidden="true">←</span>
+        <div class="workflow-step"><div class="workflow-step__num">7</div><h4>التنفيذ</h4></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 8. EXPERIENCE TIMELINE ================= -->
+  <section class="section" id="experience">
+    <div class="section-number" aria-hidden="true">07</div>
+    <div class="container">
+      <div class="section-heading" data-animate="fade-up">
+        <span class="section-eyebrow">المسيرة المهنية</span>
+        <h2 class="section-title">خط <span class="highlight">الخبرات الزمني</span></h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item" data-animate-timeline>
+          <span class="timeline-item__year">2026</span>
+          <h3>مهندس كهرباء أول</h3>
+          <p>قيادة فرق هندسية في تصميم أنظمة القدرة والتحكم لمشاريع صناعية كبرى.</p>
+        </div>
+        <div class="timeline-item" data-animate-timeline>
+          <span class="timeline-item__year">2024</span>
+          <h3>مهندس أنظمة تحكم</h3>
+          <p>تطوير حلول SCADA/PLC لخطوط إنتاج متعددة في القطاع الصناعي.</p>
+        </div>
+        <div class="timeline-item" data-animate-timeline>
+          <span class="timeline-item__year">2022</span>
+          <h3>مهندس أنظمة مدمجة</h3>
+          <p>تصميم وبرمجة أنظمة مدمجة لأجهزة استشعار ومراقبة ذكية.</p>
+        </div>
+        <div class="timeline-item" data-animate-timeline>
+          <span class="timeline-item__year">2020</span>
+          <h3>مهندس كهرباء</h3>
+          <p>بداية المسيرة المهنية في تصميم الدوائر الكهربائية والتنفيذ الميداني.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 9. ENGINEERING DASHBOARD ================= -->
+  <section class="section section--alt" id="dashboard">
+    <div class="section-number" aria-hidden="true">08</div>
+    <div class="container">
+      <div class="section-heading text-center mx-auto" data-animate="fade-up">
+        <span class="section-eyebrow" style="justify-content:center">لوحة الإحصائيات</span>
+        <h2 class="section-title">أرقام <span class="highlight">تعكس الخبرة</span></h2>
+      </div>
+
+      <div class="dashboard-grid">
+        <div class="dashboard-widget counter-card" data-animate="fade-up">
+          <div class="counter-card__value" data-counter data-target="150" data-suffix="+">0</div>
+          <div class="counter-card__label">مشروع</div>
+        </div>
+        <div class="dashboard-widget counter-card" data-animate="fade-up" style="--delay:.05s">
+          <div class="counter-card__value" data-counter data-target="120" data-suffix="+">0</div>
+          <div class="counter-card__label">لوحة PCB</div>
+        </div>
+        <div class="dashboard-widget counter-card" data-animate="fade-up" style="--delay:.1s">
+          <div class="counter-card__value" data-counter data-target="4500" data-suffix="+">0</div>
+          <div class="counter-card__label">ساعة تطوير</div>
+        </div>
+        <div class="dashboard-widget counter-card" data-animate="fade-up" style="--delay:.15s">
+          <div class="counter-card__value" data-counter data-target="98" data-suffix="%">0</div>
+          <div class="counter-card__label">نجاح المشاريع</div>
+        </div>
+      </div>
+
+      <div class="grid grid--2 mt-lg">
+        <div class="chart-card" data-animate="fade-up">
+          <h3>توزيع المشاريع حسب القطاع</h3>
+          <svg id="sectorChart" viewBox="0 0 220 220" width="220" height="220" role="img" aria-label="مخطط دائري لتوزيع المشاريع حسب القطاع"></svg>
+          <div class="chart-legend" id="sectorLegend"></div>
+        </div>
+        <div class="chart-card" data-animate="fade-up" style="--delay:.1s">
+          <h3>الكفاءة في الأدوات البرمجية</h3>
+          <svg id="toolsChart" viewBox="0 0 320 200" width="100%" height="200" role="img" aria-label="مخطط أعمدة للكفاءة في الأدوات البرمجية"></svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 10. CERTIFICATIONS ================= -->
+  <section class="section" id="certifications">
+    <div class="section-number" aria-hidden="true">09</div>
+    <div class="container">
+      <div class="section-heading" data-animate="fade-up">
+        <span class="section-eyebrow">الاعتمادات المهنية</span>
+        <h2 class="section-title">الشهادات <span class="highlight">والاعتمادات</span></h2>
+      </div>
+
+      <div class="grid grid--3">
+        <div class="certification-card" data-animate="fade-up">
+          <div class="certification-card__icon">🎓</div>
+          <div><h4>PLC Programming</h4><p class="mono-tag">Siemens · 2023</p></div>
+        </div>
+        <div class="certification-card" data-animate="fade-up" style="--delay:.05s">
+          <div class="certification-card__icon">🎓</div>
+          <div><h4>Embedded Systems</h4><p class="mono-tag">Coursera · 2022</p></div>
+        </div>
+        <div class="certification-card" data-animate="fade-up" style="--delay:.1s">
+          <div class="certification-card__icon">🎓</div>
+          <div><h4>Solar Energy Systems</h4><p class="mono-tag">NABCEP · 2023</p></div>
+        </div>
+        <div class="certification-card" data-animate="fade-up" style="--delay:.15s">
+          <div class="certification-card__icon">🎓</div>
+          <div><h4>Industrial Automation</h4><p class="mono-tag">Rockwell · 2024</p></div>
+        </div>
+        <div class="certification-card" data-animate="fade-up" style="--delay:.2s">
+          <div class="certification-card__icon">🎓</div>
+          <div><h4>MATLAB Professional</h4><p class="mono-tag">MathWorks · 2021</p></div>
+        </div>
+        <div class="certification-card" data-animate="fade-up" style="--delay:.25s">
+          <div class="certification-card__icon">🎓</div>
+          <div><h4>Project Management</h4><p class="mono-tag">PMI · 2024</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 11. TECHNOLOGIES ================= -->
+  <section class="section section--alt" id="technologies">
+    <div class="section-number" aria-hidden="true">10</div>
+    <div class="container">
+      <div class="section-heading text-center mx-auto" data-animate="fade-up">
+        <span class="section-eyebrow" style="justify-content:center">التقنيات المستخدمة</span>
+        <h2 class="section-title">منصات <span class="highlight">وأجهزة</span></h2>
+      </div>
+
+      <div class="grid grid--4">
+        <div class="tech-grid-item" data-animate="fade-up"><div class="tech-grid-item__icon">◧</div><span>Arduino</span></div>
+        <div class="tech-grid-item" data-animate="fade-up" style="--delay:.03s"><div class="tech-grid-item__icon">◧</div><span>ESP32</span></div>
+        <div class="tech-grid-item" data-animate="fade-up" style="--delay:.06s"><div class="tech-grid-item__icon">◧</div><span>STM32</span></div>
+        <div class="tech-grid-item" data-animate="fade-up" style="--delay:.09s"><div class="tech-grid-item__icon">◧</div><span>Raspberry Pi</span></div>
+        <div class="tech-grid-item" data-animate="fade-up" style="--delay:.12s"><div class="tech-grid-item__icon">◧</div><span>PLC</span></div>
+        <div class="tech-grid-item" data-animate="fade-up" style="--delay:.15s"><div class="tech-grid-item__icon">◧</div><span>SCADA</span></div>
+        <div class="tech-grid-item" data-animate="fade-up" style="--delay:.18s"><div class="tech-grid-item__icon">◧</div><span>CAN Bus</span></div>
+        <div class="tech-grid-item" data-animate="fade-up" style="--delay:.21s"><div class="tech-grid-item__icon">◧</div><span>Modbus</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 12. RESEARCH & PUBLICATIONS ================= -->
+  <section class="section" id="research">
+    <div class="section-number" aria-hidden="true">11</div>
+    <div class="container">
+      <div class="section-heading" data-animate="fade-up">
+        <span class="section-eyebrow">الإسهامات العلمية</span>
+        <h2 class="section-title">الأبحاث <span class="highlight">والمنشورات</span></h2>
+      </div>
+
+      <div class="grid grid--4">
+        <div class="engineering-card" data-animate="fade-up">
+          <h4>الأبحاث</h4>
+          <p>أوراق بحثية في تحسين كفاءة أنظمة الطاقة المتجددة.</p>
+        </div>
+        <div class="engineering-card" data-animate="fade-up" style="--delay:.05s">
+          <h4>المقالات</h4>
+          <p>مقالات تقنية حول تصميم الدوائر والأنظمة المدمجة.</p>
+        </div>
+        <div class="engineering-card" data-animate="fade-up" style="--delay:.1s">
+          <h4>المشاريع الأكاديمية</h4>
+          <p>مشاريع تخرج وأبحاث جامعية في الهندسة الكهربائية.</p>
+        </div>
+        <div class="engineering-card" data-animate="fade-up" style="--delay:.15s">
+          <h4>براءات الاختراع</h4>
+          <p>ابتكارات مسجلة في مجال الأنظمة الذكية والاستشعار.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 13. TESTIMONIALS ================= -->
+  <section class="section section--alt" id="testimonials">
+    <div class="section-number" aria-hidden="true">12</div>
+    <div class="container">
+      <div class="section-heading text-center mx-auto" data-animate="fade-up">
+        <span class="section-eyebrow" style="justify-content:center">آراء العملاء</span>
+        <h2 class="section-title">ماذا يقول <span class="highlight">عملائي</span></h2>
+      </div>
+
+      <div class="testimonial-slider relative" data-animate="fade-up">
+        <button class="slider-arrow slider-arrow--prev" id="testimonialPrev" aria-label="الشهادة السابقة">›</button>
+        <button class="slider-arrow slider-arrow--next" id="testimonialNext" aria-label="الشهادة التالية">‹</button>
+
+        <div class="testimonial-track" id="testimonialTrack">
+          <div class="testimonial-card">
+            <p class="testimonial-card__quote">"تعامل احترافي ودقيق، حوّل فكرتنا لنظام أتمتة كامل تجاوز توقعاتنا في الكفاءة والموثوقية."</p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar"><img src="assets/placeholder.png" alt="صورة العميل"></div>
+              <div><strong>خالد الفهد</strong><div class="mono-tag">مدير المصنع، النور الصناعي</div></div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <p class="testimonial-card__quote">"فهم عميق لمتطلبات المشروع وتسليم في الوقت المحدد مع توثيق هندسي ممتاز."</p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar"><img src="assets/placeholder.png" alt="صورة العميل"></div>
+              <div><strong>سامي المطيري</strong><div class="mono-tag">المدير الفني، سولار جريد</div></div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <p class="testimonial-card__quote">"جودة عالية في تصميم الأنظمة المدمجة وسرعة استجابة استثنائية طوال مراحل التطوير."</p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar"><img src="assets/placeholder.png" alt="صورة العميل"></div>
+              <div><strong>عمر الشريف</strong><div class="mono-tag">مؤسس، ميديكال تك</div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider-controls" id="testimonialDots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 14. BLOG ================= -->
+  <section class="section" id="blog">
+    <div class="section-number" aria-hidden="true">13</div>
+    <div class="container">
+      <div class="section-heading" data-animate="fade-up">
+        <span class="section-eyebrow">المدونة الهندسية</span>
+        <h2 class="section-title">أحدث <span class="highlight">المقالات</span></h2>
+      </div>
+
+      <div class="grid grid--4">
+        <article class="blog-card" data-animate="fade-up">
+          <div class="blog-card__media"><img src="assets/placeholder.png" alt="رسم توضيحي لأساسيات تصميم الدوائر" loading="lazy"></div>
+          <div class="blog-card__body">
+            <div class="blog-card__meta">15 يوليو 2026 · 6 دقائق قراءة</div>
+            <h4>أساسيات تصميم الدوائر</h4>
+          </div>
+        </article>
+        <article class="blog-card" data-animate="fade-up" style="--delay:.05s">
+          <div class="blog-card__media"><img src="assets/placeholder.png" alt="مخطط لوحة PCB احترافية" loading="lazy"></div>
+          <div class="blog-card__body">
+            <div class="blog-card__meta">2 يوليو 2026 · 8 دقائق قراءة</div>
+            <h4>كيفية تصميم PCB احترافية</h4>
+          </div>
+        </article>
+        <article class="blog-card" data-animate="fade-up" style="--delay:.1s">
+          <div class="blog-card__media"><img src="assets/placeholder.png" alt="لوحة أنظمة مدمجة تعليمية" loading="lazy"></div>
+          <div class="blog-card__body">
+            <div class="blog-card__meta">20 يونيو 2026 · 5 دقائق قراءة</div>
+            <h4>مقدمة في الأنظمة المدمجة</h4>
+          </div>
+        </article>
+        <article class="blog-card" data-animate="fade-up" style="--delay:.15s">
+          <div class="blog-card__media"><img src="assets/placeholder.png" alt="لوحة طاقة شمسية للمبتدئين" loading="lazy"></div>
+          <div class="blog-card__body">
+            <div class="blog-card__meta">5 يونيو 2026 · 7 دقائق قراءة</div>
+            <h4>الطاقة الشمسية للمبتدئين</h4>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 15. FAQ ================= -->
+  <section class="section section--alt" id="faq">
+    <div class="section-number" aria-hidden="true">14</div>
+    <div class="container">
+      <div class="section-heading text-center mx-auto" data-animate="fade-up">
+        <span class="section-eyebrow" style="justify-content:center">الأسئلة الشائعة</span>
+        <h2 class="section-title">إجابات <span class="highlight">لاستفساراتكم</span></h2>
+      </div>
+
+      <div style="max-width:760px; margin-inline:auto" data-animate="fade-up">
+        <div class="accordion-item">
+          <div class="accordion-header" role="button" tabindex="0" aria-expanded="false">
+            <span>ما هي الخدمات التي تقدمها؟</span>
+            <span class="accordion-icon">+</span>
+          </div>
+          <div class="accordion-panel">
+            <div class="accordion-panel__inner">أقدم خدمات تصميم الأنظمة الكهربائية، الإلكترونيات، الأنظمة المدمجة، إنترنت الأشياء، الطاقة المتجددة، والأتمتة الصناعية، بالإضافة إلى الاستشارات الهندسية المتخصصة.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header" role="button" tabindex="0" aria-expanded="false">
+            <span>هل تقدم استشارات عن بعد؟</span>
+            <span class="accordion-icon">+</span>
+          </div>
+          <div class="accordion-panel">
+            <div class="accordion-panel__inner">نعم، أقدم استشارات هندسية عن بعد عبر مكالمات الفيديو ومراجعة الملفات الفنية، مع دعم كامل لمراحل التصميم والتنفيذ.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header" role="button" tabindex="0" aria-expanded="false">
+            <span>ما هي الأدوات التي تستخدمها؟</span>
+            <span class="accordion-icon">+</span>
+          </div>
+          <div class="accordion-panel">
+            <div class="accordion-panel__inner">أستخدم أدوات احترافية مثل MATLAB، Proteus، Altium Designer، KiCad، وAutoCAD Electrical لضمان جودة التصميم والمحاكاة.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header" role="button" tabindex="0" aria-expanded="false">
+            <span>هل تعمل في مشاريع IoT؟</span>
+            <span class="accordion-icon">+</span>
+          </div>
+          <div class="accordion-panel">
+            <div class="accordion-panel__inner">بالتأكيد، لدي خبرة واسعة في تصميم وتطوير حلول إنترنت الأشياء المتكاملة من المستشعرات وحتى لوحات المراقبة السحابية.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 16. CONTACT ================= -->
+  <section class="section" id="contact">
+    <div class="section-number" aria-hidden="true">15</div>
+    <div class="container split split--reverse">
+      <div class="pcb-frame" data-animate="fade-left">
+        <span class="pcb-frame__corner pcb-frame__corner--tl" aria-hidden="true"></span>
+        <span class="pcb-frame__corner pcb-frame__corner--tr" aria-hidden="true"></span>
+        <span class="pcb-frame__corner pcb-frame__corner--bl" aria-hidden="true"></span>
+        <span class="pcb-frame__corner pcb-frame__corner--br" aria-hidden="true"></span>
+        <img src="assets/placeholder.png" alt="رسم توضيحي للوحة دوائر إلكترونية">
+      </div>
+
+      <div data-animate="fade-right">
+        <span class="section-eyebrow">تواصل معي</span>
+        <h2 class="section-title">لنبنِ <span class="highlight">مشروعك القادم</span></h2>
+        <p class="section-subtitle mb-lg">أخبرني عن مشروعك وسأتواصل معك خلال 24 ساعة.</p>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">الاسم</label>
+              <input type="text" id="fname" name="name" required autocomplete="name">
+              <span class="form-error" data-error-for="fname"></span>
+            </div>
+            <div class="form-group">
+              <label for="femail">البريد الإلكتروني</label>
+              <input type="email" id="femail" name="email" required autocomplete="email">
+              <span class="form-error" data-error-for="femail"></span>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fcompany">الشركة</label>
+              <input type="text" id="fcompany" name="company" autocomplete="organization">
+            </div>
+            <div class="form-group">
+              <label for="fproject">نوع المشروع</label>
+              <select id="fproject" name="projectType">
+                <option value="power">أنظمة القدرة</option>
+                <option value="embedded">أنظمة مدمجة</option>
+                <option value="iot">إنترنت الأشياء</option>
+                <option value="solar">الطاقة المتجددة</option>
+                <option value="automation">أتمتة صناعية</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="fbudget">الميزانية</label>
+            <select id="fbudget" name="budget">
+              <option value="small">أقل من 5,000$</option>
+              <option value="medium">5,000$ - 20,000$</option>
+              <option value="large">أكثر من 20,000$</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="fmessage">الرسالة</label>
+            <textarea id="fmessage" name="message" rows="4" required></textarea>
+            <span class="form-error" data-error-for="fmessage"></span>
+          </div>
+
+          <div class="form-status form-status--success" id="formStatus">تم إرسال طلبك بنجاح، سأتواصل معك قريبًا.</div>
+
+          <button type="submit" class="btn btn-primary" id="submitBtn">
+            <span class="btn-label">إرسال الطلب</span>
+            <span class="btn-spinner"><span class="spinner"></span></span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container footer__grid">
+    <div>
+      <a href="#home" class="brand mb-lg" style="margin-bottom:1rem">
+        <span class="brand__mark">م.أ</span>
+        <span>محمد أحمد</span>
+      </a>
+      <p style="max-width:320px">مهندس كهرباء متخصص في أنظمة القدرة، الإلكترونيات، والأنظمة الذكية المدمجة.</p>
+      <div class="social-icons mt-lg">
+        <a href="#" aria-label="LinkedIn">in</a>
+        <a href="#" aria-label="GitHub">Gh</a>
+        <a href="#" aria-label="ResearchGate">Rg</a>
+      </div>
+    </div>
+
+    <div>
+      <h4 class="mb-lg">روابط سريعة</h4>
+      <ul style="display:grid; gap:.6rem">
+        <li><a href="#about" class="nav-link">نبذة عني</a></li>
+        <li><a href="#skills" class="nav-link">المهارات</a></li>
+        <li><a href="#experience" class="nav-link">الخبرات</a></li>
+        <li><a href="#contact" class="nav-link">تواصل معي</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="mb-lg">الخدمات</h4>
+      <ul style="display:grid; gap:.6rem">
+        <li><a href="#services" class="nav-link">تصميم الأنظمة الكهربائية</a></li>
+        <li><a href="#services" class="nav-link">الأنظمة المدمجة</a></li>
+        <li><a href="#services" class="nav-link">إنترنت الأشياء</a></li>
+        <li><a href="#projects" class="nav-link">المشاريع</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="mb-lg">تواصل</h4>
+      <ul style="display:grid; gap:.6rem" class="mono-tag">
+        <li>hello@mohamed-eng.com</li>
+        <li>+20 100 000 0000</li>
+        <li>القاهرة، مصر</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container footer__bottom">
+    <span class="mono-tag">© 2026 محمد أحمد. جميع الحقوق محفوظة.</span>
+    <span class="mono-tag">صُنع بشغف هندسي ⚡</span>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="العودة إلى الأعلى">↑</button>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/navbar.js" defer></script>
+<script src="js/particles.js" defer></script>
+<script src="js/circuits.js" defer></script>
+<script src="js/animations.js" defer></script>
+<script src="js/counters.js" defer></script>
+<script src="js/timeline.js" defer></script>
+<script src="js/projects.js" defer></script>
+<script src="js/charts.js" defer></script>
+<script src="js/cursor.js" defer></script>
+<script src="js/dashboard.js" defer></script>
+<script src="js/contact.js" defer></script>
+<script src="js/script.js" defer></script>
+
+<!-- portfolio-buy-badge:start -->
+<style>
+  #portfolio-buy-badge { position: fixed; z-index: 999999; bottom: 18px; right: 18px; direction: rtl; font-family: 'Cairo', Tahoma, Arial, sans-serif; }
+  #portfolio-buy-badge a { display: flex; align-items: center; gap: 10px; background: #14142b; color: #fff; padding: 10px 16px; border-radius: 999px; box-shadow: 0 10px 25px -8px rgba(0,0,0,.5); text-decoration: none; font-size: 14px; font-weight: 700; border: 1px solid rgba(255,255,255,.15); transition: transform .15s ease, background .15s ease; }
+  #portfolio-buy-badge a:hover { background: #312e81; transform: translateY(-2px); }
+  #portfolio-buy-badge .pbb-price { background: #4f46e5; color: #fff; padding: 4px 10px; border-radius: 999px; font-size: 13px; direction: ltr; }
+  @media (max-width: 480px) { #portfolio-buy-badge a span:not(.pbb-price) { display: none; } #portfolio-buy-badge { bottom: 12px; right: 12px; } }
+</style>
+<div id="portfolio-buy-badge">
+  <a href="../../index.html?template=eng-elec#contact">
+    <span class="pbb-price">$29</span>
+    <span>اشترِ هذا القالب</span>
+  </a>
+</div>
+<!-- portfolio-buy-badge:end -->
+</body>
+</html>

@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>أحمد خالد | مصمم ديكور داخلي</title>
+<meta name="description" content="أحمد خالد - مصمم ديكور داخلي متخصص في تصميم المنازل والفلل والمكاتب بأسلوب عصري فاخر.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cursor-glow" aria-hidden="true"></div>
+<div class="page-loader" id="pageLoader" aria-hidden="true"><div class="loader-mark">أ خ</div></div>
+
+<!-- ===== Navbar ===== -->
+<header class="navbar" id="navbar">
+  <div class="navbar__inner">
+    <div class="navbar__brand">
+      <span class="navbar__name">أحمد خالد</span>
+      <span class="navbar__title">مصمم ديكور داخلي</span>
+    </div>
+
+    <nav class="navbar__menu" id="navMenu">
+      <a href="#hero" class="nav-link active">الرئيسية</a>
+      <a href="#about" class="nav-link">من أنا</a>
+      <a href="#portfolio" class="nav-link">أعمالي</a>
+      <a href="#services" class="nav-link">الخدمات</a>
+      <a href="#testimonials" class="nav-link">آراء العملاء</a>
+      <a href="#contact" class="nav-link">تواصل</a>
+    </nav>
+
+    <a href="#contact" class="btn btn--accent navbar__cta">ابدأ مشروعك</a>
+
+    <button class="navbar__burger" id="navBurger" aria-label="فتح القائمة" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===== Hero ===== -->
+<section class="hero" id="hero">
+  <div class="hero__bg">
+    <img src="https://images.unsplash.com/photo-1615873968403-89e068629265?w=1800&q=75&auto=format&fit=crop" alt="تصميم غرفة معيشة فاخرة" loading="eager">
+    <div class="hero__overlay"></div>
+  </div>
+
+  <div class="hero__particles" id="heroParticles"></div>
+
+  <img class="float-deco float-deco--chair" src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=400&q=75&auto=format&fit=crop" alt="" aria-hidden="true" data-parallax="0.4">
+  <img class="float-deco float-deco--plant" src="https://images.unsplash.com/photo-1512428813834-c702c7702b78?w=400&q=75&auto=format&fit=crop" alt="" aria-hidden="true" data-parallax="0.6">
+  <img class="float-deco float-deco--table" src="https://images.unsplash.com/photo-1594026112284-02bb6f3352fe?w=400&q=75&auto=format&fit=crop" alt="" aria-hidden="true" data-parallax="0.3">
+
+  <div class="hero__content">
+    <p class="eyebrow reveal-up">تصميم داخلي فاخر منذ ٢٠١٤</p>
+    <h1 class="hero__title reveal-up" data-delay="1">نصنع مساحات <span>تنبض بالأناقة</span></h1>
+    <p class="hero__desc reveal-up" data-delay="2">
+      نقدم حلول تصميم داخلي تجمع بين الإبداع والوظيفة، مع الاهتمام بأدق التفاصيل
+      لإخراج مساحة تعكس شخصيتك.
+    </p>
+    <div class="hero__actions reveal-up" data-delay="3">
+      <a href="#portfolio" class="btn btn--accent">تصفح المشاريع</a>
+      <a href="#contact" class="btn btn--ghost">احجز استشارة</a>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-indicator" aria-label="انتقل للأسفل">
+    <span class="scroll-indicator__dot"></span>
+  </a>
+</section>
+
+<!-- ===== About ===== -->
+<section class="about" id="about">
+  <div class="about__blueprint" aria-hidden="true"></div>
+  <div class="container about__grid">
+
+    <div class="about__media reveal-left">
+      <div class="about__media-frame">
+        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=900&q=75&auto=format&fit=crop" alt="مشروع تصميم داخلي" loading="lazy">
+      </div>
+      <div class="about__media-badge">
+        <span class="about__media-badge-num">١٠+</span>
+        <span>سنوات من التميز</span>
+      </div>
+      <img class="float-deco float-deco--lamp" src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=300&q=75&auto=format&fit=crop" alt="" aria-hidden="true" data-parallax="0.35">
+    </div>
+
+    <div class="about__text reveal-right">
+      <p class="eyebrow">من أنا</p>
+      <h2 class="section-title">شغف بالتفاصيل، والتزام بالتميز</h2>
+      <p class="about__desc">
+        أنا أحمد خالد، مصمم ديكور داخلي متخصص في تصميم المنازل والفلل والمكاتب
+        بأسلوب عصري يجمع بين الجمال والعملية. أؤمن بأن كل مساحة تحمل قصة، ومهمتي
+        أن أترجم هذه القصة إلى تصميم يعيش فيه أصحابه بكل راحة وفخامة.
+      </p>
+
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-card__num" data-count="250">0</span>
+          <span class="stat-card__plus">+</span>
+          <p>مشروع</p>
+        </div>
+        <div class="stat-card">
+          <span class="stat-card__num" data-count="180">0</span>
+          <span class="stat-card__plus">+</span>
+          <p>عميل سعيد</p>
+        </div>
+        <div class="stat-card">
+          <span class="stat-card__num" data-count="10">0</span>
+          <span class="stat-card__plus">+</span>
+          <p>سنوات خبرة</p>
+        </div>
+        <div class="stat-card">
+          <span class="stat-card__num" data-count="35">0</span>
+          <span class="stat-card__plus">+</span>
+          <p>جائزة تصميم</p>
+        </div>
+      </div>
+
+      <a href="#services" class="link-arrow">
+        اعرف المزيد
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M17 7L7 17M17 7H9M17 7V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== Portfolio ===== -->
+<section class="portfolio" id="portfolio">
+  <div class="container">
+    <div class="section-head reveal-up">
+      <p class="eyebrow">أعمالي</p>
+      <h2 class="section-title">مشاريع تحكي قصص تصميم</h2>
+      <p class="section-sub">مجموعة مختارة من أفخم المشاريع السكنية والتجارية التي قمنا بتصميمها وتنفيذها.</p>
+    </div>
+
+    <div class="filter-chips reveal-up" id="filterChips">
+      <button class="chip active" data-filter="all">الكل</button>
+      <button class="chip" data-filter="residential">سكني</button>
+      <button class="chip" data-filter="commercial">تجاري</button>
+      <button class="chip" data-filter="villas">فلل</button>
+      <button class="chip" data-filter="offices">مكاتب</button>
+    </div>
+
+    <div class="masonry" id="masonryGrid">
+      <article class="proj-card reveal-up" data-category="residential" style="--i:0">
+        <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=700&q=75&auto=format&fit=crop" alt="تصميم غرفة معيشة" loading="lazy">
+        <div class="proj-card__overlay">
+          <span class="proj-card__tag">سكني</span>
+          <h3>تصميم غرفة معيشة</h3>
+          <span class="proj-card__line"></span>
+        </div>
+      </article>
+
+      <article class="proj-card proj-card--tall reveal-up" data-category="villas" style="--i:1">
+        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=700&q=75&auto=format&fit=crop" alt="فيلا مودرن" loading="lazy">
+        <div class="proj-card__overlay">
+          <span class="proj-card__tag">فلل</span>
+          <h3>فيلا مودرن</h3>
+          <span class="proj-card__line"></span>
+        </div>
+      </article>
+
+      <article class="proj-card reveal-up" data-category="residential" style="--i:2">
+        <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=700&q=75&auto=format&fit=crop" alt="غرفة نوم فاخرة" loading="lazy">
+        <div class="proj-card__overlay">
+          <span class="proj-card__tag">سكني</span>
+          <h3>غرفة نوم فاخرة</h3>
+          <span class="proj-card__line"></span>
+        </div>
+      </article>
+
+      <article class="proj-card reveal-up" data-category="offices" style="--i:3">
+        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&q=75&auto=format&fit=crop" alt="مكتب إداري" loading="lazy">
+        <div class="proj-card__overlay">
+          <span class="proj-card__tag">مكاتب</span>
+          <h3>مكتب إداري</h3>
+          <span class="proj-card__line"></span>
+        </div>
+      </article>
+
+      <article class="proj-card proj-card--tall reveal-up" data-category="residential" style="--i:4">
+        <img src="https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=700&q=75&auto=format&fit=crop" alt="مطبخ عصري" loading="lazy">
+        <div class="proj-card__overlay">
+          <span class="proj-card__tag">سكني</span>
+          <h3>مطبخ عصري</h3>
+          <span class="proj-card__line"></span>
+        </div>
+      </article>
+
+      <article class="proj-card reveal-up" data-category="villas" style="--i:5">
+        <img src="https://images.unsplash.com/photo-1615529182904-14819c35db37?w=700&q=75&auto=format&fit=crop" alt="صالة استقبال" loading="lazy">
+        <div class="proj-card__overlay">
+          <span class="proj-card__tag">فلل</span>
+          <h3>صالة استقبال</h3>
+          <span class="proj-card__line"></span>
+        </div>
+      </article>
+
+      <article class="proj-card reveal-up" data-category="commercial" style="--i:6">
+        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=700&q=75&auto=format&fit=crop" alt="كافيه" loading="lazy">
+        <div class="proj-card__overlay">
+          <span class="proj-card__tag">تجاري</span>
+          <h3>كافيه</h3>
+          <span class="proj-card__line"></span>
+        </div>
+      </article>
+
+      <article class="proj-card proj-card--tall reveal-up" data-category="commercial" style="--i:7">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=700&q=75&auto=format&fit=crop" alt="مطعم فاخر" loading="lazy">
+        <div class="proj-card__overlay">
+          <span class="proj-card__tag">تجاري</span>
+          <h3>مطعم فاخر</h3>
+          <span class="proj-card__line"></span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Services ===== -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-head reveal-up">
+      <p class="eyebrow">الخدمات</p>
+      <h2 class="section-title">خدمات تصميم متكاملة</h2>
+      <p class="section-sub">نقدم مجموعة شاملة من الخدمات لتحويل رؤيتك إلى واقع ملموس بأعلى معايير الجودة.</p>
+    </div>
+
+    <div class="services-grid">
+      <article class="service-card reveal-up" style="--i:0">
+        <span class="service-card__icon">🏠</span>
+        <h3>تصميم داخلي</h3>
+        <p>تصميم مساحات داخلية متكاملة تعكس ذوقك الخاص وتلبي احتياجاتك اليومية.</p>
+        <a href="#contact" class="service-card__arrow" aria-label="تواصل بخصوص هذه الخدمة">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M17 7L7 17M17 7H9M17 7V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </article>
+
+      <article class="service-card reveal-up" style="--i:1">
+        <span class="service-card__icon">🎨</span>
+        <h3>اختيار الألوان</h3>
+        <p>دراسة نفسية الألوان واختيار الباليت الأنسب لكل مساحة لخلق أجواء متناغمة.</p>
+        <a href="#contact" class="service-card__arrow" aria-label="تواصل بخصوص هذه الخدمة">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M17 7L7 17M17 7H9M17 7V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </article>
+
+      <article class="service-card reveal-up" style="--i:2">
+        <span class="service-card__icon">🪑</span>
+        <h3>تصميم الأثاث</h3>
+        <p>اختيار وتصميم قطع أثاث فريدة تجمع بين الفخامة والراحة والعملية.</p>
+        <a href="#contact" class="service-card__arrow" aria-label="تواصل بخصوص هذه الخدمة">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M17 7L7 17M17 7H9M17 7V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </article>
+
+      <article class="service-card reveal-up" style="--i:3">
+        <span class="service-card__icon">💡</span>
+        <h3>الإضاءة</h3>
+        <p>تصميم أنظمة إضاءة ذكية تبرز جماليات المساحة وتضفي عليها لمسة دافئة.</p>
+        <a href="#contact" class="service-card__arrow" aria-label="تواصل بخصوص هذه الخدمة">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M17 7L7 17M17 7H9M17 7V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </article>
+
+      <article class="service-card reveal-up" style="--i:4">
+        <span class="service-card__icon">📐</span>
+        <h3>التخطيط ثلاثي الأبعاد</h3>
+        <p>تصور مشروعك بدقة قبل التنفيذ من خلال نماذج ثلاثية الأبعاد واقعية.</p>
+        <a href="#contact" class="service-card__arrow" aria-label="تواصل بخصوص هذه الخدمة">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M17 7L7 17M17 7H9M17 7V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </article>
+
+      <article class="service-card reveal-up" style="--i:5">
+        <span class="service-card__icon">🏢</span>
+        <h3>تصميم المكاتب</h3>
+        <p>بيئات عمل عصرية تعزز الإنتاجية وتعكس هوية شركتك بأسلوب راقٍ.</p>
+        <a href="#contact" class="service-card__arrow" aria-label="تواصل بخصوص هذه الخدمة">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M17 7L7 17M17 7H9M17 7V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Work Process ===== -->
+<section class="process" id="process">
+  <div class="container">
+    <div class="section-head section-head--light reveal-up">
+      <p class="eyebrow eyebrow--gold">خطوات العمل</p>
+      <h2 class="section-title section-title--light">رحلتنا نحو تصميم أحلامك</h2>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline__line" aria-hidden="true"></div>
+
+      <div class="timeline__step reveal-up" style="--i:0">
+        <span class="timeline__num">١</span>
+        <div class="timeline__card">
+          <h3>الاستشارة</h3>
+          <p>نستمع لأفكارك واحتياجاتك لفهم رؤيتك بالكامل.</p>
+        </div>
+      </div>
+
+      <div class="timeline__step reveal-up" style="--i:1">
+        <span class="timeline__num">٢</span>
+        <div class="timeline__card">
+          <h3>التخطيط</h3>
+          <p>نضع خطة تصميم متكاملة تناسب المساحة والميزانية.</p>
+        </div>
+      </div>
+
+      <div class="timeline__step reveal-up" style="--i:2">
+        <span class="timeline__num">٣</span>
+        <div class="timeline__card">
+          <h3>التصميم ثلاثي الأبعاد</h3>
+          <p>نحول الأفكار إلى تصاميم واقعية قابلة للمعاينة.</p>
+        </div>
+      </div>
+
+      <div class="timeline__step reveal-up" style="--i:3">
+        <span class="timeline__num">٤</span>
+        <div class="timeline__card">
+          <h3>التنفيذ</h3>
+          <p>فريق متخصص يتولى التنفيذ بأعلى معايير الجودة.</p>
+        </div>
+      </div>
+
+      <div class="timeline__step reveal-up" style="--i:4">
+        <span class="timeline__num">٥</span>
+        <div class="timeline__card">
+          <h3>التسليم</h3>
+          <p>تسليم المساحة جاهزة بكل تفاصيلها الفاخرة.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Featured Project ===== -->
+<section class="featured">
+  <img class="float-deco float-deco--plant2" src="https://images.unsplash.com/photo-1512428813834-c702c7702b78?w=300&q=75&auto=format&fit=crop" alt="" aria-hidden="true" data-parallax="0.4">
+  <div class="featured__grid">
+    <div class="featured__media reveal-left">
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1100&q=75&auto=format&fit=crop" alt="فيلا مودرن في الرياض" loading="lazy">
+    </div>
+    <div class="featured__content reveal-right">
+      <p class="eyebrow eyebrow--gold">مشروع الشهر</p>
+      <h2 class="section-title section-title--light">فيلا مودرن في الرياض</h2>
+      <p>
+        مشروع متكامل لفيلا سكنية بمساحة ٨٥٠ متر مربع، جمعنا فيه بين الطابع
+        العصري والدفء الشرقي، مع اهتمام خاص بالإضاءة الطبيعية والمساحات المفتوحة
+        التي تربط الداخل بالخارج بسلاسة.
+      </p>
+      <a href="#contact" class="btn btn--accent">عرض التفاصيل</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Testimonials ===== -->
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <div class="section-head reveal-up">
+      <p class="eyebrow">آراء العملاء</p>
+      <h2 class="section-title">ثقة عملائنا فخرنا</h2>
+    </div>
+
+    <div class="testimonials-grid">
+      <article class="testimonial-card reveal-up" style="--i:0">
+        <div class="testimonial-card__stars">★★★★★</div>
+        <p class="testimonial-card__text">"تعامل احترافي ونتيجة فاقت توقعاتي. كل التفاصيل نُفذت بدقة واهتمام حقيقي."</p>
+        <div class="testimonial-card__client">
+          <img src="https://i.pravatar.cc/100?img=12" alt="محمد علي" loading="lazy">
+          <span>محمد علي</span>
+        </div>
+      </article>
+
+      <article class="testimonial-card reveal-up" style="--i:1">
+        <div class="testimonial-card__stars">★★★★★</div>
+        <p class="testimonial-card__text">"أفضل تجربة تصميم داخلي مررت بها. فريق محترف ونتيجة تستحق كل ريال."</p>
+        <div class="testimonial-card__client">
+          <img src="https://i.pravatar.cc/100?img=47" alt="سارة أحمد" loading="lazy">
+          <span>سارة أحمد</span>
+        </div>
+      </article>
+
+      <article class="testimonial-card reveal-up" style="--i:2">
+        <div class="testimonial-card__stars">★★★★★</div>
+        <p class="testimonial-card__text">"كل التفاصيل كانت مدروسة بعناية، من الفكرة الأولى حتى التسليم النهائي."</p>
+        <div class="testimonial-card__client">
+          <img src="https://i.pravatar.cc/100?img=33" alt="عبدالله سالم" loading="lazy">
+          <span>عبدالله سالم</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Brands ===== -->
+<section class="brands">
+  <div class="container">
+    <p class="brands__label reveal-up">يثق بنا</p>
+    <div class="brands__row reveal-up">
+      <span>NOVA HOME</span>
+      <span>LUMIÈRE</span>
+      <span>URBAN LIVING</span>
+      <span>ELITE DECOR</span>
+      <span>ORIENT STUDIO</span>
+      <span>VILLA PLUS</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Contact ===== -->
+<section class="contact" id="contact">
+  <div class="container contact__grid">
+    <div class="contact__info reveal-right">
+      <p class="eyebrow">تواصل معي</p>
+      <h2 class="section-title">لنبدأ مشروعك القادم</h2>
+      <p class="contact__desc">
+        تواصل معنا اليوم لنحول أفكارك إلى مساحة تعكس فخامتك وتفردك.
+      </p>
+
+      <ul class="contact__list">
+        <li>
+          <span class="contact__icon">📍</span>
+          <div><strong>الموقع</strong><p>الرياض، المملكة العربية السعودية</p></div>
+        </li>
+        <li>
+          <span class="contact__icon">📞</span>
+          <div><strong>الهاتف</strong><p dir="ltr">+966 50 123 4567</p></div>
+        </li>
+        <li>
+          <span class="contact__icon">✉️</span>
+          <div><strong>البريد الإلكتروني</strong><p dir="ltr">info@ahmedkhaled.design</p></div>
+        </li>
+      </ul>
+
+      <div class="contact__social">
+        <a href="#" aria-label="انستغرام">IG</a>
+        <a href="#" aria-label="بينتيريست">PIN</a>
+        <a href="#" aria-label="لينكدإن">IN</a>
+        <a href="#" aria-label="واتساب">WA</a>
+      </div>
+    </div>
+
+    <form class="contact__form reveal-left" id="contactForm" novalidate>
+      <div class="form-row">
+        <div class="form-field">
+          <label for="name">الاسم</label>
+          <input type="text" id="name" name="name" placeholder="اكتب اسمك الكامل" required>
+        </div>
+        <div class="form-field">
+          <label for="email">البريد الإلكتروني</label>
+          <input type="email" id="email" name="email" placeholder="example@email.com" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-field">
+          <label for="phone">رقم الهاتف</label>
+          <input type="tel" id="phone" name="phone" placeholder="05xxxxxxxx" required>
+        </div>
+        <div class="form-field">
+          <label for="type">نوع المشروع</label>
+          <select id="type" name="type" required>
+            <option value="" disabled selected>اختر نوع المشروع</option>
+            <option value="residential">سكني</option>
+            <option value="villa">فيلا</option>
+            <option value="office">مكتب</option>
+            <option value="commercial">تجاري</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-field">
+        <label for="message">الرسالة</label>
+        <textarea id="message" name="message" rows="5" placeholder="أخبرنا المزيد عن مشروعك..." required></textarea>
+      </div>
+
+      <button type="submit" class="btn btn--accent form-submit">
+        <span>إرسال الطلب</span>
+      </button>
+      <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer class="footer">
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <span class="footer__logo">أحمد خالد</span>
+      <p>مصمم ديكور داخلي متخصص في خلق مساحات فاخرة تجمع بين الجمال والوظيفة.</p>
+      <div class="contact__social">
+        <a href="#" aria-label="انستغرام">IG</a>
+        <a href="#" aria-label="بينتيريست">PIN</a>
+        <a href="#" aria-label="لينكدإن">IN</a>
+        <a href="#" aria-label="واتساب">WA</a>
+      </div>
+    </div>
+
+    <div class="footer__col">
+      <h4>الخدمات</h4>
+      <a href="#services">تصميم داخلي</a>
+      <a href="#services">اختيار الألوان</a>
+      <a href="#services">تصميم الأثاث</a>
+      <a href="#services">الإضاءة</a>
+    </div>
+
+    <div class="footer__col">
+      <h4>الأعمال</h4>
+      <a href="#portfolio">مشاريع سكنية</a>
+      <a href="#portfolio">مشاريع تجارية</a>
+      <a href="#portfolio">فلل</a>
+      <a href="#portfolio">مكاتب</a>
+    </div>
+
+    <div class="footer__col">
+      <h4>روابط سريعة</h4>
+      <a href="#about">من أنا</a>
+      <a href="#testimonials">آراء العملاء</a>
+      <a href="#contact">تواصل</a>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <p>© 2026 جميع الحقوق محفوظة | أحمد خالد</p>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="العودة للأعلى">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 19V5M12 5L6 11M12 5L18 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<script src="script.js"></script>
+
+<!-- portfolio-buy-badge:start -->
+<style>
+  #portfolio-buy-badge { position: fixed; z-index: 999999; bottom: 18px; right: 18px; direction: rtl; font-family: 'Cairo', Tahoma, Arial, sans-serif; }
+  #portfolio-buy-badge a { display: flex; align-items: center; gap: 10px; background: #14142b; color: #fff; padding: 10px 16px; border-radius: 999px; box-shadow: 0 10px 25px -8px rgba(0,0,0,.5); text-decoration: none; font-size: 14px; font-weight: 700; border: 1px solid rgba(255,255,255,.15); transition: transform .15s ease, background .15s ease; }
+  #portfolio-buy-badge a:hover { background: #312e81; transform: translateY(-2px); }
+  #portfolio-buy-badge .pbb-price { background: #4f46e5; color: #fff; padding: 4px 10px; border-radius: 999px; font-size: 13px; direction: ltr; }
+  @media (max-width: 480px) { #portfolio-buy-badge a span:not(.pbb-price) { display: none; } #portfolio-buy-badge { bottom: 12px; right: 12px; } }
+</style>
+<div id="portfolio-buy-badge">
+  <a href="../../index.html?template=int-1#contact">
+    <span class="pbb-price">$29</span>
+    <span>اشترِ هذا القالب</span>
+  </a>
+</div>
+<!-- portfolio-buy-badge:end -->
+</body>
+</html>

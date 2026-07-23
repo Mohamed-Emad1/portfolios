@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>محمد عماد | متجر قوالب مواقع احترافية</title>
+<meta name="description" content="قوالب مواقع جاهزة واحترافية للأطباء والمحامين والمحاسبين والمهندسين والمصورين والأندية الرياضية ومصممي الديكور والجرافيك. معاينة حية فورية وتسليم سريع." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%234f46e5'/%3E%3Ctext x='50' y='68' font-size='58' font-family='Arial, sans-serif' font-weight='700' fill='white' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<a href="#templates" class="skip-link">تخطَّ إلى القوالب</a>
+
+<header class="site-header" id="header">
+  <div class="container header__inner">
+    <a href="#home" class="brand">
+      <span class="brand__mark">م</span>
+      <span class="brand__text">محمد عماد <em>للقوالب</em></span>
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="التنقل الرئيسي">
+      <a href="#templates">القوالب</a>
+      <a href="#pricing">الأسعار</a>
+      <a href="#how">طريقة العمل</a>
+      <a href="#contact">تواصل معنا</a>
+    </nav>
+
+    <div class="header__actions">
+      <a href="#contact" class="btn btn--primary btn--sm">اشترِ قالبًا</a>
+      <button class="nav-toggle" id="navToggle" aria-label="فتح القائمة" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="container hero__inner">
+      <span class="eyebrow">أكثر من 20 موقعًا جاهزًا</span>
+      <h1>قوالب مواقع احترافية لكل مهنة</h1>
+      <p class="hero__lead">
+        مواقع جاهزة بتصميم يدوي متجاوب بالكامل لصفحة واحدة، مخصصة للأطباء والمحامين والمحاسبين
+        والمهندسين والمصورين والأندية الرياضية ومصممي الديكور والجرافيك. عاين كل تصميم مباشرة،
+        اختر ما يناسبك، واحصل عليه بسرعة — مع ملفات المصدر الكاملة.
+      </p>
+      <div class="hero__cta">
+        <a href="#templates" class="btn btn--primary btn--lg">تصفح القوالب</a>
+        <a href="#contact" class="btn btn--ghost btn--lg">تواصل للشراء</a>
+      </div>
+      <ul class="hero__stats" id="heroStats" aria-label="إحصائيات المتجر">
+        <li><strong id="statTemplates">20</strong><span>قالبًا</span></li>
+        <li><strong id="statCategories">8</strong><span>تصنيفات</span></li>
+        <li><strong>100%</strong><span>متجاوب بالكامل</span></li>
+        <li><strong>24 ساعة</strong><span>سرعة التسليم</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- TEMPLATES -->
+  <section class="templates-section" id="templates">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">معاينة حية</span>
+        <h2>تصفح المجموعة الكاملة</h2>
+        <p>كل بطاقة أدناه تعرض معاينة حية ومصغّرة للقالب الفعلي. اضغط على البطاقة لفتح العرض الكامل في نافذة جديدة.</p>
+      </div>
+
+      <div class="filters" id="filters" role="tablist" aria-label="تصفية القوالب حسب التصنيف">
+        <button class="filter-btn is-active" data-filter="all">الكل</button>
+        <button class="filter-btn" data-filter="accountants">محاسبون</button>
+        <button class="filter-btn" data-filter="doctors">أطباء</button>
+        <button class="filter-btn" data-filter="engineers">مهندسون</button>
+        <button class="filter-btn" data-filter="graphic_designers">مصممو جرافيك</button>
+        <button class="filter-btn" data-filter="gym">نادي رياضي</button>
+        <button class="filter-btn" data-filter="interior_design">تصميم داخلي</button>
+        <button class="filter-btn" data-filter="lawyers">محامون</button>
+        <button class="filter-btn" data-filter="photographers">مصورون</button>
+      </div>
+
+      <div class="grid" id="templatesGrid"><!-- يتم إنشاؤها بواسطة script.js --></div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how-section" id="how">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">خطوات بسيطة</span>
+        <h2>كيف تتم عملية شراء القالب؟</h2>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <span class="step__num">1</span>
+          <h3>تصفح واختر</h3>
+          <p>استعرض العروض الحية واختر التصميم الذي يناسب مهنتك وذوقك.</p>
+        </div>
+        <div class="step">
+          <span class="step__num">2</span>
+          <h3>تواصل معنا</h3>
+          <p>راسلنا عبر البريد الإلكتروني أو الهاتف أو واتساب أو فيسبوك مع ذكر اسم القالب.</p>
+        </div>
+        <div class="step">
+          <span class="step__num">3</span>
+          <h3>التخصيص</h3>
+          <p>نقوم باستبدال الاسم والصور والنصوص والألوان — أو نسلّمك ملفات المصدر لتعديلها بنفسك.</p>
+        </div>
+        <div class="step">
+          <span class="step__num">4</span>
+          <h3>الانطلاق</h3>
+          <p>تستلم الملفات النهائية جاهزة للاستضافة على أي سيرفر، مع تسليم سريع.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="pricing-section" id="pricing">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">الأسعار</span>
+        <h2>أسعار بسيطة وواضحة</h2>
+        <p>كل صفحة قالب تعرض أيضًا سعرها الخاص. تحتاج تصميمًا مخصصًا؟ تواصل معنا لعرض سعر.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <div class="price-card">
+          <h3>قالب واحد</h3>
+          <p class="price-card__price">25$<span>&ndash;59$</span></p>
+          <p class="price-card__desc">قالب جاهز واحد، تمامًا كما يظهر في العرض التجريبي.</p>
+          <ul>
+            <li>الكود المصدري الكامل (HTML/CSS/JS)</li>
+            <li>استبدال المحتوى (اسمك، صورك، نصوصك)</li>
+            <li>متجاوب مع الجوال وسطح المكتب</li>
+            <li>تسليم خلال 24–48 ساعة</li>
+          </ul>
+          <a href="#contact" class="btn btn--outline">اشترِ قالبًا</a>
+        </div>
+
+        <div class="price-card price-card--featured">
+          <span class="price-card__badge">الأكثر طلبًا</span>
+          <h3>باقة تصنيف كامل</h3>
+          <p class="price-card__price">59$</p>
+          <p class="price-card__desc">احصل على جميع التصاميم المتوفرة في تصنيف مهنة واحدة.</p>
+          <ul>
+            <li>جميع تصاميم التصنيف</li>
+            <li>نسخة لون إضافية مجانًا</li>
+            <li>استبدال المحتوى ضمن الباقة</li>
+            <li>تسليم بأولوية</li>
+          </ul>
+          <a href="#contact" class="btn btn--primary">احصل على الباقة</a>
+        </div>
+
+        <div class="price-card">
+          <h3>المجموعة الكاملة</h3>
+          <p class="price-card__price">299$</p>
+          <p class="price-card__desc">جميع القوالب في التصنيفات الثمانية — مثالية للوكالات وإعادة البيع.</p>
+          <ul>
+            <li>جميع القوالب العشرين</li>
+            <li>إضافة القوالب المستقبلية مجانًا</li>
+            <li>ترخيص يسمح بإعادة البيع</li>
+            <li>دعم مباشر</li>
+          </ul>
+          <a href="#contact" class="btn btn--outline">تواصل مع المبيعات</a>
+        </div>
+
+        <div class="price-card">
+          <h3>تصميم مخصص</h3>
+          <p class="price-card__price">تواصل معنا</p>
+          <p class="price-card__desc">تحتاج تصميمًا جديدًا بالكامل أو صفحات إضافية أو نظام حجز/متجر إلكتروني؟</p>
+          <ul>
+            <li>مصمم خصيصًا لهويتك</li>
+            <li>صفحات وميزات إضافية</li>
+            <li>عرض سعر مجاني بدون التزام</li>
+            <li>دعم مستمر متاح</li>
+          </ul>
+          <a href="#contact" class="btn btn--outline">اطلب عرض سعر</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact">
+    <div class="container contact__inner">
+      <div class="contact__info">
+        <span class="eyebrow">تواصل معنا</span>
+        <h2>جاهز لشراء أو تخصيص قالب؟</h2>
+        <p>أرسل لنا اسم القالب (والتصنيف) الذي يهمك. عادةً نرد خلال ساعات قليلة.</p>
+
+        <ul class="contact__list">
+          <li>
+            <span class="contact__icon" aria-hidden="true">&#9993;</span>
+            <div>
+              <span class="contact__label">البريد الإلكتروني</span>
+              <a href="mailto:mohamed.emad45621@gmail.com">mohamed.emad45621@gmail.com</a>
+            </div>
+          </li>
+          <li>
+            <span class="contact__icon" aria-hidden="true">&#128222;</span>
+            <div>
+              <span class="contact__label">هاتف / واتساب</span>
+              <a href="tel:+201032746151">010 3274 6151</a>
+            </div>
+          </li>
+          <li>
+            <span class="contact__icon" aria-hidden="true">&#128222;</span>
+            <div>
+              <span class="contact__label">هاتف / واتساب</span>
+              <a href="tel:+201285076888">012 8507 6888</a>
+            </div>
+          </li>
+          <li>
+            <span class="contact__icon" aria-hidden="true">&#128100;</span>
+            <div>
+              <span class="contact__label">فيسبوك</span>
+              <a href="https://www.facebook.com/joomedi3?sfnsn=scwspwa&mibextid=RUbZ1f" target="_blank" rel="noopener noreferrer">facebook.com/joomedi3</a>
+            </div>
+          </li>
+        </ul>
+
+        <div class="contact__quick">
+          <a class="btn btn--primary" href="https://wa.me/201032746151" target="_blank" rel="noopener noreferrer">تواصل عبر واتساب</a>
+          <a class="btn btn--ghost" href="https://www.facebook.com/joomedi3?sfnsn=scwspwa&mibextid=RUbZ1f" target="_blank" rel="noopener noreferrer">راسلنا على فيسبوك</a>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <h3>أرسل رسالة</h3>
+        <label>
+          الاسم
+          <input type="text" name="name" id="cf-name" required placeholder="اسمك" />
+        </label>
+        <label>
+          البريد الإلكتروني
+          <input type="email" name="email" id="cf-email" required placeholder="you@example.com" />
+        </label>
+        <label>
+          القالب الذي يهمك
+          <select name="template" id="cf-template">
+            <option value="">استفسار عام</option>
+          </select>
+        </label>
+        <label>
+          رسالتك
+          <textarea name="message" id="cf-message" rows="4" required placeholder="أخبرنا بما تحتاجه..."></textarea>
+        </label>
+        <button type="submit" class="btn btn--primary btn--block">إرسال عبر البريد الإلكتروني</button>
+        <p class="contact-form__note">سيتم فتح تطبيق البريد الإلكتروني برسالة معبأة مسبقًا — لن يتم إرسال أي شيء تلقائيًا.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer__inner">
+    <div class="brand brand--footer">
+      <span class="brand__mark">م</span>
+      <span class="brand__text">محمد عماد <em>للقوالب</em></span>
+    </div>
+    <p class="footer__copy">© <span id="year"></span> محمد عماد. جميع القوالب متاحة للشراء والتخصيص.</p>
+    <div class="footer__links">
+      <a href="mailto:mohamed.emad45621@gmail.com">البريد الإلكتروني</a>
+      <a href="tel:+201032746151">اتصل بنا</a>
+      <a href="https://www.facebook.com/joomedi3?sfnsn=scwspwa&mibextid=RUbZ1f" target="_blank" rel="noopener noreferrer">فيسبوك</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

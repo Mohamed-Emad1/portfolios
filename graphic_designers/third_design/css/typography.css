@@ -1,0 +1,116 @@
+/* ==========================================================================
+   Typography — Arabic Web Fonts & Type Scale
+   ========================================================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;600;700;800;900&family=Cairo:wght@300;400;500;600;700;800;900&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Readex+Pro:wght@300;400;500;600;700&family=Marhey:wght@400;500;600;700&display=swap");
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: var(--fs-base);
+  font-weight: var(--fw-regular);
+  line-height: var(--lh-normal);
+  color: var(--color-text-muted);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-primary);
+  color: var(--color-text);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-tight);
+  letter-spacing: -0.01em;
+}
+
+h1 { font-size: var(--fs-hero); font-weight: var(--fw-black); }
+h2 { font-size: var(--fs-2xl); }
+h3 { font-size: var(--fs-xl); }
+h4 { font-size: var(--fs-lg); }
+h5 { font-size: var(--fs-md); }
+h6 { font-size: var(--fs-base); }
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button, input, textarea, select {
+  font-family: inherit;
+  color: inherit;
+}
+
+/* ---------- Utility Type Classes ---------- */
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2xs);
+  font-family: var(--font-secondary);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-semibold);
+  letter-spacing: 0.04em;
+  color: var(--color-accent);
+  text-transform: uppercase;
+}
+
+.eyebrow::before {
+  content: "";
+  display: inline-block;
+  width: 26px;
+  height: 2px;
+  background: var(--color-accent);
+  border-radius: var(--radius-full);
+}
+
+.display-text {
+  font-family: var(--font-display);
+}
+
+.text-lead {
+  font-size: var(--fs-md);
+  line-height: var(--lh-loose);
+  color: var(--color-text-muted);
+}
+
+.text-muted {
+  color: var(--color-text-dim);
+}
+
+.text-accent {
+  color: var(--color-accent);
+}
+
+.mark-highlight {
+  position: relative;
+  color: var(--color-bg);
+  padding: 0 0.35em;
+  font-weight: var(--fw-bold);
+}
+
+.mark-highlight::before {
+  content: "";
+  position: absolute;
+  inset: 8% -2% 4%;
+  background: var(--gradient-accent);
+  transform: rotate(-1deg);
+  z-index: -1;
+  border-radius: 4px;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}

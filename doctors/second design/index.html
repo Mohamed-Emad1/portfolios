@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>د. جون ويليام | أخصائي طبي</title>
+<meta name="description" content="د. جون ويليام - أخصائي طبي معتمد يتمتع بخبرة تزيد عن 8 سنوات في الجراحة والعناية المركزة وعلاج المرضى.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;600;700;800;900&family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ ICON SPRITE ============ -->
+<svg style="display:none">
+  <symbol id="icon-heart-pulse" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z"/><path d="M4 12h3l2-4 2 6 2-4h3"/></symbol>
+  <symbol id="icon-stethoscope" viewBox="0 0 24 24"><path d="M5 3v6a4 4 0 0 0 8 0V3"/><path d="M9 3h-4M17 3h-4"/><path d="M13 9v3a6 6 0 0 0 12 0v-1.5"/><circle cx="20" cy="6" r="2"/><circle cx="6" cy="17" r="3"/></symbol>
+  <symbol id="icon-puzzle" viewBox="0 0 24 24"><path d="M4 7h3.5a1.5 1.5 0 0 0 0-3 1.5 1.5 0 1 1 3-1 1.5 1.5 0 0 1-1.5 2H13v3.5a1.5 1.5 0 0 0 3 0A1.5 1.5 0 1 1 17 11.5V15h-3.5a1.5 1.5 0 0 0 0 3 1.5 1.5 0 1 1-3 1 1.5 1.5 0 0 1 1.5-2H4v-3.5a1.5 1.5 0 0 0-3 0A1.5 1.5 0 1 1 3 9.5V7Z"/></symbol>
+  <symbol id="icon-pill" viewBox="0 0 24 24"><rect x="3" y="9" width="18" height="6" rx="3" transform="rotate(-45 12 12)"/><line x1="12" y1="6" x2="12" y2="18" transform="rotate(-45 12 12)"/></symbol>
+  <symbol id="icon-theater" viewBox="0 0 24 24"><path d="M4 21V9a8 8 0 0 1 16 0v12"/><path d="M4 21h16M8 21v-6M16 21v-6M12 21v-9"/></symbol>
+  <symbol id="icon-tooth" viewBox="0 0 24 24"><path d="M12 3c-2 0-3 1-4.5 1S5 3 4 3C2 3 2 6 2 8c0 4 1 6 2 9 .5 1.5 1 2 2 2s1.5-3 2-5c.3-1.2.6-2 2-2s1.7.8 2 2c.5 2 1 5 2 5s1.5-.5 2-2c1-3 2-5 2-9 0-2 0-5-2-5-1 0-1.5 1-3.5 1S14 3 12 3Z"/></symbol>
+  <symbol id="icon-monitor-heart" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M6 12h2l1.5-3 2 6 1.5-3H18"/><line x1="8" y1="21" x2="16" y2="21"/></symbol>
+  <symbol id="icon-medkit" viewBox="0 0 24 24"><rect x="2" y="8" width="20" height="12" rx="2"/><path d="M9 8V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v3"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></symbol>
+  <symbol id="icon-ambulance" viewBox="0 0 24 24"><path d="M2 17h1a2 2 0 0 0 4 0h8a2 2 0 0 0 4 0h1v-5l-3-4h-4V7H4a2 2 0 0 0-2 2v8Z"/><line x1="9" y1="10" x2="9" y2="14"/><line x1="7" y1="12" x2="11" y2="12"/><circle cx="7" cy="17" r="1.6"/><circle cx="19" cy="17" r="1.6"/></symbol>
+  <symbol id="icon-scalpel" viewBox="0 0 24 24"><path d="M3 21 14 10"/><path d="M14 10 20 4a2 2 0 0 1 3 3l-6 6a3 3 0 0 1-4 0 3 3 0 0 1 0-4Z"/><line x1="3" y1="21" x2="6" y2="21"/></symbol>
+  <symbol id="icon-flask" viewBox="0 0 24 24"><path d="M9 2v6L3.5 18a2 2 0 0 0 1.8 3h13.4a2 2 0 0 0 1.8-3L15 8V2"/><line x1="8" y1="2" x2="16" y2="2"/><line x1="7" y1="14" x2="17" y2="14"/></symbol>
+  <symbol id="icon-wheelchair" viewBox="0 0 24 24"><circle cx="9" cy="18" r="4"/><circle cx="18" cy="5" r="1.5"/><path d="M9 18 11 8h5l3 6"/><path d="M11 8 9 4H6"/><path d="M9 12h6"/></symbol>
+  <symbol id="icon-hand-heart" viewBox="0 0 24 24"><path d="M12 21s-6.5-4.4-9-8.6C1.2 9.6 2.3 6.5 5 6c1.8-.3 3 .7 3.5 1.7C9 6.7 10.2 5.7 12 6c2.7.5 3.8 3.6 2 6.4-2.5 4.2-2 8.6-2 8.6Z"/></symbol>
+  <symbol id="icon-shield-check" viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.4 8.7 8 11 4.6-2.3 8-6 8-11V5l-8-3Z"/><path d="M8.5 12 11 14.5 16 9"/></symbol>
+  <symbol id="icon-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></symbol>
+  <symbol id="icon-play" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M10 8.5 16 12l-6 3.5Z"/></symbol>
+  <symbol id="icon-facebook" viewBox="0 0 24 24"><path d="M14 8.5h2.5V5H14c-2.2 0-4 1.8-4 4v2H8v3.5h2V20h3.5v-5.5H16l.5-3.5h-3V9c0-.6.4-1 1-1Z"/></symbol>
+  <symbol id="icon-twitter" viewBox="0 0 24 24"><path d="M21 5.5c-.7.4-1.5.6-2.3.8a3.7 3.7 0 0 0-6.3 3.4A10.6 10.6 0 0 1 4.5 5.8a3.7 3.7 0 0 0 1.2 5 3.7 3.7 0 0 1-1.7-.5v.1c0 1.8 1.3 3.3 3 3.6a3.8 3.8 0 0 1-1.7.1 3.7 3.7 0 0 0 3.5 2.6 7.5 7.5 0 0 1-5.5 1.5A10.6 10.6 0 0 0 9 19.8c6.9 0 10.7-5.8 10.7-10.7v-.5c.7-.5 1.4-1.2 1.9-2Z"/></symbol>
+  <symbol id="icon-linkedin" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><line x1="7.5" y1="10" x2="7.5" y2="17"/><circle cx="7.5" cy="6.8" r="1.2"/><path d="M11.5 17v-4.5c0-1.5 1-2.5 2.5-2.5s2.5 1 2.5 2.5V17"/><line x1="11.5" y1="10" x2="11.5" y2="17"/></symbol>
+  <symbol id="icon-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1.1"/></symbol>
+  <symbol id="icon-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></symbol>
+  <symbol id="icon-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 6.5 8 6.5 8-6.5"/></symbol>
+  <symbol id="icon-map-pin" viewBox="0 0 24 24"><path d="M12 22s7-6.6 7-12a7 7 0 1 0-14 0c0 5.4 7 12 7 12Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+  <symbol id="icon-download" viewBox="0 0 24 24"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></symbol>
+  <symbol id="icon-star" viewBox="0 0 24 24"><path d="m12 2 3.1 6.6 7.2.7-5.4 4.9 1.6 7.1L12 17.8 5.5 21.3l1.6-7.1L1.7 9.3l7.2-.7Z"/></symbol>
+  <symbol id="icon-arrow-right" viewBox="0 0 24 24"><line x1="4" y1="12" x2="20" y2="12"/><path d="m14 6 6 6-6 6"/></symbol>
+  <symbol id="icon-chevron" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></symbol>
+  <symbol id="icon-plus" viewBox="0 0 24 24"><line x1="12" y1="4" x2="12" y2="20"/><line x1="4" y1="12" x2="20" y2="12"/></symbol>
+  <symbol id="icon-menu" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></symbol>
+  <symbol id="icon-close" viewBox="0 0 24 24"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></symbol>
+</svg>
+
+<!-- ============ BACKGROUND LAYERS ============ -->
+<div class="bg-layer" aria-hidden="true">
+  <div class="bg-glow bg-glow--1"></div>
+  <div class="bg-glow bg-glow--2"></div>
+  <div class="bg-glow bg-glow--3"></div>
+  <div class="bg-grid"></div>
+  <span class="bg-icon bg-icon--1"><svg><use href="#icon-plus"/></svg></span>
+  <span class="bg-icon bg-icon--2"><svg><use href="#icon-plus"/></svg></span>
+  <span class="bg-icon bg-icon--3 bg-ring"></span>
+  <span class="bg-icon bg-icon--4 bg-ring"></span>
+  <span class="bg-icon bg-icon--5"><svg><use href="#icon-heart-pulse"/></svg></span>
+</div>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar" id="navbar">
+  <div class="navbar__inner container">
+    <a href="#home" class="brand">
+      <span class="brand__logo"><svg><use href="#icon-heart-pulse"/></svg></span>
+      <span class="brand__text">
+        <span class="brand__name">د. جون ويليام</span>
+        <span class="brand__title">أخصائي طبي</span>
+      </span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link is-active" data-nav>الرئيسية<span class="nav-dot"></span></a>
+      <a href="#about" class="nav-link" data-nav>من أنا<span class="nav-dot"></span></a>
+      <a href="#services" class="nav-link" data-nav>الخدمات<span class="nav-dot"></span></a>
+      <a href="#portfolio" class="nav-link" data-nav>أعمالي<span class="nav-dot"></span></a>
+      <a href="#blog" class="nav-link" data-nav>المدونة<span class="nav-dot"></span></a>
+      <a href="#contact" class="nav-link" data-nav>تواصل معي<span class="nav-dot"></span></a>
+    </nav>
+
+    <a href="#contact" class="btn btn--primary btn--sm navbar__cta">
+      <svg class="btn__icon"><use href="#icon-mail"/></svg>
+      لنتحدث
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="فتح القائمة" aria-expanded="false">
+      <svg><use href="#icon-menu"/></svg>
+    </button>
+  </div>
+</header>
+
+<main>
+  <div class="layout container">
+
+    <!-- ============ LEFT COLUMN ============ -->
+    <div class="col-left">
+
+      <!-- HERO -->
+      <section class="hero reveal" id="home">
+        <div class="hero__text">
+          <span class="badge">
+            <span class="badge__dot"></span> مرحباً بكم في عالمي
+          </span>
+          <p class="hero__greeting">مرحباً، أنا</p>
+          <h1 class="hero__title">
+            <span class="text-gradient">جون ويليام</span>
+            <span class="hero__title-sub">أخصائي طبي</span>
+          </h1>
+          <p class="hero__desc">أصنع تجارب صحية هادفة من خلال الرعاية الإنسانية والخبرة المتقدمة والالتزام بتحسين حياة مرضاي.</p>
+
+          <div class="hero__actions">
+            <a href="#contact" class="btn btn--primary">
+              <svg class="btn__icon"><use href="#icon-heart-pulse"/></svg>
+              احجز موعداً
+            </a>
+            <a href="#" class="btn btn--secondary">
+              <svg class="btn__icon"><use href="#icon-download"/></svg>
+              تحميل السيرة الذاتية
+            </a>
+          </div>
+
+          <div class="hero__social">
+            <span class="hero__social-label">تابعني على</span>
+            <div class="social-row">
+              <a href="#" class="social-btn" aria-label="فيسبوك"><svg><use href="#icon-facebook"/></svg></a>
+              <a href="#" class="social-btn" aria-label="تويتر"><svg><use href="#icon-twitter"/></svg></a>
+              <a href="#" class="social-btn" aria-label="لينكدإن"><svg><use href="#icon-linkedin"/></svg></a>
+              <a href="#" class="social-btn" aria-label="إنستغرام"><svg><use href="#icon-instagram"/></svg></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__visual">
+          <div class="hero__glow"></div>
+          <div class="hero__ring hero__ring--1"></div>
+          <div class="hero__ring hero__ring--2"></div>
+          <span class="hero__float hero__float--1"><svg><use href="#icon-plus"/></svg></span>
+          <span class="hero__float hero__float--2"><svg><use href="#icon-stethoscope"/></svg></span>
+          <span class="hero__float hero__float--3"><svg><use href="#icon-heart-pulse"/></svg></span>
+          <div class="hero__blob"></div>
+          <div class="hero__photo">
+            <div class="hero__photo-frame">
+              <img src="assets/hero-doctor-placeholder.svg" alt="د. جون ويليام" width="400" height="520" loading="lazy">
+            </div>
+            <div class="hero__badge-exp">
+              <span class="hero__badge-icon"><svg><use href="#icon-shield-check"/></svg></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="section reveal" id="about">
+        <div class="glass-card about">
+          <div class="about__text">
+            <span class="eyebrow">من أنا</span>
+            <h2 class="section-title">متخصص في <span class="text-gradient">صحتك ورفاهيتك</span></h2>
+            <p class="section-desc">أنا أخصائي طبي معتمد أتمتع بخبرة تزيد عن 8 سنوات في تقديم رعاية صحية استثنائية. مهمتي هي تقديم رعاية إنسانية وحلول طبية متقدمة لكل مريض.</p>
+
+            <ul class="feature-list">
+              <li class="feature-item">
+                <span class="feature-item__icon"><svg><use href="#icon-hand-heart"/></svg></span>
+                <div>
+                  <h3>رعاية إنسانية</h3>
+                  <p>وضع المريض أولاً بتعاطف واحترام.</p>
+                </div>
+              </li>
+              <li class="feature-item">
+                <span class="feature-item__icon"><svg><use href="#icon-shield-check"/></svg></span>
+                <div>
+                  <h3>قائم على الأدلة</h3>
+                  <p>استخدام أحدث الأبحاث والممارسات الطبية المثبتة.</p>
+                </div>
+              </li>
+              <li class="feature-item">
+                <span class="feature-item__icon"><svg><use href="#icon-user"/></svg></span>
+                <div>
+                  <h3>التركيز على المريض</h3>
+                  <p>رعاية شخصية مصممة خصيصاً لاحتياجاتك.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="about__visual">
+            <div class="about__image">
+              <img src="assets/about-doctor-placeholder.svg" alt="د. جون ويليام يستشير أحد المرضى" width="640" height="600" loading="lazy">
+            </div>
+            <div class="stat-badge">
+              <span class="stat-badge__num">+8</span>
+              <span class="stat-badge__label">سنوات<br>خبرة</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES -->
+      <section class="section reveal" id="services">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">ماذا أقدم</span>
+            <h2 class="section-title">الخدمات التي <span class="text-gradient">أقدمها</span></h2>
+          </div>
+          <p class="section-desc section-desc--right">أقدم مجموعة واسعة من الخدمات الطبية باستخدام تقنيات متقدمة ونهج يركز على المريض لضمان أفضل النتائج.</p>
+        </div>
+
+        <div class="grid grid--services">
+          <article class="service-card">
+            <span class="service-card__icon"><svg><use href="#icon-stethoscope"/></svg></span>
+            <h3>استشارة عامة</h3>
+            <p>فحوصات واستشارات صحية شاملة.</p>
+            <a href="#" class="link-arrow">اعرف المزيد <svg><use href="#icon-arrow-right"/></svg></a>
+          </article>
+          <article class="service-card">
+            <span class="service-card__icon"><svg><use href="#icon-ambulance"/></svg></span>
+            <h3>رعاية الطوارئ</h3>
+            <p>دعم طارئ على مدار الساعة مع رعاية فورية.</p>
+            <a href="#" class="link-arrow">اعرف المزيد <svg><use href="#icon-arrow-right"/></svg></a>
+          </article>
+          <article class="service-card">
+            <span class="service-card__icon"><svg><use href="#icon-scalpel"/></svg></span>
+            <h3>الجراحة</h3>
+            <p>خبرة في إجراء الجراحات المعقدة والطفيفة التوغل.</p>
+            <a href="#" class="link-arrow">اعرف المزيد <svg><use href="#icon-arrow-right"/></svg></a>
+          </article>
+          <article class="service-card">
+            <span class="service-card__icon"><svg><use href="#icon-flask"/></svg></span>
+            <h3>التشخيص</h3>
+            <p>فحوصات تشخيصية متقدمة للحصول على نتائج دقيقة.</p>
+            <a href="#" class="link-arrow">اعرف المزيد <svg><use href="#icon-arrow-right"/></svg></a>
+          </article>
+          <article class="service-card">
+            <span class="service-card__icon"><svg><use href="#icon-monitor-heart"/></svg></span>
+            <h3>العناية المركزة والحرجة</h3>
+            <p>رعاية متخصصة لمرضى الحالات الحرجة والقلب.</p>
+            <a href="#" class="link-arrow">اعرف المزيد <svg><use href="#icon-arrow-right"/></svg></a>
+          </article>
+          <article class="service-card">
+            <span class="service-card__icon"><svg><use href="#icon-wheelchair"/></svg></span>
+            <h3>إعادة التأهيل</h3>
+            <p>مساعدتك على التعافي واستعادة أفضل حالة صحية.</p>
+            <a href="#" class="link-arrow">اعرف المزيد <svg><use href="#icon-arrow-right"/></svg></a>
+          </article>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <section class="section reveal">
+        <div class="glass-card testimonial">
+          <div class="testimonial__head">
+            <h2 class="section-title">ماذا يقول مرضاي</h2>
+            <svg class="testimonial__quote"><use href="#icon-plus"/></svg>
+          </div>
+
+          <div class="testimonial__track" id="testimonialTrack">
+            <div class="testimonial__slide is-active">
+              <div class="testimonial__avatar" style="--seed:1">س.أ</div>
+              <p class="testimonial__text">"الدكتور جون طبيب استثنائي. استمع لي بعناية، وشرح كل شيء بوضوح، وجعلني أشعر بالراحة طوال فترة العلاج."</p>
+              <div class="testimonial__meta">
+                <span class="testimonial__name">سارة أحمد</span>
+                <span class="testimonial__stars">
+                  <svg><use href="#icon-star"/></svg><svg><use href="#icon-star"/></svg><svg><use href="#icon-star"/></svg><svg><use href="#icon-star"/></svg><svg><use href="#icon-star"/></svg>
+                </span>
+              </div>
+            </div>
+            <div class="testimonial__slide">
+              <div class="testimonial__avatar" style="--seed:2">م.ب</div>
+              <p class="testimonial__text">"محترف ومهتم وصادق في رعايته. المتابعة بعد عمليتي منحتني راحة بال تامة."</p>
+              <div class="testimonial__meta">
+                <span class="testimonial__name">محمد بكري</span>
+                <span class="testimonial__stars">
+                  <svg><use href="#icon-star"/></svg><svg><use href="#icon-star"/></svg><svg><use href="#icon-star"/></svg><svg><use href="#icon-star"/></svg><svg><use href="#icon-star"/></svg>
+                </span>
+              </div>
+            </div>
+            <div class="testimonial__slide">
+              <div class="testimonial__avatar" style="--seed:3">إ.و</div>
+              <p class="testimonial__text">"أشمل استشارة حصلت عليها على الإطلاق. خبرة الدكتور جون وهدوؤه جعلاني أشعر بالاطمئنان فوراً."</p>
+              <div class="testimonial__meta">
+                <span class="testimonial__name">إيمان وهبة</span>
+                <span class="testimonial__stars">
+                  <svg><use href="#icon-star"/></svg><svg><use href="#icon-star"/></svg><svg><use href="#icon-star"/></svg><svg><use href="#icon-star"/></svg><svg><use href="#icon-star"/></svg>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial__dots" id="testimonialDots">
+            <button class="dot is-active" data-index="0" aria-label="تقييم 1"></button>
+            <button class="dot" data-index="1" aria-label="تقييم 2"></button>
+            <button class="dot" data-index="2" aria-label="تقييم 3"></button>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- ============ RIGHT COLUMN ============ -->
+    <div class="col-right">
+
+      <!-- SPECIALIZATIONS -->
+      <section class="section reveal">
+        <h2 class="section-title section-title--center">تخصصاتي</h2>
+        <div class="grid grid--spec">
+          <article class="spec-card">
+            <span class="spec-card__icon"><svg><use href="#icon-puzzle"/></svg></span>
+            <h3>عمليات معقدة</h3>
+            <p>التعامل مع الحالات الدقيقة بدقة وتقنيات متقدمة.</p>
+          </article>
+          <article class="spec-card">
+            <span class="spec-card__icon"><svg><use href="#icon-pill"/></svg></span>
+            <h3>علاج دوائي</h3>
+            <p>خطط علاجية شخصية لتعافٍ أسرع وأكثر فعالية.</p>
+          </article>
+          <article class="spec-card">
+            <span class="spec-card__icon"><svg><use href="#icon-theater"/></svg></span>
+            <h3>غرفة العمليات</h3>
+            <p>مهارة في الإجراءات الجراحية الحديثة بأفضل النتائج.</p>
+          </article>
+          <article class="spec-card">
+            <span class="spec-card__icon"><svg><use href="#icon-tooth"/></svg></span>
+            <h3>علاج الأسنان</h3>
+            <p>خبرة في رعاية الأسنان المتقدمة لابتسامة صحية.</p>
+          </article>
+          <article class="spec-card">
+            <span class="spec-card__icon"><svg><use href="#icon-monitor-heart"/></svg></span>
+            <h3>أفضل عناية مركزة</h3>
+            <p>أخصائي رعاية حرجة وعناية مركزة بنتائج مثبتة للمرضى.</p>
+          </article>
+          <article class="spec-card">
+            <span class="spec-card__icon"><svg><use href="#icon-medkit"/></svg></span>
+            <h3>أفضل علاج طبي</h3>
+            <p>رعاية طبية شاملة مصممة خصيصاً لاحتياجات كل مريض.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- PORTFOLIO -->
+      <section class="section reveal" id="portfolio">
+        <div class="glass-card portfolio">
+          <div class="section-head section-head--center">
+            <h2 class="section-title">أعمالي</h2>
+            <p class="section-desc">عرض لأعمالي وخبراتي والنتائج الناجحة عبر مختلف المجالات الطبية.</p>
+          </div>
+
+          <div class="filter-row" id="filterRow">
+            <button class="filter-btn is-active" data-filter="all">الكل</button>
+            <button class="filter-btn" data-filter="surgery">جراحة</button>
+            <button class="filter-btn" data-filter="treatment">علاج</button>
+            <button class="filter-btn" data-filter="care">رعاية</button>
+            <button class="filter-btn" data-filter="others">أخرى</button>
+          </div>
+
+          <div class="grid grid--portfolio" id="portfolioGrid">
+            <article class="portfolio-card" data-category="surgery">
+              <div class="portfolio-card__media portfolio-card__media--1">
+                <button class="play-btn" aria-label="تشغيل الفيديو"><svg><use href="#icon-play"/></svg></button>
+                <span class="badge-pill">جراحة</span>
+              </div>
+              <h3>جراحة القلب</h3>
+              <p>عملية قلب مفتوح معقدة وناجحة.</p>
+            </article>
+            <article class="portfolio-card" data-category="others">
+              <div class="portfolio-card__media portfolio-card__media--2">
+                <button class="play-btn" aria-label="تشغيل الفيديو"><svg><use href="#icon-play"/></svg></button>
+                <span class="badge-pill">أسنان</span>
+              </div>
+              <h3>زراعة الأسنان</h3>
+              <p>حالة ترميم كامل للفم بزراعة الأسنان.</p>
+            </article>
+            <article class="portfolio-card" data-category="care">
+              <div class="portfolio-card__media portfolio-card__media--3">
+                <button class="play-btn" aria-label="تشغيل الفيديو"><svg><use href="#icon-play"/></svg></button>
+                <span class="badge-pill">رعاية</span>
+              </div>
+              <h3>تعافي المريض</h3>
+              <p>التعافي وإعادة التأهيل بعد الجراحة.</p>
+            </article>
+            <article class="portfolio-card" data-category="treatment">
+              <div class="portfolio-card__media portfolio-card__media--4">
+                <button class="play-btn" aria-label="تشغيل الفيديو"><svg><use href="#icon-play"/></svg></button>
+                <span class="badge-pill">عناية مركزة</span>
+              </div>
+              <h3>الرعاية الحرجة</h3>
+              <p>رعاية مرضى العناية المركزة وإدارة دعم الحياة.</p>
+            </article>
+          </div>
+
+          <a href="#" class="btn btn--primary btn--block">عرض جميع المشاريع</a>
+        </div>
+      </section>
+
+      <!-- RESUME -->
+      <section class="section reveal">
+        <div class="section-head section-head--center">
+          <h2 class="section-title">سيرتي الذاتية</h2>
+          <p class="section-desc">خلفيتي الأكاديمية ومسيرتي المهنية التي شكّلت خبرتي الطبية.</p>
+        </div>
+
+        <div class="grid grid--resume">
+          <div class="glass-card resume-card">
+            <h3 class="resume-card__title">التعليم</h3>
+            <ol class="timeline">
+              <li class="timeline__item">
+                <span class="timeline__year">2015 - 2019</span>
+                <h4>بكالوريوس الطب والجراحة</h4>
+                <p>جامعة العلوم الصحية</p>
+              </li>
+              <li class="timeline__item">
+                <span class="timeline__year">2019 - 2021</span>
+                <h4>ماجستير في الطب</h4>
+                <p>جامعة العلوم الصحية</p>
+              </li>
+              <li class="timeline__item">
+                <span class="timeline__year">2021 - 2023</span>
+                <h4>دكتوراه في أمراض القلب</h4>
+                <p>المعهد الطبي الوطني</p>
+              </li>
+            </ol>
+          </div>
+
+          <div class="glass-card resume-card">
+            <h3 class="resume-card__title">الخبرة</h3>
+            <ol class="timeline">
+              <li class="timeline__item">
+                <span class="timeline__year">2021 - حتى الآن</span>
+                <h4>أخصائي طبي أول</h4>
+                <p>مستشفى المدينة، نيويورك</p>
+              </li>
+              <li class="timeline__item">
+                <span class="timeline__year">2018 - 2021</span>
+                <h4>طبيب مسؤول</h4>
+                <p>المستشفى العام، نيويورك</p>
+              </li>
+              <li class="timeline__item">
+                <span class="timeline__year">2016 - 2018</span>
+                <h4>طبيب مقيم</h4>
+                <p>مركز الرعاية الصحية المجتمعي</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="grid grid--skills">
+          <div class="glass-card skills-card">
+            <h3 class="resume-card__title">المهارات والخبرات</h3>
+            <div class="skill-bar">
+              <div class="skill-bar__head"><span>الخبرة السريرية</span><span>95%</span></div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" data-percent="95"></div></div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar__head"><span>الجراحة</span><span>90%</span></div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" data-percent="90"></div></div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar__head"><span>رعاية المرضى</span><span>95%</span></div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" data-percent="95"></div></div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar__head"><span>رعاية الطوارئ</span><span>90%</span></div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" data-percent="90"></div></div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar__head"><span>الاستشارات</span><span>95%</span></div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" data-percent="95"></div></div>
+            </div>
+          </div>
+
+          <div class="glass-card cv-card">
+            <span class="cv-card__icon"><svg><use href="#icon-download"/></svg></span>
+            <h3 class="resume-card__title">تحميل سيرتي الذاتية</h3>
+            <p>احصل على سيرتي الذاتية كاملة بصيغة PDF.</p>
+            <a href="#" class="btn btn--primary btn--block">
+              <svg class="btn__icon"><use href="#icon-download"/></svg>
+              تحميل السيرة الذاتية
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <!-- ============ CONSULTATION CTA ============ -->
+  <section class="section container" id="contact">
+    <div class="glass-card consultation reveal">
+      <div class="consultation__text">
+        <span class="eyebrow">ماذا يقول مرضاي عن العمل معي</span>
+        <h2 class="section-title">استشارة من أجل <span class="text-gradient">صحة أفضل</span></h2>
+        <p class="section-desc">أنا هنا لمساعدتك أنت وعائلتك بأفضل رعاية طبية. لنتواصل ونناقش كيف يمكنني دعم رحلتك الصحية.</p>
+        <a href="#" class="btn btn--primary">
+          <svg class="btn__icon"><use href="#icon-phone"/></svg>
+          احجز استشارة مجانية
+        </a>
+      </div>
+
+      <div class="consultation__contact">
+        <div class="contact-item">
+          <span class="contact-item__icon"><svg><use href="#icon-phone"/></svg></span>
+          <div><span class="contact-item__label">الهاتف</span><span class="contact-item__value">1-555-123-4567+</span></div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-item__icon"><svg><use href="#icon-mail"/></svg></span>
+          <div><span class="contact-item__label">البريد الإلكتروني</span><span class="contact-item__value">dr.johnwilliam@example.com</span></div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-item__icon"><svg><use href="#icon-map-pin"/></svg></span>
+          <div><span class="contact-item__label">العنوان</span><span class="contact-item__value">123 شارع الصحة، نيويورك 10001</span></div>
+        </div>
+      </div>
+
+      <div class="consultation__visual" aria-hidden="true">
+        <span class="consultation__ring"></span>
+        <svg viewBox="0 0 200 200" class="consultation__heart">
+          <path d="M100 170 C40 130 20 90 40 60 C55 38 85 38 100 62 C115 38 145 38 160 60 C180 90 160 130 100 170Z" fill="url(#heartGrad)"/>
+          <polyline points="30,100 60,100 75,75 90,120 105,90 115,100 170,100" fill="none" stroke="#5CE6FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <defs>
+            <linearGradient id="heartGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#4F7BFF"/>
+              <stop offset="100%" stop-color="#785DFF"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <p class="footer__copy">© 2026 د. جون ويليام. جميع الحقوق محفوظة.</p>
+    <nav class="footer__links">
+      <a href="#">سياسة الخصوصية</a>
+      <a href="#">شروط الخدمة</a>
+      <a href="#">خريطة الموقع</a>
+    </nav>
+    <div class="social-row">
+      <a href="#" class="social-btn social-btn--sm" aria-label="فيسبوك"><svg><use href="#icon-facebook"/></svg></a>
+      <a href="#" class="social-btn social-btn--sm" aria-label="تويتر"><svg><use href="#icon-twitter"/></svg></a>
+      <a href="#" class="social-btn social-btn--sm" aria-label="لينكدإن"><svg><use href="#icon-linkedin"/></svg></a>
+      <a href="#" class="social-btn social-btn--sm" aria-label="إنستغرام"><svg><use href="#icon-instagram"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+<!-- portfolio-buy-badge:start -->
+<style>
+  #portfolio-buy-badge { position: fixed; z-index: 999999; bottom: 18px; right: 18px; direction: rtl; font-family: 'Cairo', Tahoma, Arial, sans-serif; }
+  #portfolio-buy-badge a { display: flex; align-items: center; gap: 10px; background: #14142b; color: #fff; padding: 10px 16px; border-radius: 999px; box-shadow: 0 10px 25px -8px rgba(0,0,0,.5); text-decoration: none; font-size: 14px; font-weight: 700; border: 1px solid rgba(255,255,255,.15); transition: transform .15s ease, background .15s ease; }
+  #portfolio-buy-badge a:hover { background: #312e81; transform: translateY(-2px); }
+  #portfolio-buy-badge .pbb-price { background: #4f46e5; color: #fff; padding: 4px 10px; border-radius: 999px; font-size: 13px; direction: ltr; }
+  @media (max-width: 480px) { #portfolio-buy-badge a span:not(.pbb-price) { display: none; } #portfolio-buy-badge { bottom: 12px; right: 12px; } }
+</style>
+<div id="portfolio-buy-badge">
+  <a href="../../index.html?template=doc-2#contact">
+    <span class="pbb-price">$25</span>
+    <span>اشترِ هذا القالب</span>
+  </a>
+</div>
+<!-- portfolio-buy-badge:end -->
+</body>
+</html>

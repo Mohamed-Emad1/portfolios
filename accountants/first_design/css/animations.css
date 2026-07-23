@@ -1,0 +1,157 @@
+/* ==========================================================================
+   Animations
+   ========================================================================== */
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(32px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fade-left {
+  from { opacity: 0; transform: translateX(-32px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fade-right {
+  from { opacity: 0; transform: translateX(32px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scale-in {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes ripple-anim {
+  to { transform: scale(3); opacity: 0; }
+}
+
+@keyframes float-y {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-14px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 0 rgba(37, 99, 235, 0.4); }
+  50% { box-shadow: 0 0 32px rgba(37, 99, 235, 0.5); }
+}
+
+@keyframes spin-slow {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes marquee-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* ---------------------------------- Reveal-on-scroll utility classes ----------------------------------
+   Content is visible by default (no-JS / slow-JS safe). Only once the
+   document is confirmed script-enabled (html.js, set synchronously in
+   <head>) do reveal targets start hidden and wait for .in-view. */
+html.js [data-animate] {
+  opacity: 0;
+}
+
+[data-animate].in-view {
+  opacity: 1;
+  animation-duration: 0.9s;
+  animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  animation-fill-mode: forwards;
+}
+
+[data-animate="fade-up"].in-view { animation-name: fade-up; }
+[data-animate="fade-left"].in-view { animation-name: fade-left; }
+[data-animate="fade-right"].in-view { animation-name: fade-right; }
+[data-animate="fade-in"].in-view { animation-name: fade-in; }
+[data-animate="scale-in"].in-view { animation-name: scale-in; }
+
+[data-animate-delay="1"].in-view { animation-delay: 0.1s; }
+[data-animate-delay="2"].in-view { animation-delay: 0.2s; }
+[data-animate-delay="3"].in-view { animation-delay: 0.3s; }
+[data-animate-delay="4"].in-view { animation-delay: 0.4s; }
+[data-animate-delay="5"].in-view { animation-delay: 0.5s; }
+[data-animate-delay="6"].in-view { animation-delay: 0.6s; }
+
+.float {
+  animation: float-y 5s ease-in-out infinite;
+}
+
+.pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+.spin-slow {
+  animation: spin-slow 18s linear infinite;
+}
+
+/* Card lift + hover glow (applies broadly via component hover states already;
+   these utility classes are for elements needing it explicitly) */
+.hover-lift {
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.hover-lift:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+.hover-glow:hover {
+  box-shadow: var(--shadow-glow-blue);
+}
+
+/* ---------------------------------- Custom cursor ---------------------------------- */
+.cursor-dot,
+.cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: var(--z-cursor);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  will-change: transform;
+}
+
+.cursor-dot {
+  width: 6px;
+  height: 6px;
+  background: var(--color-gold);
+}
+
+.cursor-ring {
+  width: 34px;
+  height: 34px;
+  border: 1px solid rgba(244, 185, 66, 0.5);
+  transition: width 0.2s ease, height 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.cursor-ring.is-active {
+  width: 54px;
+  height: 54px;
+  background: rgba(244, 185, 66, 0.08);
+}
+
+/* ---------------------------------- Reduced motion ---------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  [data-animate] {
+    opacity: 1;
+  }
+
+  .cursor-dot,
+  .cursor-ring {
+    display: none;
+  }
+}

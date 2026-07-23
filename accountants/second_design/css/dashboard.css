@@ -1,0 +1,159 @@
+/* ==========================================================================
+   Financial Dashboard — KPI widgets, chart cards, grid layout
+   ========================================================================== */
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-lg);
+  margin-bottom: var(--space-lg);
+}
+
+.kpi-card {
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.kpi-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.kpi-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.kpi-icon.primary { background: var(--gradient-primary); }
+.kpi-icon.success { background: var(--gradient-success); }
+.kpi-icon.gold { background: var(--gradient-gold); }
+.kpi-icon.secondary { background: linear-gradient(135deg, var(--color-secondary), #7DD3FC); }
+
+.kpi-trend {
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  padding: .25rem .55rem;
+  border-radius: var(--radius-full);
+}
+
+.kpi-trend.up { color: var(--color-success); background: rgba(16, 185, 129, .12); }
+.kpi-trend.down { color: var(--color-danger); background: rgba(239, 68, 68, .12); }
+
+.kpi-value {
+  font-family: var(--font-display);
+  font-size: var(--fs-2xl);
+  font-weight: 800;
+}
+
+.kpi-label { color: var(--color-subtitle); font-size: var(--fs-sm); }
+
+.dashboard-charts {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: var(--space-lg);
+}
+
+.chart-card {
+  padding: var(--space-lg);
+}
+
+.chart-card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-md);
+}
+
+.chart-card-head h4 { margin: 0; font-size: var(--fs-md); }
+
+.chart-legend {
+  display: flex;
+  gap: var(--space-md);
+  font-size: var(--fs-xs);
+  color: var(--color-subtitle);
+}
+
+.chart-legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2xs);
+}
+
+.legend-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.chart-svg-wrap { width: 100%; }
+
+.chart-svg-wrap .bar {
+  transition: height 1.2s var(--ease-soft), y 1.2s var(--ease-soft);
+}
+
+.chart-svg-wrap .line-path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  transition: stroke-dashoffset 1.8s var(--ease-soft);
+}
+
+.chart-svg-wrap.in-view .line-path { stroke-dashoffset: 0; }
+
+.pie-segment {
+  transform-origin: center;
+  transition: stroke-dasharray 1.4s var(--ease-soft);
+}
+
+.mini-calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: var(--space-2xs);
+  text-align: center;
+  font-size: var(--fs-xs);
+}
+
+.mini-calendar span {
+  padding: var(--space-2xs);
+  border-radius: var(--radius-sm);
+}
+
+.mini-calendar span.active {
+  background: var(--gradient-primary);
+  color: #fff;
+  font-weight: 700;
+}
+
+.recent-reports-list li {
+  display: flex;
+  justify-content: space-between;
+  padding-block: var(--space-sm);
+  border-bottom: 1px solid var(--color-border-dark);
+  font-size: var(--fs-sm);
+}
+
+.recent-reports-list li:last-child { border-bottom: none; }
+
+.dash-stagger {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity .7s var(--ease-soft), transform .7s var(--ease-soft);
+  transition-delay: calc(var(--stagger-i, 0) * 90ms);
+}
+
+.in-view .dash-stagger {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dash-stagger { transition: none; opacity: 1; transform: none; }
+}

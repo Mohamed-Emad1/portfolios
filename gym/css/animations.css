@@ -1,0 +1,107 @@
+/* ==========================================================================
+   Scroll Reveal Animations (toggled via JS + Intersection Observer)
+   ========================================================================== */
+[data-reveal] {
+  opacity: 0;
+  transition: opacity var(--duration-slow) var(--ease-out),
+    transform var(--duration-slow) var(--ease-out);
+  will-change: transform, opacity;
+}
+
+[data-reveal].is-visible {
+  opacity: 1;
+  transform: none !important;
+}
+
+[data-reveal="fade-up"] {
+  transform: translateY(36px);
+}
+
+[data-reveal="fade-left"] {
+  transform: translateX(-48px);
+}
+
+[data-reveal="fade-right"] {
+  transform: translateX(48px);
+}
+
+[data-reveal="zoom"] {
+  transform: scale(0.9);
+}
+
+/* Stagger children via inline --delay custom property */
+[data-reveal] {
+  transition-delay: var(--delay, 0ms);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* ==========================================================================
+   Keyframes
+   ========================================================================== */
+@keyframes float-y {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+.hero__floating-card--1 {
+  animation: float-y 5s var(--ease-in-out) infinite;
+}
+
+.hero__floating-card--2 {
+  animation: float-y 6s var(--ease-in-out) infinite 0.6s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.lightbox.is-open .lightbox__content {
+  animation: fade-in var(--duration-base) var(--ease-out);
+}
+
+@keyframes rotate-slow {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.hero__bg-glow {
+  animation: pulse-glow 8s var(--ease-in-out) infinite;
+}
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero__floating-card--1,
+  .hero__floating-card--2,
+  .hero__bg-glow,
+  .promo__play-btn,
+  .hero__scroll-cue .scroll-line {
+    animation: none !important;
+  }
+}

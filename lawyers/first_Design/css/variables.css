@@ -1,0 +1,111 @@
+/* ==========================================================================
+   Design Tokens — Colors, Typography, Spacing, Shadows, Radius, Transitions
+   ========================================================================== */
+
+:root {
+  /* Colors */
+  --color-bg-primary: #0f1722;
+  --color-bg-secondary: #172332;
+  --color-surface: #1f2d3d;
+  --color-surface-light: #253547;
+
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #cbd5e1;
+  --color-text-muted: #8a97a8;
+
+  --color-gold: #d4af37;
+  --color-gold-warm: #f4c15d;
+  --color-gold-soft: rgba(212, 175, 55, 0.12);
+
+  --color-success: #22c55e;
+
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-border-gold: rgba(212, 175, 55, 0.35);
+
+  --color-shadow: rgba(0, 0, 0, 0.25);
+
+  --gradient-gold: linear-gradient(135deg, var(--color-gold) 0%, var(--color-gold-warm) 100%);
+  --gradient-dark: linear-gradient(180deg, var(--color-bg-primary) 0%, var(--color-bg-secondary) 100%);
+  --gradient-overlay: linear-gradient(180deg, rgba(15, 23, 34, 0) 0%, rgba(15, 23, 34, 0.95) 100%);
+
+  /* Typography */
+  --font-heading: 'Marhey', 'Cairo', sans-serif;
+  --font-body: 'Alexandria', 'Cairo', sans-serif;
+
+  --fs-xs: 0.8rem;
+  --fs-sm: 0.9rem;
+  --fs-base: 1rem;
+  --fs-md: 1.15rem;
+  --fs-lg: 1.4rem;
+  --fs-xl: 1.85rem;
+  --fs-2xl: 2.5rem;
+  --fs-3xl: 3.4rem;
+  --fs-hero: 4.2rem;
+
+  --lh-tight: 1.15;
+  --lh-normal: 1.5;
+  --lh-loose: 1.85;
+
+  /* Spacing */
+  --space-3xs: 0.25rem;
+  --space-2xs: 0.5rem;
+  --space-xs: 0.75rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  --space-2xl: 4.5rem;
+  --space-3xl: 6.5rem;
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --radius-xl: 32px;
+  --radius-full: 999px;
+
+  /* Shadows */
+  --shadow-sm: 0 4px 14px var(--color-shadow);
+  --shadow-md: 0 12px 32px var(--color-shadow);
+  --shadow-lg: 0 24px 60px rgba(0, 0, 0, 0.35);
+  --shadow-gold-glow: 0 0 40px rgba(212, 175, 55, 0.25);
+
+  /* Transitions */
+  --ease-default: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-out-back: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --t-fast: 0.2s;
+  --t-base: 0.35s;
+  --t-slow: 0.6s;
+
+  /* Layout */
+  --container-width: 1320px;
+  --container-padding: 6vw;
+
+  /* Z-index */
+  --z-cursor: 9999;
+  --z-nav: 1000;
+  --z-modal: 1100;
+  --z-toast: 1200;
+  --z-decor: 1;
+  --z-content: 2;
+}
+
+@media (max-width: 992px) {
+  :root {
+    --fs-hero: 3rem;
+    --fs-3xl: 2.5rem;
+    --fs-2xl: 2rem;
+    --fs-xl: 1.5rem;
+    --container-padding: 5vw;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --fs-hero: 2.3rem;
+    --fs-3xl: 1.9rem;
+    --fs-2xl: 1.6rem;
+    --fs-xl: 1.3rem;
+    --container-padding: 6vw;
+  }
+}

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 600" role="img" aria-label="مكان صورة الاستشارة الطبية">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#16224a"/>
+      <stop offset="100%" stop-color="#0b1431"/>
+    </linearGradient>
+    <linearGradient id="iconGrad2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#39B8FF"/>
+      <stop offset="100%" stop-color="#785DFF"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="600" fill="url(#bgGrad2)"/>
+  <rect x="0.5" y="0.5" width="639" height="599" fill="none" stroke="rgba(255,255,255,0.08)"/>
+  <g opacity="0.9">
+    <rect x="260" y="220" width="120" height="120" rx="20" fill="none" stroke="url(#iconGrad2)" stroke-width="4"/>
+    <circle cx="294" cy="254" r="12" fill="none" stroke="url(#iconGrad2)" stroke-width="4"/>
+    <path d="M260 316 L302 280 L334 308 L358 284 L380 316" fill="none" stroke="url(#iconGrad2)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="320" y="372" text-anchor="middle" font-family="Tajawal, sans-serif" font-size="18" fill="#7F8FAF">صورة الاستشارة الطبية</text>
+  <text x="320" y="398" text-anchor="middle" font-family="Tajawal, sans-serif" font-size="13" fill="#5a6b8c">640 × 600</text>
+</svg>

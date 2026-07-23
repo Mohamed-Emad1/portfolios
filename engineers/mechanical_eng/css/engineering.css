@@ -1,0 +1,76 @@
+/* ===== Blueprint grid overlay ===== */
+.blueprint-grid {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(var(--border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--border) 1px, transparent 1px);
+  background-size: 48px 48px;
+  -webkit-mask-image: radial-gradient(ellipse at center, black 0%, transparent 75%);
+  mask-image: radial-gradient(ellipse at center, black 0%, transparent 75%);
+  opacity: .5;
+}
+
+/* ===== Gear field (decorative rotating gears) ===== */
+.gear-field {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  overflow: hidden;
+}
+.gear {
+  position: absolute;
+  width: var(--gear-size, 100px);
+  height: var(--gear-size, 100px);
+  opacity: .35;
+  color: var(--color-steel);
+}
+.gear svg { width: 100%; height: 100%; display: block; }
+
+/* ===== Blueprint tag on project media ===== */
+.blueprint-tag {
+  position: absolute;
+  top: var(--space-3);
+  right: var(--space-3);
+  background: rgba(18, 20, 23, .8);
+  border: 1px solid var(--color-blue);
+  color: var(--color-blue);
+  font-family: 'IBM Plex Sans Arabic', monospace;
+  font-size: .75rem;
+  padding: .25rem .6rem;
+  border-radius: var(--radius-sm);
+  letter-spacing: .05em;
+}
+
+/* ===== Circuit-inspired section divider ===== */
+.section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  inset-inline: 0;
+  height: 1px;
+  background: repeating-linear-gradient(90deg, var(--color-blue) 0 10px, transparent 10px 22px);
+  opacity: .35;
+}
+
+/* ===== Industrial warning stripe accent (used sparingly) ===== */
+.stats-section::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  inset-inline: 0;
+  height: 6px;
+  background: repeating-linear-gradient(-45deg, var(--color-yellow) 0 14px, var(--bg-primary) 14px 28px);
+  opacity: .8;
+}
+
+/* ===== Technical measurement corner marks reused from hero ===== */
+.contact-illustration svg { width: 100%; max-width: 320px; margin-inline: auto; opacity: .9; }
+.contact-illustration circle,
+.contact-illustration path { }
+
+/* ===== Section numbering emphasis on hover ===== */
+.section-header:hover .section-num { border-color: var(--color-yellow); }

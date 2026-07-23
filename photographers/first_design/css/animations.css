@@ -1,0 +1,260 @@
+/* ==========================================================================
+   Animations
+   ========================================================================== */
+
+/* Reveal base state: JS toggles .is-visible on scroll via IntersectionObserver */
+[data-animate] {
+  opacity: 0;
+  will-change: transform, opacity;
+  transition: opacity var(--dur-slow) var(--ease-cinematic),
+    transform var(--dur-slow) var(--ease-cinematic);
+}
+
+[data-animate].is-visible {
+  opacity: 1;
+  transform: none !important;
+}
+
+[data-animate="fade-up"] { transform: translateY(48px); }
+[data-animate="fade-down"] { transform: translateY(-48px); }
+[data-animate="fade-right"] { transform: translateX(-48px); } /* visually enters from right in RTL */
+[data-animate="fade-left"] { transform: translateX(48px); }
+[data-animate="zoom-in"] { transform: scale(0.9); }
+[data-animate="reveal"] { transform: none; }
+
+[data-animate-delay="1"] { transition-delay: 0.08s; }
+[data-animate-delay="2"] { transition-delay: 0.16s; }
+[data-animate-delay="3"] { transition-delay: 0.24s; }
+[data-animate-delay="4"] { transition-delay: 0.32s; }
+[data-animate-delay="5"] { transition-delay: 0.4s; }
+[data-animate-delay="6"] { transition-delay: 0.48s; }
+
+/* Image reveal: clip-path sweep + inner image zoom-settle */
+.img-reveal {
+  position: relative;
+  overflow: hidden;
+  clip-path: inset(0 0 0 0);
+}
+
+.img-reveal img {
+  transform: scale(1.15);
+  transition: transform 1.6s var(--ease-cinematic);
+}
+
+.img-reveal.is-visible img {
+  transform: scale(1);
+}
+
+.img-reveal::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--color-primary);
+  transform-origin: right;
+  transform: scaleX(1);
+  transition: transform 1s var(--ease-cinematic);
+  z-index: 2;
+}
+
+.img-reveal.is-visible::after {
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+/* Text reveal: letters/words fly up */
+.text-reveal {
+  overflow: hidden;
+  display: block;
+}
+
+.text-reveal__inner {
+  display: inline-block;
+  transform: translateY(110%);
+  transition: transform 0.9s var(--ease-cinematic);
+}
+
+.text-reveal.is-visible .text-reveal__inner {
+  transform: translateY(0);
+}
+
+.letter-anim span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(30px) rotate(4deg);
+  transition: opacity 0.6s var(--ease-cinematic), transform 0.6s var(--ease-cinematic);
+}
+
+.letter-anim.is-visible span {
+  opacity: 1;
+  transform: translateY(0) rotate(0);
+}
+
+/* Card lift (hover) */
+.hover-lift {
+  transition: transform var(--dur-base) var(--ease-cinematic), box-shadow var(--dur-base) var(--ease-cinematic);
+}
+
+.hover-lift:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 60px -25px rgba(0, 0, 0, 0.75);
+}
+
+/* Image hover zoom */
+.hover-zoom {
+  overflow: hidden;
+}
+
+.hover-zoom img {
+  transition: transform 1s var(--ease-cinematic);
+}
+
+.hover-zoom:hover img {
+  transform: scale(1.08);
+}
+
+/* Gallery fade-in for filtering */
+.gallery-item {
+  transition: opacity var(--dur-base) var(--ease-out), transform var(--dur-base) var(--ease-out);
+}
+
+.gallery-item.is-hidden {
+  opacity: 0;
+  transform: scale(0.92);
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+}
+
+/* Navbar blur */
+.navbar {
+  transition: background var(--dur-base) var(--ease-out),
+    box-shadow var(--dur-base) var(--ease-out),
+    transform var(--dur-base) var(--ease-out),
+    border-color var(--dur-base) var(--ease-out);
+}
+
+.navbar--hidden {
+  transform: translateY(-100%);
+}
+
+/* Ripple keyframe */
+@keyframes ripple {
+  to {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
+
+/* Scroll indicator */
+@keyframes scroll-wheel {
+  0% { transform: translateY(0); opacity: 1; }
+  70% { opacity: 1; }
+  100% { transform: translateY(14px); opacity: 0; }
+}
+
+.hero__scroll-wheel::before {
+  animation: scroll-wheel 1.8s var(--ease-out) infinite;
+}
+
+/* Fade in generic */
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade-in {
+  animation: fade-in var(--dur-base) var(--ease-out);
+}
+
+/* Spinner for loading button */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.btn-loading .btn-spinner {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  border-top-color: currentColor;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+/* Parallax hero */
+.hero__bg {
+  will-change: transform;
+}
+
+/* Custom cursor: hidden until JS confirms a real pointer has moved,
+   so it never flashes at the top-left (0,0) default fixed-position corner */
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background: var(--color-primary);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: var(--z-cursor);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  mix-blend-mode: difference;
+}
+
+.cursor-follower {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--color-primary);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: var(--z-cursor);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: width 0.3s var(--ease-out), height 0.3s var(--ease-out), opacity 0.2s ease, border-color 0.3s ease;
+}
+
+body.has-custom-cursor .cursor.is-active,
+body.has-custom-cursor .cursor-follower.is-active {
+  opacity: 1;
+}
+
+.cursor-follower.is-hover {
+  width: 70px;
+  height: 70px;
+  border-color: var(--color-secondary);
+}
+
+.cursor-follower.is-text {
+  background: rgba(217, 164, 65, 0.08);
+}
+
+/* Reduced motion ------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  [data-animate] {
+    opacity: 1;
+    transform: none;
+  }
+
+  .img-reveal img {
+    transform: none;
+  }
+
+  .img-reveal::after {
+    display: none;
+  }
+}

@@ -1,0 +1,70 @@
+/* ===== Scroll-reveal base states ===== */
+.fade-up, .fade-left, .fade-right {
+  opacity: 0;
+  transition: opacity var(--duration-slow) var(--ease), transform var(--duration-slow) var(--ease);
+  will-change: transform, opacity;
+}
+.fade-up { transform: translateY(28px); }
+.fade-left { transform: translateX(-28px); }
+.fade-right { transform: translateX(28px); }
+
+.fade-up.is-visible,
+.fade-left.is-visible,
+.fade-right.is-visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/* stagger helper set by JS via inline style --delay */
+.fade-up, .fade-left, .fade-right { transition-delay: var(--delay, 0s); }
+
+/* ===== Card lift (hover, generic) ===== */
+.card-lift { transition: transform var(--duration-base) var(--ease); }
+.card-lift:hover { transform: translateY(-6px); }
+
+/* ===== Gear rotation ===== */
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes spinReverse { to { transform: rotate(-360deg); } }
+
+.gear svg {
+  animation: spin linear infinite;
+  animation-duration: var(--gear-duration, 30s);
+}
+.gear[data-reverse="1"] svg {
+  animation-name: spinReverse;
+}
+
+/* ===== Blueprint draw ===== */
+.draw-path {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  transition: stroke-dashoffset 1.6s var(--ease);
+}
+.blueprint-grid.is-visible .draw-path,
+.draw-path.is-visible {
+  stroke-dashoffset: 0;
+}
+
+/* ===== Counter / skill-bar reveal handled via JS + width/textContent transitions already in components.css ===== */
+
+/* ===== Toast / spinner ===== */
+@keyframes toastPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+}
+
+/* ===== Reduced motion ===== */
+@media (prefers-reduced-motion: reduce) {
+  .fade-up, .fade-left, .fade-right {
+    transition-duration: .01s;
+    transform: none;
+  }
+  .gear svg, .gear[data-reverse="1"] svg {
+    animation: none;
+  }
+  .draw-path {
+    transition-duration: .01s;
+  }
+  html { scroll-behavior: auto; }
+  * { animation-duration: .01s !important; animation-iteration-count: 1 !important; }
+}

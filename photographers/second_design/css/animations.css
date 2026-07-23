@@ -1,0 +1,153 @@
+/* ==========================================================================
+   Animations — scroll reveals, keyframes, interaction effects
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Scroll-reveal base states (toggled via Intersection Observer + .is-visible)
+   -------------------------------------------------------------------------- */
+
+[data-animate] {
+  opacity: 0;
+  transition: opacity var(--transition-cinematic), transform var(--transition-cinematic);
+  will-change: transform, opacity;
+}
+
+[data-animate].is-visible {
+  opacity: 1;
+  transform: none !important;
+}
+
+[data-animate="fade-up"] {
+  transform: translateY(48px);
+}
+
+[data-animate="fade-down"] {
+  transform: translateY(-48px);
+}
+
+[data-animate="fade-left"] {
+  transform: translateX(-48px);
+}
+
+[data-animate="fade-right"] {
+  transform: translateX(48px);
+}
+
+[data-animate="zoom-in"] {
+  transform: scale(0.85);
+}
+
+[data-animate="zoom-out"] {
+  transform: scale(1.15);
+}
+
+[data-animate="reveal"] {
+  transform: translateY(0);
+  clip-path: inset(0 0 100% 0);
+  opacity: 1;
+}
+
+[data-animate="reveal"].is-visible {
+  clip-path: inset(0 0 0% 0);
+}
+
+/* Stagger helper — apply data-delay="1".."6" for cascading reveals */
+[data-delay="1"] { transition-delay: 0.1s; }
+[data-delay="2"] { transition-delay: 0.2s; }
+[data-delay="3"] { transition-delay: 0.3s; }
+[data-delay="4"] { transition-delay: 0.4s; }
+[data-delay="5"] { transition-delay: 0.5s; }
+[data-delay="6"] { transition-delay: 0.6s; }
+
+/* --------------------------------------------------------------------------
+   Keyframes
+   -------------------------------------------------------------------------- */
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes scroll-line {
+  0% { top: -100%; }
+  100% { top: 100%; }
+}
+
+@keyframes floaty {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-14px); }
+}
+
+@keyframes ripple-anim {
+  to {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes count-pulse {
+  0% { opacity: 0.4; }
+  100% { opacity: 1; }
+}
+
+@keyframes gallery-in {
+  from {
+    opacity: 0;
+    transform: translateY(24px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.gallery-item.is-filtering-in {
+  animation: gallery-in 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Hero parallax layer (JS sets transform via requestAnimationFrame) */
+.hero__media img {
+  transition: transform 0.1s linear;
+}
+
+/* Navbar blur handled with .is-scrolled defined in components.css */
+
+/* Mouse glow follower for section backgrounds (desktop only) */
+.mouse-glow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(205, 161, 94, 0.09), transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+  transition: opacity var(--transition-base);
+}
+
+@media (hover: none), (pointer: coarse) {
+  .mouse-glow {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-animate] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .floating,
+  .hero__badge-spin,
+  .scroll-indicator__line::after {
+    animation: none !important;
+  }
+}

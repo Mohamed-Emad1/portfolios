@@ -1,0 +1,89 @@
+/* ===================================================================
+   Variables — colors, typography, spacing, shadows, radii, motion
+   =================================================================== */
+
+:root {
+  /* Colors */
+  --color-bg-primary: #111318;
+  --color-bg-secondary: #1a1d24;
+  --color-surface: #232733;
+  --color-surface-hover: #2a2f3d;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #b8bdc7;
+  --color-text-muted: #7d8391;
+  --color-gold: #d6a548;
+  --color-gold-light: #f1d28c;
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-border-strong: rgba(255, 255, 255, 0.14);
+  --color-success: #4caf50;
+  --color-shadow: rgba(0, 0, 0, 0.45);
+
+  --gradient-gold: linear-gradient(135deg, var(--color-gold) 0%, var(--color-gold-light) 100%);
+  --gradient-surface: linear-gradient(160deg, var(--color-surface) 0%, var(--color-bg-secondary) 100%);
+  --gradient-overlay: linear-gradient(180deg, rgba(17, 19, 24, 0) 0%, rgba(17, 19, 24, 0.95) 100%);
+
+  /* Typography */
+  --font-heading: 'Alexandria', 'Cairo', sans-serif;
+  --font-body: 'IBM Plex Sans Arabic', 'Readex Pro', sans-serif;
+
+  --fs-hero: clamp(2.6rem, 6vw, 5rem);
+  --fs-h1: clamp(2.2rem, 4.4vw, 3.4rem);
+  --fs-h2: clamp(1.8rem, 3.2vw, 2.6rem);
+  --fs-h3: clamp(1.3rem, 2vw, 1.7rem);
+  --fs-h4: clamp(1.1rem, 1.4vw, 1.3rem);
+  --fs-body-lg: 1.15rem;
+  --fs-body: 1rem;
+  --fs-sm: 0.875rem;
+  --fs-xs: 0.75rem;
+
+  --lh-tight: 1.2;
+  --lh-normal: 1.6;
+  --lh-loose: 1.9;
+
+  /* Spacing */
+  --space-3xs: 0.25rem;
+  --space-2xs: 0.5rem;
+  --space-xs: 0.75rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
+  --space-2xl: 6rem;
+  --space-3xl: 9rem;
+
+  --container-width: 1280px;
+  --container-padding: clamp(1.25rem, 5vw, 4rem);
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-full: 999px;
+
+  /* Shadows */
+  --shadow-sm: 0 4px 16px var(--color-shadow);
+  --shadow-md: 0 12px 32px var(--color-shadow);
+  --shadow-lg: 0 24px 60px var(--color-shadow);
+  --shadow-gold: 0 8px 30px rgba(214, 165, 72, 0.25);
+
+  /* Motion */
+  --duration-fast: 0.2s;
+  --duration-base: 0.4s;
+  --duration-slow: 0.8s;
+  --ease-premium: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* Z-index scale */
+  --z-cursor: 999;
+  --z-nav: 500;
+  --z-overlay: 600;
+  --z-modal: 700;
+  --z-toast: 800;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --space-2xl: 4rem;
+    --space-3xl: 5rem;
+  }
+}

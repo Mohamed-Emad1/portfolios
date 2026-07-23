@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>محمد أحمد | مصور فوتوغرافي محترف</title>
+  <meta name="description" content="محمد أحمد - مصور فوتوغرافي محترف متخصص في حفلات الزفاف، البورتريه، السفر، الحياة البرية، والتصوير التجاري." />
+
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="preload" as="image" href="assets/placeholder.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;900&family=Alexandria:wght@400;500;600;700;900&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a href="#main" class="skip-link">تخطى إلى المحتوى الرئيسي</a>
+
+  <div class="mouse-glow" aria-hidden="true"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- ==========================================================================
+       Navigation
+       ========================================================================== -->
+  <header class="navbar" id="navbar">
+    <nav class="container navbar__inner" aria-label="التنقل الرئيسي">
+      <a href="#home" class="logo">
+        <span class="logo__icon" aria-hidden="true">&#9679;</span>
+        <span>شتر ستوريز</span>
+      </a>
+
+      <ul class="nav-menu" role="list">
+        <li><a href="#home" class="nav-menu__link is-active">الرئيسية</a></li>
+        <li><a href="#about" class="nav-menu__link">من أنا</a></li>
+        <li><a href="#gallery" class="nav-menu__link">الأعمال</a></li>
+        <li><a href="#services" class="nav-menu__link">الخدمات</a></li>
+        <li><a href="#blog" class="nav-menu__link">المدونة</a></li>
+        <li><a href="#pricing" class="nav-menu__link">الأسعار</a></li>
+        <li><a href="#contact" class="nav-menu__link">تواصل معي</a></li>
+      </ul>
+
+      <div class="navbar__actions">
+        <a href="#contact" class="btn btn-outline">لنعمل معًا</a>
+        <button class="hamburger" id="hamburgerBtn" aria-label="فتح القائمة" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile fullscreen menu -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <a href="#home" class="mobile-menu__link">الرئيسية</a>
+    <a href="#about" class="mobile-menu__link">من أنا</a>
+    <a href="#gallery" class="mobile-menu__link">الأعمال</a>
+    <a href="#services" class="mobile-menu__link">الخدمات</a>
+    <a href="#blog" class="mobile-menu__link">المدونة</a>
+    <a href="#pricing" class="mobile-menu__link">الأسعار</a>
+    <a href="#contact" class="mobile-menu__link">تواصل معي</a>
+  </div>
+
+  <main id="main">
+
+    <!-- ==========================================================================
+         1. Hero Section
+         ========================================================================== -->
+    <section class="hero" id="home">
+      <div class="hero__media" id="heroParallax">
+        <img src="assets/placeholder.png" alt="مصور يلتقط صورة لغروب الشمس فوق الجبال" width="1600" height="1200" />
+      </div>
+
+      <div class="container hero__content">
+        <span class="hero__eyebrow" data-animate="fade-up">التقاط اللحظات</span>
+        <h1 class="hero__title" data-animate="fade-up" data-delay="1">
+          حكايات تُروى<br />بعدستي
+        </h1>
+        <p class="hero__subtitle" data-animate="fade-up" data-delay="2">
+          تصوير فوتوغرافي احترافي للأشخاص والأماكن واللحظات التي تستحق أن تُخلّد.
+        </p>
+
+        <div class="hero__actions" data-animate="fade-up" data-delay="3">
+          <a href="#gallery" class="btn btn-primary">استعرض الأعمال</a>
+          <button class="btn-play" type="button" data-video-trigger>
+            <span class="btn-play__circle" aria-hidden="true">&#9658;</span>
+            شاهد الفيديو التعريفي
+          </button>
+        </div>
+
+        <div class="hero__socials" data-animate="fade-up" data-delay="4" aria-label="روابط التواصل الاجتماعي">
+          <a href="#" aria-label="إنستجرام">IG</a>
+          <a href="#" aria-label="فيسبوك">FB</a>
+          <a href="#" aria-label="تويتر">TW</a>
+          <a href="#" aria-label="بيهانس">BE</a>
+        </div>
+
+        <div class="hero__stats">
+          <div class="hero__stat" data-animate="fade-up">
+            <span class="hero__stat-num" data-counter="1200">0</span>
+            <span class="hero__stat-label">جلسة تصوير</span>
+          </div>
+          <div class="hero__stat" data-animate="fade-up" data-delay="1">
+            <span class="hero__stat-num" data-counter="500">0</span>
+            <span class="hero__stat-label">عميل سعيد</span>
+          </div>
+          <div class="hero__stat" data-animate="fade-up" data-delay="2">
+            <span class="hero__stat-num" data-counter="12">0</span>
+            <span class="hero__stat-label">سنة خبرة</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__badge floating" aria-hidden="true">
+        <svg viewBox="0 0 100 100" class="hero__badge-spin">
+          <defs>
+            <path id="badgeCircle" d="M 50,50 m -38,0 a 38,38 0 1,1 76,0 a 38,38 0 1,1 -76,0" />
+          </defs>
+          <text>
+            <textPath href="#badgeCircle">مصور حائز على جوائز &#8226; مصور حائز على جوائز &#8226;</textPath>
+          </text>
+        </svg>
+        <span class="hero__badge-icon">&#128247;</span>
+      </div>
+
+      <div class="scroll-indicator" aria-hidden="true">
+        <span>مرر للأسفل</span>
+        <span class="scroll-indicator__line"></span>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         2. About Photographer
+         ========================================================================== -->
+    <section class="section" id="about">
+      <div class="container about__grid">
+        <div class="about__media" data-animate="fade-right">
+          <img src="assets/placeholder.png" alt="محمد أحمد يحمل كاميراته الاحترافية" width="800" height="1000" loading="lazy" />
+          <div class="about__badge">
+            <strong>14+</strong>
+            <span>سنة خبرة احترافية</span>
+          </div>
+        </div>
+
+        <div class="about__content" data-animate="fade-left">
+          <span class="eyebrow">من أنا</span>
+          <h2 class="section-title">أرى العالم من خلال <span class="text-gold">العدسة</span></h2>
+          <p class="about__bio">
+            أنا محمد أحمد، مصور فوتوغرافي محترف منذ أكثر من 14 عامًا. أؤمن أن كل لحظة تحمل قصة تستحق أن تُروى،
+            وأن مهمتي هي التقاط هذه القصص بصدق وجمال. عملت مع مئات العملاء حول العالم في الزفاف، البورتريه،
+            السفر، والحياة البرية، وحصلت على العديد من الجوائز التقديرية في هذا المجال.
+          </p>
+          <p class="about__bio">
+            فلسفتي في التصوير بسيطة: الضوء الطبيعي، اللحظات العفوية، والتفاصيل الصادقة هي ما يصنع صورة لا تُنسى.
+          </p>
+
+          <div class="about__facts">
+            <div class="about__fact">
+              <strong>+30</strong>
+              <span>جائزة عالمية ومحلية</span>
+            </div>
+            <div class="about__fact">
+              <strong>+45</strong>
+              <span>دولة تم التصوير فيها</span>
+            </div>
+            <div class="about__fact">
+              <strong>+1500</strong>
+              <span>جلسة تصوير مكتملة</span>
+            </div>
+            <div class="about__fact">
+              <strong>+800</strong>
+              <span>عميل سعيد بالنتائج</span>
+            </div>
+          </div>
+
+          <a href="#" class="btn btn-outline">تعرف علي أكثر</a>
+          <div class="about__signature" aria-hidden="true">Mohamed Ahmed</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         3 & 4. Categories + Featured Gallery (masonry)
+         ========================================================================== -->
+    <section class="section section--alt" id="gallery">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="eyebrow">أعمالي</span>
+          <h2 class="section-title">معرض <span class="text-gold">الأعمال</span> المميزة</h2>
+          <p class="section-subtitle">مجموعة مختارة من أفضل اللحظات التي التقطتها عبر مختلف التخصصات.</p>
+        </div>
+
+        <div class="filter-bar" role="tablist" aria-label="تصفية الأعمال حسب الفئة">
+          <button class="filter-btn is-active" role="tab" aria-selected="true" data-filter="all">الكل</button>
+          <button class="filter-btn" role="tab" aria-selected="false" data-filter="wedding">حفلات الزفاف</button>
+          <button class="filter-btn" role="tab" aria-selected="false" data-filter="portrait">البورتريه</button>
+          <button class="filter-btn" role="tab" aria-selected="false" data-filter="nature">الطبيعة</button>
+          <button class="filter-btn" role="tab" aria-selected="false" data-filter="travel">السفر</button>
+          <button class="filter-btn" role="tab" aria-selected="false" data-filter="wildlife">الحياة البرية</button>
+          <button class="filter-btn" role="tab" aria-selected="false" data-filter="product">المنتجات</button>
+          <button class="filter-btn" role="tab" aria-selected="false" data-filter="fashion">الموضة</button>
+          <button class="filter-btn" role="tab" aria-selected="false" data-filter="event">الفعاليات</button>
+        </div>
+
+        <div class="gallery" id="galleryGrid">
+          <article class="gallery-item" data-category="nature">
+            <div class="gallery-item__media">
+              <img src="assets/placeholder.png" alt="بحيرة جبلية عند الفجر" style="aspect-ratio: 4/5" loading="lazy" />
+            </div>
+            <div class="gallery-item__overlay">
+              <span class="gallery-item__category">الطبيعة</span>
+              <h3 class="gallery-item__title">صمت الجبال</h3>
+              <span class="gallery-item__location">الألب السويسرية</span>
+              <a href="#" class="gallery-item__link">عرض المشروع</a>
+            </div>
+          </article>
+
+          <article class="gallery-item" data-category="portrait">
+            <div class="gallery-item__media">
+              <img src="assets/placeholder.png" alt="بورتريه لرجل في إضاءة طبيعية" style="aspect-ratio: 3/4" loading="lazy" />
+            </div>
+            <div class="gallery-item__overlay">
+              <span class="gallery-item__category">البورتريه</span>
+              <h3 class="gallery-item__title">ملامح صادقة</h3>
+              <span class="gallery-item__location">القاهرة، مصر</span>
+              <a href="#" class="gallery-item__link">عرض المشروع</a>
+            </div>
+          </article>
+
+          <article class="gallery-item" data-category="travel">
+            <div class="gallery-item__media">
+              <img src="assets/placeholder.png" alt="طريق جبلي عند الغروب" style="aspect-ratio: 4/3" loading="lazy" />
+            </div>
+            <div class="gallery-item__overlay">
+              <span class="gallery-item__category">السفر</span>
+              <h3 class="gallery-item__title">دروب مجهولة</h3>
+              <span class="gallery-item__location">باتاغونيا</span>
+              <a href="#" class="gallery-item__link">عرض المشروع</a>
+            </div>
+          </article>
+
+          <article class="gallery-item" data-category="product">
+            <div class="gallery-item__media">
+              <img src="assets/placeholder.png" alt="كاميرا كلاسيكية على طاولة خشبية" style="aspect-ratio: 1/1" loading="lazy" />
+            </div>
+            <div class="gallery-item__overlay">
+              <span class="gallery-item__category">المنتجات</span>
+              <h3 class="gallery-item__title">تفاصيل دقيقة</h3>
+              <span class="gallery-item__location">استوديو داخلي</span>
+              <a href="#" class="gallery-item__link">عرض المشروع</a>
+            </div>
+          </article>
+
+          <article class="gallery-item" data-category="wildlife">
+            <div class="gallery-item__media">
+              <img src="assets/placeholder.png" alt="حمار وحشي في السافانا الأفريقية" style="aspect-ratio: 4/3" loading="lazy" />
+            </div>
+            <div class="gallery-item__overlay">
+              <span class="gallery-item__category">الحياة البرية</span>
+              <h3 class="gallery-item__title">ملوك السافانا</h3>
+              <span class="gallery-item__location">كينيا</span>
+              <a href="#" class="gallery-item__link">عرض المشروع</a>
+            </div>
+          </article>
+
+          <article class="gallery-item" data-category="nature">
+            <div class="gallery-item__media">
+              <img src="assets/placeholder.png" alt="شلال في غابة كثيفة" style="aspect-ratio: 3/5" loading="lazy" />
+            </div>
+            <div class="gallery-item__overlay">
+              <span class="gallery-item__category">الطبيعة</span>
+              <h3 class="gallery-item__title">قوة الماء</h3>
+              <span class="gallery-item__location">آيسلندا</span>
+              <a href="#" class="gallery-item__link">عرض المشروع</a>
+            </div>
+          </article>
+
+          <article class="gallery-item" data-category="event">
+            <div class="gallery-item__media">
+              <img src="assets/placeholder.png" alt="إضاءة مسرح في مؤتمر" style="aspect-ratio: 4/3" loading="lazy" />
+            </div>
+            <div class="gallery-item__overlay">
+              <span class="gallery-item__category">الفعاليات</span>
+              <h3 class="gallery-item__title">لحظة الإعلان</h3>
+              <span class="gallery-item__location">دبي</span>
+              <a href="#" class="gallery-item__link">عرض المشروع</a>
+            </div>
+          </article>
+
+          <article class="gallery-item" data-category="wedding">
+            <div class="gallery-item__media">
+              <img src="assets/placeholder.png" alt="خواتم زفاف على قماش حريري" style="aspect-ratio: 1/1" loading="lazy" />
+            </div>
+            <div class="gallery-item__overlay">
+              <span class="gallery-item__category">حفلات الزفاف</span>
+              <h3 class="gallery-item__title">وعد أبدي</h3>
+              <span class="gallery-item__location">مراكش</span>
+              <a href="#" class="gallery-item__link">عرض المشروع</a>
+            </div>
+          </article>
+
+          <article class="gallery-item" data-category="fashion">
+            <div class="gallery-item__media">
+              <img src="assets/placeholder.png" alt="جلسة تصوير أزياء رجالية" style="aspect-ratio: 3/4" loading="lazy" />
+            </div>
+            <div class="gallery-item__overlay">
+              <span class="gallery-item__category">الموضة</span>
+              <h3 class="gallery-item__title">أناقة عصرية</h3>
+              <span class="gallery-item__location">ميلانو</span>
+              <a href="#" class="gallery-item__link">عرض المشروع</a>
+            </div>
+          </article>
+
+          <article class="gallery-item" data-category="travel">
+            <div class="gallery-item__media">
+              <img src="assets/placeholder.png" alt="أزقة مدينة قديمة ليلاً" style="aspect-ratio: 4/5" loading="lazy" />
+            </div>
+            <div class="gallery-item__overlay">
+              <span class="gallery-item__category">السفر</span>
+              <h3 class="gallery-item__title">أضواء المدينة</h3>
+              <span class="gallery-item__location">فينيسيا</span>
+              <a href="#" class="gallery-item__link">عرض المشروع</a>
+            </div>
+          </article>
+
+          <article class="gallery-item" data-category="portrait">
+            <div class="gallery-item__media">
+              <img src="assets/placeholder.png" alt="بورتريه درامي بإضاءة خافتة" style="aspect-ratio: 4/3" loading="lazy" />
+            </div>
+            <div class="gallery-item__overlay">
+              <span class="gallery-item__category">البورتريه</span>
+              <h3 class="gallery-item__title">ظلال وأضواء</h3>
+              <span class="gallery-item__location">استوديو داخلي</span>
+              <a href="#" class="gallery-item__link">عرض المشروع</a>
+            </div>
+          </article>
+
+          <article class="gallery-item" data-category="wildlife">
+            <div class="gallery-item__media">
+              <img src="assets/placeholder.png" alt="نسر يحلق فوق الجبال" style="aspect-ratio: 3/4" loading="lazy" />
+            </div>
+            <div class="gallery-item__overlay">
+              <span class="gallery-item__category">الحياة البرية</span>
+              <h3 class="gallery-item__title">حرية الطيران</h3>
+              <span class="gallery-item__location">الألب النمساوية</span>
+              <a href="#" class="gallery-item__link">عرض المشروع</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         5. Featured Projects (editorial alternate layout)
+         ========================================================================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="eyebrow">مشاريع مختارة</span>
+          <h2 class="section-title">قصص <span class="text-gold">مصورة</span> بعناية</h2>
+        </div>
+
+        <div class="project" data-animate="fade-up">
+          <div class="project__media">
+            <img src="assets/placeholder.png" alt="حفل زفاف في حديقة خارجية عند الغروب" loading="lazy" />
+            <span class="project__index">01</span>
+          </div>
+          <div class="project__content">
+            <h3 class="project__title">زفاف ليال في مراكش</h3>
+            <p class="project__story">
+              رحلة توثيق حفل زفاف امتدت على ثلاثة أيام بين القصور التاريخية وحدائق مراكش، حيث تم التقاط كل تفصيلة
+              من التحضيرات حتى لحظات الرقص الأخيرة.
+            </p>
+            <dl class="project__meta">
+              <div><dt>العميل</dt><dd>عائلة الشريف</dd></div>
+              <div><dt>الموقع</dt><dd>مراكش، المغرب</dd></div>
+              <div><dt>عدد الصور</dt><dd>820 صورة</dd></div>
+              <div><dt>مدة التنفيذ</dt><dd>3 أيام</dd></div>
+            </dl>
+            <a href="#" class="btn btn-outline">شاهد المعرض الكامل</a>
+          </div>
+        </div>
+
+        <div class="project project--reverse" data-animate="fade-up">
+          <div class="project__media">
+            <img src="assets/placeholder.png" alt="حملة تصوير تجارية لمنتج فاخر" loading="lazy" />
+            <span class="project__index">02</span>
+          </div>
+          <div class="project__content">
+            <h3 class="project__title">حملة نوّار التجارية</h3>
+            <p class="project__story">
+              تصوير تجاري لمجموعة منتجات فاخرة، بأسلوب بصري مينيمال يبرز التفاصيل والخامات بدقة عالية لصالح
+              حملة تسويقية دولية.
+            </p>
+            <dl class="project__meta">
+              <div><dt>العميل</dt><dd>نوّار للعطور</dd></div>
+              <div><dt>الموقع</dt><dd>استوديو داخلي</dd></div>
+              <div><dt>عدد الصور</dt><dd>140 صورة</dd></div>
+              <div><dt>مدة التنفيذ</dt><dd>5 أيام</dd></div>
+            </dl>
+            <a href="#" class="btn btn-outline">شاهد المعرض الكامل</a>
+          </div>
+        </div>
+
+        <div class="project" data-animate="fade-up">
+          <div class="project__media">
+            <img src="assets/placeholder.png" alt="رحلة تصوير الحياة البرية في السافانا" loading="lazy" />
+            <span class="project__index">03</span>
+          </div>
+          <div class="project__content">
+            <h3 class="project__title">همسات السافانا</h3>
+            <p class="project__story">
+              رحلة استمرت أسبوعين لتوثيق الحياة البرية في محميات كينيا الطبيعية، من الفجر الأول وحتى غروب الشمس
+              خلف السهول الذهبية.
+            </p>
+            <dl class="project__meta">
+              <div><dt>العميل</dt><dd>مشروع شخصي</dd></div>
+              <div><dt>الموقع</dt><dd>ماساي مارا، كينيا</dd></div>
+              <div><dt>عدد الصور</dt><dd>1200 صورة</dd></div>
+              <div><dt>مدة التنفيذ</dt><dd>14 يومًا</dd></div>
+            </dl>
+            <a href="#" class="btn btn-outline">شاهد المعرض الكامل</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         6. Photography Services
+         ========================================================================== -->
+    <section class="section section--alt" id="services">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="eyebrow">خدماتي</span>
+          <h2 class="section-title">خدمات <span class="text-gold">تصوير</span> احترافية</h2>
+          <p class="section-subtitle">باقات مصممة لتناسب مختلف المناسبات والاحتياجات البصرية.</p>
+        </div>
+
+        <div class="cards-grid">
+          <article class="card" data-animate="fade-up">
+            <div class="card__icon" aria-hidden="true">&#128100;</div>
+            <h3 class="card__title">جلسات شخصية</h3>
+            <p class="card__desc">جلسات بورتريه فردية أو عائلية بإضاءة طبيعية واحترافية تُبرز شخصيتك الحقيقية.</p>
+            <span class="card__price">تبدأ من 1200 جنيه <span>/ الجلسة</span></span>
+          </article>
+
+          <article class="card" data-animate="fade-up" data-delay="1">
+            <div class="card__icon" aria-hidden="true">&#128141;</div>
+            <h3 class="card__title">حفلات الزفاف</h3>
+            <p class="card__desc">توثيق كامل ليوم زفافك بأسلوب سينمائي يحفظ كل التفاصيل والمشاعر.</p>
+            <span class="card__price">تبدأ من 8000 جنيه <span>/ اليوم</span></span>
+          </article>
+
+          <article class="card" data-animate="fade-up" data-delay="2">
+            <div class="card__icon" aria-hidden="true">&#128230;</div>
+            <h3 class="card__title">تصوير المنتجات</h3>
+            <p class="card__desc">صور منتجات احترافية بخلفيات مصممة تبرز جودة وتفاصيل منتجك للتسويق.</p>
+            <span class="card__price">تبدأ من 900 جنيه <span>/ منتج</span></span>
+          </article>
+
+          <article class="card" data-animate="fade-up" data-delay="3">
+            <div class="card__icon" aria-hidden="true">&#127970;</div>
+            <h3 class="card__title">تصوير الشركات</h3>
+            <p class="card__desc">صور بورتريه للفريق والمكاتب بمظهر احترافي يعكس هوية شركتك.</p>
+            <span class="card__price">تبدأ من 3000 جنيه <span>/ الجلسة</span></span>
+          </article>
+
+          <article class="card" data-animate="fade-up" data-delay="4">
+            <div class="card__icon" aria-hidden="true">&#127968;</div>
+            <h3 class="card__title">تصوير العقارات</h3>
+            <p class="card__desc">صور داخلية وخارجية احترافية للعقارات السكنية والتجارية بجودة تسويقية عالية.</p>
+            <span class="card__price">تبدأ من 1500 جنيه <span>/ عقار</span></span>
+          </article>
+
+          <article class="card" data-animate="fade-up" data-delay="5">
+            <div class="card__icon" aria-hidden="true">&#127881;</div>
+            <h3 class="card__title">تصوير المناسبات</h3>
+            <p class="card__desc">توثيق شامل للمؤتمرات والحفلات والفعاليات الخاصة والعامة بأعلى جودة.</p>
+            <span class="card__price">تبدأ من 2500 جنيه <span>/ اليوم</span></span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         7. Why Choose Me
+         ========================================================================== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="eyebrow">لماذا أنا</span>
+          <h2 class="section-title">لماذا <span class="text-gold">تختارني</span></h2>
+        </div>
+
+        <div class="cards-grid">
+          <div class="why-card" data-animate="fade-up">
+            <span class="why-card__icon" aria-hidden="true">&#9201;</span>
+            <div>
+              <h3 class="why-card__title">خبرة طويلة</h3>
+              <p class="why-card__desc">أكثر من 14 عامًا من الخبرة الاحترافية في مختلف مجالات التصوير.</p>
+            </div>
+          </div>
+          <div class="why-card" data-animate="fade-up" data-delay="1">
+            <span class="why-card__icon" aria-hidden="true">&#128247;</span>
+            <div>
+              <h3 class="why-card__title">معدات احترافية</h3>
+              <p class="why-card__desc">أحدث الكاميرات والعدسات لضمان أعلى جودة تصوير ممكنة.</p>
+            </div>
+          </div>
+          <div class="why-card" data-animate="fade-up" data-delay="2">
+            <span class="why-card__icon" aria-hidden="true">&#127912;</span>
+            <div>
+              <h3 class="why-card__title">تعديل احترافي</h3>
+              <p class="why-card__desc">معالجة وتعديل دقيق لكل صورة لإبراز أفضل تفاصيلها وألوانها.</p>
+            </div>
+          </div>
+          <div class="why-card" data-animate="fade-up" data-delay="3">
+            <span class="why-card__icon" aria-hidden="true">&#9889;</span>
+            <div>
+              <h3 class="why-card__title">تسليم سريع</h3>
+              <p class="why-card__desc">تسليم الصور المعدلة خلال مدة زمنية قصيرة دون التأثير على الجودة.</p>
+            </div>
+          </div>
+          <div class="why-card" data-animate="fade-up" data-delay="4">
+            <span class="why-card__icon" aria-hidden="true">&#11088;</span>
+            <div>
+              <h3 class="why-card__title">جودة عالية</h3>
+              <p class="why-card__desc">التزام كامل بأعلى معايير الجودة في كل صورة يتم تسليمها.</p>
+            </div>
+          </div>
+          <div class="why-card" data-animate="fade-up" data-delay="5">
+            <span class="why-card__icon" aria-hidden="true">&#128176;</span>
+            <div>
+              <h3 class="why-card__title">أسعار مناسبة</h3>
+              <p class="why-card__desc">باقات مرنة تناسب مختلف الميزانيات دون المساومة على الجودة.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         8. Behind The Lens
+         ========================================================================== -->
+    <section class="behind-lens">
+      <div class="behind-lens__media">
+        <img src="assets/placeholder.png" alt="مصور يقف على صخرة يراقب الأفق" loading="lazy" />
+      </div>
+      <div class="behind-lens__content">
+        <p class="behind-lens__quote" data-animate="reveal">
+          الصورة ليست مجرد لقطة، بل قصة تُحكى دون كلمات.
+        </p>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         9. Statistics
+         ========================================================================== -->
+    <section class="section" id="stats">
+      <div class="container stats-grid">
+        <div class="stat-card" data-animate="zoom-in">
+          <div class="stat-card__number"><span data-counter="1500">0</span>+</div>
+          <p class="stat-card__label">جلسة تصوير</p>
+        </div>
+        <div class="stat-card" data-animate="zoom-in" data-delay="1">
+          <div class="stat-card__number"><span data-counter="800">0</span>+</div>
+          <p class="stat-card__label">عميل سعيد</p>
+        </div>
+        <div class="stat-card" data-animate="zoom-in" data-delay="2">
+          <div class="stat-card__number"><span data-counter="14">0</span>+</div>
+          <p class="stat-card__label">سنة خبرة</p>
+        </div>
+        <div class="stat-card" data-animate="zoom-in" data-delay="3">
+          <div class="stat-card__number"><span data-counter="30">0</span>+</div>
+          <p class="stat-card__label">جائزة</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         10. Testimonials
+         ========================================================================== -->
+    <section class="section section--alt" id="testimonials">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="eyebrow">آراء العملاء</span>
+          <h2 class="section-title">ماذا يقول <span class="text-gold">عملائي</span></h2>
+        </div>
+
+        <div class="testimonial-slider" data-animate="fade-up">
+          <div class="testimonial-track">
+            <div class="testimonial-slides" id="testimonialSlides">
+              <div class="testimonial-card">
+                <img src="assets/placeholder.png" alt="صورة عميل" class="testimonial-card__avatar" loading="lazy" />
+                <div class="testimonial-card__rating" aria-label="التقييم 5 من 5">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p class="testimonial-card__text">"تجربة استثنائية من الحجز حتى استلام الصور. محمد وثّق يوم زفافنا بطريقة فنية لا تُنسى."</p>
+                <p class="testimonial-card__name">أحمد الشريف</p>
+                <p class="testimonial-card__role">عميل - حفل زفاف</p>
+              </div>
+              <div class="testimonial-card">
+                <img src="assets/placeholder.png" alt="صورة عميل" class="testimonial-card__avatar" loading="lazy" />
+                <div class="testimonial-card__rating" aria-label="التقييم 5 من 5">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p class="testimonial-card__text">"احترافية عالية وإحساس فني رائع. صور المنتجات رفعت من مستوى حملتنا التسويقية بشكل كبير."</p>
+                <p class="testimonial-card__name">كريم فتحي</p>
+                <p class="testimonial-card__role">مدير تسويق - نوّار للعطور</p>
+              </div>
+              <div class="testimonial-card">
+                <img src="assets/placeholder.png" alt="صورة عميل" class="testimonial-card__avatar" loading="lazy" />
+                <div class="testimonial-card__rating" aria-label="التقييم 5 من 5">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p class="testimonial-card__text">"جلسة البورتريه الخاصة بي كانت مريحة جدًا والنتيجة فاقت توقعاتي. أنصح به بشدة."</p>
+                <p class="testimonial-card__name">يوسف عبدالله</p>
+                <p class="testimonial-card__role">عميل - جلسة شخصية</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="slider-controls">
+            <button class="btn-icon" id="testimonialPrev" aria-label="الشهادة السابقة">&#8594;</button>
+            <div class="slider-dots" id="testimonialDots" role="tablist" aria-label="اختيار الشهادة"></div>
+            <button class="btn-icon" id="testimonialNext" aria-label="الشهادة التالية">&#8592;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         11. Instagram Feed
+         ========================================================================== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="eyebrow">إنستجرام</span>
+          <h2 class="section-title">تابعني على <span class="text-gold">إنستجرام</span></h2>
+        </div>
+
+        <div class="instagram-grid" data-animate="fade-up">
+          <a href="#" class="instagram-item" aria-label="منشور إنستجرام 1"><img src="assets/placeholder.png" alt="منشور إنستجرام" loading="lazy" /><span class="instagram-item__overlay">&#128247;</span></a>
+          <a href="#" class="instagram-item" aria-label="منشور إنستجرام 2"><img src="assets/placeholder.png" alt="منشور إنستجرام" loading="lazy" /><span class="instagram-item__overlay">&#128247;</span></a>
+          <a href="#" class="instagram-item" aria-label="منشور إنستجرام 3"><img src="assets/placeholder.png" alt="منشور إنستجرام" loading="lazy" /><span class="instagram-item__overlay">&#128247;</span></a>
+          <a href="#" class="instagram-item" aria-label="منشور إنستجرام 4"><img src="assets/placeholder.png" alt="منشور إنستجرام" loading="lazy" /><span class="instagram-item__overlay">&#128247;</span></a>
+          <a href="#" class="instagram-item" aria-label="منشور إنستجرام 5"><img src="assets/placeholder.png" alt="منشور إنستجرام" loading="lazy" /><span class="instagram-item__overlay">&#128247;</span></a>
+          <a href="#" class="instagram-item" aria-label="منشور إنستجرام 6"><img src="assets/placeholder.png" alt="منشور إنستجرام" loading="lazy" /><span class="instagram-item__overlay">&#128247;</span></a>
+          <a href="#" class="instagram-item" aria-label="منشور إنستجرام 7"><img src="assets/placeholder.png" alt="منشور إنستجرام" loading="lazy" /><span class="instagram-item__overlay">&#128247;</span></a>
+          <a href="#" class="instagram-item" aria-label="منشور إنستجرام 8"><img src="assets/placeholder.png" alt="منشور إنستجرام" loading="lazy" /><span class="instagram-item__overlay">&#128247;</span></a>
+          <a href="#" class="instagram-item" aria-label="منشور إنستجرام 9"><img src="assets/placeholder.png" alt="منشور إنستجرام" loading="lazy" /><span class="instagram-item__overlay">&#128247;</span></a>
+          <a href="#" class="instagram-item" aria-label="منشور إنستجرام 10"><img src="assets/placeholder.png" alt="منشور إنستجرام" loading="lazy" /><span class="instagram-item__overlay">&#128247;</span></a>
+          <a href="#" class="instagram-item" aria-label="منشور إنستجرام 11"><img src="assets/placeholder.png" alt="منشور إنستجرام" loading="lazy" /><span class="instagram-item__overlay">&#128247;</span></a>
+          <a href="#" class="instagram-item" aria-label="منشور إنستجرام 12"><img src="assets/placeholder.png" alt="منشور إنستجرام" loading="lazy" /><span class="instagram-item__overlay">&#128247;</span></a>
+        </div>
+
+        <div style="text-align: center; margin-top: var(--space-xl);" data-animate="fade-up">
+          <a href="#" class="btn btn-primary">تابعني على إنستجرام</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         12. Pricing Packages
+         ========================================================================== -->
+    <section class="section section--alt" id="pricing">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="eyebrow">الأسعار</span>
+          <h2 class="section-title">باقات <span class="text-gold">تصوير</span> مرنة</h2>
+          <p class="section-subtitle">اختر الباقة التي تناسب احتياجاتك واستمتع بجودة استثنائية.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <div class="price-card" data-animate="fade-up">
+            <h3 class="price-card__name">الباقة الأساسية</h3>
+            <p class="price-card__duration">مثالية للجلسات الفردية والعائلية الصغيرة</p>
+            <div class="price-card__amount">1200 <span>جنيه</span></div>
+            <ul class="price-card__features">
+              <li>مدة الجلسة: ساعة واحدة</li>
+              <li>20 صورة معدلة احترافيًا</li>
+              <li>التسليم خلال 5 أيام عمل</li>
+              <li>موقع تصوير واحد</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline">احجز الآن</a>
+          </div>
+
+          <div class="price-card price-card--featured" data-animate="fade-up" data-delay="1">
+            <span class="badge">الأكثر طلبًا</span>
+            <h3 class="price-card__name">الباقة الاحترافية</h3>
+            <p class="price-card__duration">الخيار الأمثل للمناسبات والجلسات الموسّعة</p>
+            <div class="price-card__amount">3200 <span>جنيه</span></div>
+            <ul class="price-card__features">
+              <li>مدة الجلسة: 3 ساعات</li>
+              <li>60 صورة معدلة احترافيًا</li>
+              <li>التسليم خلال 3 أيام عمل</li>
+              <li>موقعين للتصوير</li>
+              <li>ألبوم رقمي مصمم</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary">احجز الآن</a>
+          </div>
+
+          <div class="price-card" data-animate="fade-up" data-delay="2">
+            <h3 class="price-card__name">الباقة الذهبية</h3>
+            <p class="price-card__duration">تغطية كاملة للمناسبات الكبرى وحفلات الزفاف</p>
+            <div class="price-card__amount">8000 <span>جنيه</span></div>
+            <ul class="price-card__features">
+              <li>تغطية يوم كامل</li>
+              <li>150+ صورة معدلة احترافيًا</li>
+              <li>التسليم خلال 7 أيام عمل</li>
+              <li>مصور مساعد وطاقم كامل</li>
+              <li>ألبوم مطبوع فاخر</li>
+              <li>فيديو ملخص قصير</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline">احجز الآن</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         13. Blog
+         ========================================================================== -->
+    <section class="section" id="blog">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="eyebrow">المدونة</span>
+          <h2 class="section-title">أحدث <span class="text-gold">المقالات</span></h2>
+        </div>
+
+        <div class="blog-grid">
+          <article class="blog-card" data-animate="fade-up">
+            <div class="blog-card__media">
+              <img src="assets/placeholder.png" alt="مجموعة عدسات تصوير احترافية" loading="lazy" />
+            </div>
+            <div class="blog-card__meta"><span>تصوير</span><span>&#8226;</span><span>5 دقائق قراءة</span></div>
+            <h3 class="blog-card__title">أفضل عدسات تصوير البورتريه</h3>
+            <a href="#" class="blog-card__link">اقرأ المزيد &#8592;</a>
+          </article>
+
+          <article class="blog-card" data-animate="fade-up" data-delay="1">
+            <div class="blog-card__media">
+              <img src="assets/placeholder.png" alt="حقيبة معدات تصوير جاهزة للسفر" loading="lazy" />
+            </div>
+            <div class="blog-card__meta"><span>نصائح</span><span>&#8226;</span><span>4 دقائق قراءة</span></div>
+            <h3 class="blog-card__title">كيف تجهز لجلسة تصوير؟</h3>
+            <a href="#" class="blog-card__link">اقرأ المزيد &#8592;</a>
+          </article>
+
+          <article class="blog-card" data-animate="fade-up" data-delay="2">
+            <div class="blog-card__media">
+              <img src="assets/placeholder.png" alt="إضاءة طبيعية داخل استوديو" loading="lazy" />
+            </div>
+            <div class="blog-card__meta"><span>تقنيات</span><span>&#8226;</span><span>6 دقائق قراءة</span></div>
+            <h3 class="blog-card__title">أسرار الإضاءة الطبيعية</h3>
+            <a href="#" class="blog-card__link">اقرأ المزيد &#8592;</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         14. FAQ
+         ========================================================================== -->
+    <section class="section section--alt" id="faq">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="eyebrow">الأسئلة الشائعة</span>
+          <h2 class="section-title">لديك <span class="text-gold">سؤال؟</span></h2>
+        </div>
+
+        <div class="faq-list" data-animate="fade-up">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              كيف يمكن الحجز؟
+              <span class="faq-question__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer__inner">
+                يمكنك الحجز بسهولة عبر تعبئة نموذج التواصل في أسفل الصفحة، أو التواصل المباشر عبر الهاتف
+                أو البريد الإلكتروني، وسيتم تأكيد الموعد خلال 24 ساعة.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              هل توفرون تصوير خارج المدينة؟
+              <span class="faq-question__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer__inner">
+                نعم، أوفر خدمة التصوير في أي مكان داخل وخارج مصر، مع احتساب تكاليف التنقل والإقامة بشكل منفصل
+                حسب الوجهة والمدة.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              متى يتم تسليم الصور؟
+              <span class="faq-question__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer__inner">
+                تختلف مدة التسليم حسب الباقة المختارة، وتتراوح عادة بين 3 إلى 7 أيام عمل بعد الجلسة.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              هل يتم تعديل جميع الصور؟
+              <span class="faq-question__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer__inner">
+                يتم اختيار وتعديل أفضل الصور احترافيًا حسب عدد الصور المحدد في كل باقة، مع إمكانية طلب صور
+                إضافية مقابل رسوم رمزية.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         15. Contact
+         ========================================================================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="eyebrow">تواصل معي</span>
+          <h2 class="section-title">لنبدأ <span class="text-gold">قصتك</span> القادمة</h2>
+        </div>
+
+        <div class="contact-split" data-animate="fade-up">
+          <div class="contact-media">
+            <img src="assets/placeholder.png" alt="استوديو تصوير مع معدات احترافية" loading="lazy" />
+            <div class="contact-media__info">
+              <div class="contact-media__item">
+                <span aria-hidden="true">&#128222;</span>
+                <span><strong>الهاتف</strong>+20 100 123 4567</span>
+              </div>
+              <div class="contact-media__item">
+                <span aria-hidden="true">&#9993;</span>
+                <span><strong>البريد الإلكتروني</strong>hello@shutterstories.com</span>
+              </div>
+              <div class="contact-media__item">
+                <span aria-hidden="true">&#128205;</span>
+                <span><strong>الموقع</strong>القاهرة، مصر</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-wrap">
+            <form class="contact-form" id="contactForm" novalidate>
+              <div class="form-group">
+                <label for="name">الاسم</label>
+                <input type="text" id="name" name="name" required autocomplete="name" />
+                <span class="form-error">الرجاء إدخال الاسم</span>
+              </div>
+
+              <div class="form-group">
+                <label for="email">البريد الإلكتروني</label>
+                <input type="email" id="email" name="email" required autocomplete="email" />
+                <span class="form-error">الرجاء إدخال بريد إلكتروني صحيح</span>
+              </div>
+
+              <div class="form-group">
+                <label for="phone">رقم الهاتف</label>
+                <input type="tel" id="phone" name="phone" required autocomplete="tel" />
+                <span class="form-error">الرجاء إدخال رقم هاتف صحيح</span>
+              </div>
+
+              <div class="form-group">
+                <label for="session-type">نوع الجلسة</label>
+                <select id="session-type" name="session-type" required>
+                  <option value="">اختر نوع الجلسة</option>
+                  <option value="wedding">حفل زفاف</option>
+                  <option value="portrait">جلسة شخصية</option>
+                  <option value="product">تصوير منتجات</option>
+                  <option value="corporate">تصوير شركات</option>
+                  <option value="event">مناسبة</option>
+                </select>
+              </div>
+
+              <div class="form-group form-group--full">
+                <label for="date">التاريخ المفضل</label>
+                <input type="date" id="date" name="date" />
+              </div>
+
+              <div class="form-group form-group--full">
+                <label for="message">الرسالة</label>
+                <textarea id="message" name="message" required></textarea>
+                <span class="form-error">الرجاء كتابة رسالتك</span>
+              </div>
+
+              <div class="form-submit">
+                <button type="submit" class="btn btn-primary" id="contactSubmit">إرسال الطلب</button>
+                <span class="form-status" id="formStatus" role="status" aria-live="polite"></span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       Footer
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <a href="#home" class="logo">
+          <span class="logo__icon" aria-hidden="true">&#9679;</span>
+          <span>شتر ستوريز</span>
+        </a>
+        <p class="footer__about">
+          مصور فوتوغرافي محترف أحوّل اللحظات العابرة إلى ذكريات بصرية خالدة، بخبرة تمتد لأكثر من 14 عامًا.
+        </p>
+        <div class="footer__socials">
+          <a href="#" class="btn-icon" aria-label="إنستجرام">IG</a>
+          <a href="#" class="btn-icon" aria-label="بيهانس">BE</a>
+          <a href="#" class="btn-icon" aria-label="فيسبوك">FB</a>
+          <a href="#" class="btn-icon" aria-label="لينكدإن">IN</a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="footer__heading">روابط سريعة</h3>
+        <nav class="footer__links" aria-label="روابط الفوتر السريعة">
+          <a href="#home">الرئيسية</a>
+          <a href="#about">من أنا</a>
+          <a href="#gallery">الأعمال</a>
+          <a href="#blog">المدونة</a>
+          <a href="#contact">تواصل معي</a>
+        </nav>
+      </div>
+
+      <div>
+        <h3 class="footer__heading">الخدمات</h3>
+        <nav class="footer__links" aria-label="روابط الخدمات">
+          <a href="#services">جلسات شخصية</a>
+          <a href="#services">حفلات الزفاف</a>
+          <a href="#services">تصوير المنتجات</a>
+          <a href="#services">تصوير الشركات</a>
+          <a href="#services">تصوير المناسبات</a>
+        </nav>
+      </div>
+
+      <div>
+        <h3 class="footer__heading">معلومات التواصل</h3>
+        <div class="footer__contact-item"><span aria-hidden="true">&#128222;</span> +20 100 123 4567</div>
+        <div class="footer__contact-item"><span aria-hidden="true">&#9993;</span> hello@shutterstories.com</div>
+        <div class="footer__contact-item"><span aria-hidden="true">&#128205;</span> القاهرة، مصر</div>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <span>&#169; 2026 شتر ستوريز. جميع الحقوق محفوظة.</span>
+      <span>صُمم بشغف لرواية القصص عبر الصور</span>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       Lightbox
+       ========================================================================== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="عارض الصور">
+    <button class="lightbox__close" id="lightboxClose" aria-label="إغلاق">&#10005;</button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="الصورة السابقة">&#8594;</button>
+    <figure class="lightbox__figure">
+      <img src="assets/placeholder.png" alt="" id="lightboxImage" />
+      <figcaption class="lightbox__caption" id="lightboxCaption"></figcaption>
+    </figure>
+    <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="الصورة التالية">&#8592;</button>
+  </div>
+
+  <script src="js/cursor.js" defer></script>
+  <script src="js/navbar.js" defer></script>
+  <script src="js/animations.js" defer></script>
+  <script src="js/counters.js" defer></script>
+  <script src="js/gallery.js" defer></script>
+  <script src="js/lightbox.js" defer></script>
+  <script src="js/slider.js" defer></script>
+  <script src="js/script.js" defer></script>
+
+<!-- portfolio-buy-badge:start -->
+<style>
+  #portfolio-buy-badge { position: fixed; z-index: 999999; bottom: 18px; right: 18px; direction: rtl; font-family: 'Cairo', Tahoma, Arial, sans-serif; }
+  #portfolio-buy-badge a { display: flex; align-items: center; gap: 10px; background: #14142b; color: #fff; padding: 10px 16px; border-radius: 999px; box-shadow: 0 10px 25px -8px rgba(0,0,0,.5); text-decoration: none; font-size: 14px; font-weight: 700; border: 1px solid rgba(255,255,255,.15); transition: transform .15s ease, background .15s ease; }
+  #portfolio-buy-badge a:hover { background: #312e81; transform: translateY(-2px); }
+  #portfolio-buy-badge .pbb-price { background: #4f46e5; color: #fff; padding: 4px 10px; border-radius: 999px; font-size: 13px; direction: ltr; }
+  @media (max-width: 480px) { #portfolio-buy-badge a span:not(.pbb-price) { display: none; } #portfolio-buy-badge { bottom: 12px; right: 12px; } }
+</style>
+<div id="portfolio-buy-badge">
+  <a href="../../index.html?template=pho-2#contact">
+    <span class="pbb-price">$25</span>
+    <span>اشترِ هذا القالب</span>
+  </a>
+</div>
+<!-- portfolio-buy-badge:end -->
+</body>
+</html>

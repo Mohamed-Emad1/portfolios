@@ -1,0 +1,312 @@
+/* ==========================================================================
+   Accounting / Financial Dashboard themed elements
+   ========================================================================== */
+
+/* ---------------------------------- Dashboard grid ---------------------------------- */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-md);
+}
+
+.dashboard-panel {
+  grid-column: span 4;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  margin-top: var(--space-md);
+}
+
+.dashboard-panel__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-md);
+}
+
+.dashboard-panel__tabs {
+  display: flex;
+  gap: var(--space-3xs);
+  background: var(--bg-primary);
+  border-radius: var(--radius-full);
+  padding: 4px;
+}
+
+.dashboard-panel__tabs button {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  padding: 0.4rem 1rem;
+  border-radius: var(--radius-full);
+  font-size: var(--fs-xs);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.dashboard-panel__tabs button.is-active {
+  background: var(--gradient-primary);
+  color: #fff;
+}
+
+/* ---------------------------------- Charts ---------------------------------- */
+.chart-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: var(--space-md);
+}
+
+.chart-card__title {
+  font-size: var(--fs-md);
+  color: var(--text-primary);
+  margin-bottom: var(--space-3xs);
+}
+
+.chart-card__subtitle {
+  color: var(--text-muted);
+  font-size: var(--fs-xs);
+  margin-bottom: var(--space-sm);
+}
+
+.chart-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.chart-line {
+  fill: none;
+  stroke: var(--color-blue-light);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  transition: stroke-dashoffset 1.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.chart-area {
+  fill: url(#chartGradient);
+  opacity: 0;
+  transition: opacity 1s ease 0.6s;
+}
+
+.chart-card.in-view .chart-line {
+  stroke-dashoffset: 0;
+}
+
+.chart-card.in-view .chart-area {
+  opacity: 1;
+}
+
+.chart-bar {
+  fill: var(--color-blue);
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.chart-card.in-view .chart-bar {
+  transform: scaleY(1);
+}
+
+.chart-bar:nth-child(1) { fill: var(--color-blue); }
+.chart-bar:nth-child(2) { fill: var(--color-emerald); }
+.chart-bar:nth-child(3) { fill: var(--color-gold); }
+.chart-bar:nth-child(4) { fill: #8B5CF6; }
+.chart-bar:nth-child(5) { fill: #F87171; }
+
+.chart-pie {
+  transform: rotate(-90deg);
+}
+
+.chart-pie circle {
+  fill: none;
+  stroke-width: 20;
+  stroke-dasharray: 0 999;
+  transition: stroke-dasharray 1.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.chart-card.in-view .chart-pie circle {
+  /* dasharray values set inline per-segment via JS */
+}
+
+.chart-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-top: var(--space-sm);
+}
+
+.chart-legend__item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--fs-xs);
+  color: var(--text-muted);
+}
+
+.chart-legend__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.chart-grid-lines line {
+  stroke: var(--border-color);
+  stroke-dasharray: 4 4;
+}
+
+.chart-axis-label {
+  fill: var(--text-muted);
+  font-size: 11px;
+  font-family: var(--font-primary);
+}
+
+/* ---------------------------------- Financial illustration motifs ---------------------------------- */
+.currency-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-sm);
+  background: rgba(244, 185, 66, 0.14);
+  color: var(--color-gold);
+}
+
+.spreadsheet-decor {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image:
+    linear-gradient(var(--border-color) 1px, transparent 1px),
+    linear-gradient(90deg, var(--border-color) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(ellipse at center, black 0%, transparent 75%);
+  opacity: 0.5;
+}
+
+.growth-arrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--color-emerald);
+  font-weight: var(--fw-semibold);
+}
+
+.growth-arrow--down {
+  color: #F87171;
+}
+
+/* ---------------------------------- Invoice / table widgets ---------------------------------- */
+.mini-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--fs-sm);
+}
+
+.mini-table th,
+.mini-table td {
+  padding: var(--space-2xs) var(--space-sm);
+  text-align: start;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.mini-table th {
+  color: var(--text-muted);
+  font-weight: var(--fw-medium);
+  font-size: var(--fs-xs);
+}
+
+.mini-table td {
+  color: var(--text-secondary);
+}
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 10px;
+  border-radius: var(--radius-full);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-semibold);
+}
+
+.status-pill--paid {
+  background: rgba(16, 185, 129, 0.14);
+  color: var(--color-emerald);
+}
+
+.status-pill--pending {
+  background: rgba(244, 185, 66, 0.14);
+  color: var(--color-gold);
+}
+
+/* ---------------------------------- Calendar widget ---------------------------------- */
+.calendar-widget {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: var(--space-sm);
+}
+
+.calendar-widget__grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+  margin-top: var(--space-2xs);
+}
+
+.calendar-widget__day {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--fs-xs);
+  color: var(--text-muted);
+  border-radius: 6px;
+}
+
+.calendar-widget__day.is-marked {
+  background: var(--gradient-primary);
+  color: #fff;
+  font-weight: var(--fw-semibold);
+}
+
+/* ---------------------------------- Counter card in dashboard stat rail ---------------------------------- */
+.counter-card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: var(--space-md);
+}
+
+.counter-card__icon {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.counter-card__value {
+  font-family: var(--font-display);
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-extrabold);
+  color: var(--text-primary);
+}
+
+.counter-card__label {
+  color: var(--text-muted);
+  font-size: var(--fs-sm);
+}

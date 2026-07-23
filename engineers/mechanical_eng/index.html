@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>محمد أحمد | مهندس ميكانيكا - تصميم، تصنيع، تطوير المنتجات</title>
+<meta name="description" content="بورتفوليو مهندس ميكانيكا متخصص في تصميم المنتجات، التصنيع، الأنظمة الصناعية والأتمتة.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23121417'/%3E%3Cpath d='M50 20a30 30 0 0 1 8 1l3 10 8 3 9-6a30 30 0 0 1 7 7l-6 9 3 8 10 3a30 30 0 0 1 0 14l-10 3-3 8 6 9a30 30 0 0 1-7 7l-9-6-8 3-3 10a30 30 0 0 1-14 0l-3-10-8-3-9 6a30 30 0 0 1-7-7l6-9-3-8-10-3a30 30 0 0 1 0-14l10-3 3-8-6-9a30 30 0 0 1 7-7l9 6 8-3z' fill='%23F5B335'/%3E%3Ccircle cx='50' cy='50' r='16' fill='%23121417'/%3E%3C/svg%3E" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== SVG SPRITE (icons reused across the page) ===== -->
+<svg style="display:none">
+  <symbol id="icon-gear-tooth" viewBox="0 0 24 24"></symbol>
+  <symbol id="icon-cad" viewBox="0 0 24 24"><path d="M3 3h18v18H3z" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M3 9h18M9 9v12" stroke="currentColor" stroke-width="1.5"/><circle cx="15" cy="15" r="3" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
+  <symbol id="icon-manufacture" viewBox="0 0 24 24"><path d="M3 20h18M5 20V10l5 4v-4l5 4v-4l4 3v7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+  <symbol id="icon-stress" viewBox="0 0 24 24"><path d="M3 12h4l3-8 4 16 3-8h4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+  <symbol id="icon-hydraulic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 3v4M12 17v4M3 12h4M17 12h4" stroke="currentColor" stroke-width="1.5"/></symbol>
+  <symbol id="icon-cooling" viewBox="0 0 24 24"><path d="M12 2v20M4.5 6.5l15 11M19.5 6.5l-15 11" stroke="currentColor" stroke-width="1.5"/></symbol>
+  <symbol id="icon-maintenance" viewBox="0 0 24 24"><path d="M14 6l4 4-8 8-4-4z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M5 19l2-2" stroke="currentColor" stroke-width="1.5"/></symbol>
+  <symbol id="icon-automation" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 4v2M12 18v2M4 12h2M18 12h2" stroke="currentColor" stroke-width="1.5"/></symbol>
+  <symbol id="icon-design" viewBox="0 0 24 24"><path d="M4 20l3-1 11-11-2-2L5 17z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+  <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M12 4v16M12 20l-5-5M12 20l5-5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="icon-check" viewBox="0 0 24 24"><path d="M4 12l5 5 11-11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="icon-close" viewBox="0 0 24 24"><path d="M5 5l14 14M19 5L5 19" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="icon-chevron" viewBox="0 0 24 24"><path d="M8 10l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="icon-linkedin" viewBox="0 0 24 24"><path d="M4 4h16v16H4z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="9" r="1" fill="currentColor"/><path d="M8 11v6M12 11v6M12 13c0-1.5 1-2 2.5-2s2.5 1 2.5 2.5V17" stroke="currentColor" stroke-width="1.3" fill="none"/></symbol>
+  <symbol id="icon-github" viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0-3 17.5c.5.1.6-.2.6-.5v-1.7c-2.4.5-3-1-3-1-.4-1-1-1.3-1-1.3-.8-.5.1-.5.1-.5.9 0 1.4.9 1.4.9.8 1.4 2.2 1 2.7.8.1-.6.3-1 .6-1.3-2-.2-4-1-4-4.5 0-1 .3-1.8 1-2.4-.1-.3-.4-1.3.1-2.6 0 0 .8-.3 2.7 1a9.3 9.3 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.3.2 2.3.1 2.6.6.6 1 1.4 1 2.4 0 3.5-2 4.3-4 4.5.3.3.6.8.6 1.7v2.5c0 .3.1.6.6.5A9 9 0 0 0 12 3z" fill="currentColor"/></symbol>
+  <symbol id="icon-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
+  <symbol id="icon-phone" viewBox="0 0 24 24"><path d="M6 3l3 1 1 4-2 2c1 3 3 5 6 6l2-2 4 1 1 3c0 2-1 3-3 3-8 0-15-7-15-15 0-2 1-3 3-3z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+  <symbol id="icon-pin" viewBox="0 0 24 24"><path d="M12 21s7-7.5 7-12a7 7 0 0 0-14 0c0 4.5 7 12 7 12z" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="9" r="2.3" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
+  <symbol id="icon-research" viewBox="0 0 24 24"><circle cx="10" cy="10" r="6" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M15 15l5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+</svg>
+
+<!-- ===== NAVIGATION ===== -->
+<header class="navbar" id="navbar">
+  <div class="container nav-container">
+    <a href="#home" class="nav-logo">
+      <span class="nav-logo-gear" aria-hidden="true"></span>
+      <span class="nav-logo-text">م. محمد أحمد</span>
+    </a>
+    <nav class="nav-menu" id="navMenu" aria-label="التنقل الرئيسي">
+      <a href="#home" class="nav-link active-link">الرئيسية</a>
+      <a href="#about" class="nav-link">نبذة عني</a>
+      <a href="#skills" class="nav-link">المهارات</a>
+      <a href="#projects" class="nav-link">المشاريع</a>
+      <a href="#experience" class="nav-link">الخبرات</a>
+      <a href="#certifications" class="nav-link">الشهادات</a>
+      <a href="#blog" class="nav-link">المدونة</a>
+      <a href="#contact" class="nav-link nav-cta">تواصل معي</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="فتح القائمة" aria-expanded="false" aria-controls="navMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<!-- ===== 1. HERO ===== -->
+<section class="hero" id="home">
+  <div class="blueprint-grid" aria-hidden="true"></div>
+  <div class="gear-field hero-gears" aria-hidden="true">
+    <div class="gear" data-size="140" data-teeth="14" data-speed="40" style="top:8%;left:6%"></div>
+    <div class="gear" data-size="90" data-teeth="10" data-speed="26" data-reverse="1" style="top:60%;left:14%"></div>
+    <div class="gear" data-size="200" data-teeth="18" data-speed="60" style="top:20%;right:4%"></div>
+    <div class="gear" data-size="70" data-teeth="8" data-speed="18" data-reverse="1" style="top:70%;right:16%"></div>
+  </div>
+  <div class="container hero-grid">
+    <div class="hero-media fade-right">
+      <div class="hero-media-frame">
+        <img src="assets/placeholder.png" alt="صورة شخصية لمحمد أحمد، مهندس ميكانيكا" width="480" height="560" loading="eager">
+        <span class="corner-mark tl"></span><span class="corner-mark tr"></span>
+        <span class="corner-mark bl"></span><span class="corner-mark br"></span>
+      </div>
+    </div>
+    <div class="hero-content fade-left">
+      <p class="eyebrow">تصميم <span class="dot">•</span> تصنيع <span class="dot">•</span> تطوير المنتجات</p>
+      <h1 class="hero-title">محمد أحمد<br><span class="text-accent">مهندس ميكانيكا</span></h1>
+      <p class="hero-desc">
+        أساعد الشركات على تصميم وتطوير الأنظمة الميكانيكية والمنتجات الصناعية باستخدام أحدث أدوات الهندسة والتصنيع.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">استعرض المشاريع</a>
+        <a href="assets/placeholder.png" download class="btn btn-outline">تحميل السيرة الذاتية</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-chip"><span class="counter" data-target="120" data-suffix="+">0</span><small>مشروع</small></div>
+        <div class="stat-chip"><span class="counter" data-target="8">0</span><small>سنوات خبرة</small></div>
+        <div class="stat-chip"><span class="counter" data-target="35" data-suffix="+">0</span><small>عميل</small></div>
+        <div class="stat-chip"><span class="counter" data-target="12" data-suffix="+">0</span><small>شهادة</small></div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-indicator" aria-hidden="true"><span></span> تابع التمرير للأسفل</div>
+</section>
+
+<!-- ===== 2. ABOUT ===== -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-num">01</span>
+      <h2 class="section-title">من أنا</h2>
+      <p class="section-subtitle">نظرة على مسيرتي المهنية وفلسفتي الهندسية</p>
+    </div>
+    <div class="about-grid">
+      <div class="about-media fade-right">
+        <img src="assets/placeholder.png" alt="صورة توضيحية لمهندس يعمل على تصميم ميكانيكي" width="520" height="600" loading="lazy">
+        <svg class="about-illustration" viewBox="0 0 200 200" aria-hidden="true">
+          <circle cx="100" cy="100" r="70" fill="none" stroke="var(--color-blue)" stroke-width="1" stroke-dasharray="6 6"/>
+        </svg>
+      </div>
+      <div class="about-content fade-left">
+        <p>
+          مهندس ميكانيكا بخبرة تمتد لثماني سنوات في تصميم المنتجات الصناعية وتطوير الأنظمة الميكانيكية، بدءًا من الفكرة الأولى وحتى خط الإنتاج. عملت مع شركات في قطاعات الطاقة والسيارات والتصنيع الثقيل، حيث قدت فرقًا هندسية لتحويل المتطلبات المعقدة إلى حلول عملية قابلة للتصنيع.
+        </p>
+        <p>
+          فلسفتي الهندسية تقوم على الدقة في التفاصيل، والتوازن بين الأداء والتكلفة، والالتزام بمعايير الجودة العالمية في كل مرحلة من مراحل التصميم والتصنيع.
+        </p>
+        <div class="value-chips">
+          <span class="value-chip">الابتكار</span>
+          <span class="value-chip">الدقة</span>
+          <span class="value-chip">حل المشكلات</span>
+          <span class="value-chip">الاستدامة</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 3. ENGINEERING SERVICES ===== -->
+<section class="section section-alt" id="services">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-num">02</span>
+      <h2 class="section-title">الخدمات الهندسية</h2>
+      <p class="section-subtitle">حلول هندسية متكاملة من الفكرة إلى التنفيذ</p>
+    </div>
+    <div class="services-grid">
+      <article class="service-card fade-up">
+        <svg class="service-icon"><use href="#icon-design"/></svg>
+        <h3>تصميم ميكانيكي</h3>
+        <p>تصميم مكونات وأنظمة ميكانيكية دقيقة تراعي متطلبات الأداء والتصنيع معًا.</p>
+      </article>
+      <article class="service-card fade-up">
+        <svg class="service-icon"><use href="#icon-cad"/></svg>
+        <h3>تصميم CAD</h3>
+        <p>نمذجة ثلاثية الأبعاد ورسومات هندسية تفصيلية باستخدام أحدث برامج CAD.</p>
+      </article>
+      <article class="service-card fade-up">
+        <svg class="service-icon"><use href="#icon-manufacture"/></svg>
+        <h3>التصنيع</h3>
+        <p>إشراف على عمليات التصنيع وضمان مطابقة المنتج للمواصفات الهندسية.</p>
+      </article>
+      <article class="service-card fade-up">
+        <svg class="service-icon"><use href="#icon-stress"/></svg>
+        <h3>تحليل الإجهاد</h3>
+        <p>محاكاة وتحليل الإجهادات باستخدام FEA لضمان سلامة التصميم تحت الأحمال الفعلية.</p>
+      </article>
+      <article class="service-card fade-up">
+        <svg class="service-icon"><use href="#icon-hydraulic"/></svg>
+        <h3>الأنظمة الهيدروليكية</h3>
+        <p>تصميم وصيانة الأنظمة الهيدروليكية للمعدات الصناعية الثقيلة.</p>
+      </article>
+      <article class="service-card fade-up">
+        <svg class="service-icon"><use href="#icon-cooling"/></svg>
+        <h3>أنظمة التبريد</h3>
+        <p>حلول تبريد فعالة للأنظمة الميكانيكية والمعدات عالية الحرارة.</p>
+      </article>
+      <article class="service-card fade-up">
+        <svg class="service-icon"><use href="#icon-maintenance"/></svg>
+        <h3>الصيانة</h3>
+        <p>برامج صيانة وقائية ودورية لإطالة عمر المعدات وتقليل التوقف.</p>
+      </article>
+      <article class="service-card fade-up">
+        <svg class="service-icon"><use href="#icon-automation"/></svg>
+        <h3>الأتمتة الصناعية</h3>
+        <p>دمج أنظمة التحكم والأتمتة لرفع كفاءة خطوط الإنتاج.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 4. FEATURED PROJECTS ===== -->
+<section class="section" id="projects">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-num">03</span>
+      <h2 class="section-title">مشاريع هندسية مميزة</h2>
+      <p class="section-subtitle">نماذج من مشاريع نُفذت من التصميم حتى التسليم</p>
+    </div>
+
+    <article class="project-item fade-up">
+      <div class="project-media">
+        <img src="assets/placeholder.png" alt="مخطط هندسي لمشروع مضخة صناعية" width="640" height="440" loading="lazy">
+        <span class="blueprint-tag">P-01</span>
+      </div>
+      <div class="project-content">
+        <h3>تصميم مضخة صناعية عالية الضغط</h3>
+        <ul class="project-meta">
+          <li><strong>العميل:</strong> شركة النيل للصناعات الهندسية</li>
+          <li><strong>القطاع:</strong> الطاقة والمعالجة الصناعية</li>
+          <li><strong>المدة:</strong> 6 أشهر</li>
+          <li><strong>البرامج المستخدمة:</strong> SolidWorks، ANSYS</li>
+        </ul>
+        <p><strong>التحديات:</strong> الحاجة لمضخة تتحمل ضغطًا تشغيليًا مرتفعًا مع الحفاظ على كفاءة الطاقة.</p>
+        <p><strong>الحلول:</strong> إعادة تصميم الدفاعة وتحليل الإجهاد باستخدام المحاكاة العددية لتحسين توزيع الأحمال.</p>
+        <p><strong>النتائج:</strong> تحسّن الكفاءة بنسبة 22% وخفض التكلفة التشغيلية السنوية.</p>
+        <a href="#" class="btn btn-outline btn-sm project-view" data-project="1">استكشف المشروع</a>
+      </div>
+    </article>
+
+    <article class="project-item reverse fade-up">
+      <div class="project-media">
+        <img src="assets/placeholder.png" alt="مخطط هندسي لمشروع ذراع روبوتية" width="640" height="440" loading="lazy">
+        <span class="blueprint-tag">P-02</span>
+      </div>
+      <div class="project-content">
+        <h3>ذراع روبوتية لخط تجميع آلي</h3>
+        <ul class="project-meta">
+          <li><strong>العميل:</strong> مصنع الدلتا للسيارات</li>
+          <li><strong>القطاع:</strong> صناعة السيارات والأتمتة</li>
+          <li><strong>المدة:</strong> 9 أشهر</li>
+          <li><strong>البرامج المستخدمة:</strong> Fusion 360، MATLAB، PLC</li>
+        </ul>
+        <p><strong>التحديات:</strong> دمج ذراع آلية ضمن خط إنتاج قائم دون إيقاف التشغيل.</p>
+        <p><strong>الحلول:</strong> تصميم معياري للذراع مع برمجة تحكم مرنة قابلة للتكيف مع محطات العمل.</p>
+        <p><strong>النتائج:</strong> رفع سرعة خط الإنتاج بنسبة 30% وتقليل الأخطاء البشرية.</p>
+        <a href="#" class="btn btn-outline btn-sm project-view" data-project="2">استكشف المشروع</a>
+      </div>
+    </article>
+
+    <article class="project-item fade-up">
+      <div class="project-media">
+        <img src="assets/placeholder.png" alt="مخطط هندسي لمشروع نظام تبريد صناعي" width="640" height="440" loading="lazy">
+        <span class="blueprint-tag">P-03</span>
+      </div>
+      <div class="project-content">
+        <h3>نظام تبريد لمحطة توليد طاقة</h3>
+        <ul class="project-meta">
+          <li><strong>العميل:</strong> الهيئة الوطنية للكهرباء</li>
+          <li><strong>القطاع:</strong> الطاقة</li>
+          <li><strong>المدة:</strong> سنة واحدة</li>
+          <li><strong>البرامج المستخدمة:</strong> CATIA، ANSYS Fluent</li>
+        </ul>
+        <p><strong>التحديات:</strong> ارتفاع درجات حرارة التشغيل في فصل الصيف يؤثر على كفاءة التوربينات.</p>
+        <p><strong>الحلول:</strong> إعادة تصميم مسارات التبريد ومحاكاة التدفق الحراري لتحسين التبديد.</p>
+        <p><strong>النتائج:</strong> خفض درجة حرارة التشغيل بمقدار 15 درجة مئوية وزيادة الاستقرار التشغيلي.</p>
+        <a href="#" class="btn btn-outline btn-sm project-view" data-project="3">استكشف المشروع</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ===== 5. PORTFOLIO GALLERY ===== -->
+<section class="section section-alt" id="gallery">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-num">04</span>
+      <h2 class="section-title">معرض الأعمال</h2>
+      <p class="section-subtitle">تصفح مجموعة متنوعة من الأعمال حسب التخصص</p>
+    </div>
+    <div class="gallery-filters fade-up" role="tablist" aria-label="تصنيفات المعرض">
+      <button class="filter-btn active" data-filter="all">الكل</button>
+      <button class="filter-btn" data-filter="cad">تصميم CAD</button>
+      <button class="filter-btn" data-filter="manufacturing">التصنيع</button>
+      <button class="filter-btn" data-filter="robotics">الروبوتات</button>
+      <button class="filter-btn" data-filter="energy">الطاقة</button>
+      <button class="filter-btn" data-filter="automotive">السيارات</button>
+      <button class="filter-btn" data-filter="industrial">الأنظمة الصناعية</button>
+      <button class="filter-btn" data-filter="print3d">الطباعة ثلاثية الأبعاد</button>
+    </div>
+    <div class="gallery-grid" id="galleryGrid">
+      <!-- items injected below, static markup for no-js fallback -->
+      <figure class="gallery-item" data-category="cad" data-name="تصميم علبة تروس" data-tech="SolidWorks" data-year="2024">
+        <img src="assets/placeholder.png" alt="تصميم CAD لعلبة تروس" loading="lazy" width="400" height="320">
+        <figcaption><span class="g-name">تصميم علبة تروس</span><span class="g-meta">SolidWorks · 2024</span></figcaption>
+      </figure>
+      <figure class="gallery-item" data-category="manufacturing" data-name="خط تصنيع صمامات" data-tech="CNC" data-year="2023">
+        <img src="assets/placeholder.png" alt="خط تصنيع صمامات صناعية" loading="lazy" width="400" height="320">
+        <figcaption><span class="g-name">خط تصنيع صمامات</span><span class="g-meta">CNC · 2023</span></figcaption>
+      </figure>
+      <figure class="gallery-item" data-category="robotics" data-name="ذراع فرز آلي" data-tech="ROS" data-year="2024">
+        <img src="assets/placeholder.png" alt="ذراع روبوتية لفرز المنتجات" loading="lazy" width="400" height="320">
+        <figcaption><span class="g-name">ذراع فرز آلي</span><span class="g-meta">ROS · 2024</span></figcaption>
+      </figure>
+      <figure class="gallery-item" data-category="energy" data-name="توربين رياح مصغر" data-tech="ANSYS" data-year="2022">
+        <img src="assets/placeholder.png" alt="تصميم توربين رياح مصغر" loading="lazy" width="400" height="320">
+        <figcaption><span class="g-name">توربين رياح مصغر</span><span class="g-meta">ANSYS · 2022</span></figcaption>
+      </figure>
+      <figure class="gallery-item" data-category="automotive" data-name="نظام تعليق رياضي" data-tech="CATIA" data-year="2023">
+        <img src="assets/placeholder.png" alt="تصميم نظام تعليق سيارة رياضية" loading="lazy" width="400" height="320">
+        <figcaption><span class="g-name">نظام تعليق رياضي</span><span class="g-meta">CATIA · 2023</span></figcaption>
+      </figure>
+      <figure class="gallery-item" data-category="industrial" data-name="ناقل حركة صناعي" data-tech="Inventor" data-year="2021">
+        <img src="assets/placeholder.png" alt="تصميم ناقل حركة لخط إنتاج" loading="lazy" width="400" height="320">
+        <figcaption><span class="g-name">ناقل حركة صناعي</span><span class="g-meta">Inventor · 2021</span></figcaption>
+      </figure>
+      <figure class="gallery-item" data-category="print3d" data-name="نموذج أولي مطبوع" data-tech="FDM" data-year="2024">
+        <img src="assets/placeholder.png" alt="نموذج أولي بالطباعة ثلاثية الأبعاد" loading="lazy" width="400" height="320">
+        <figcaption><span class="g-name">نموذج أولي مطبوع</span><span class="g-meta">FDM · 2024</span></figcaption>
+      </figure>
+      <figure class="gallery-item" data-category="cad" data-name="مجمع صمامات هيدروليكي" data-tech="SolidWorks" data-year="2022">
+        <img src="assets/placeholder.png" alt="تصميم مجمع صمامات هيدروليكي" loading="lazy" width="400" height="320">
+        <figcaption><span class="g-name">مجمع صمامات هيدروليكي</span><span class="g-meta">SolidWorks · 2022</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox / Project Viewer -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-label="عارض المشروع">
+  <button class="lightbox-close" id="lightboxClose" aria-label="إغلاق"><svg><use href="#icon-close"/></svg></button>
+  <button class="lightbox-nav prev" id="lightboxPrev" aria-label="السابق"><svg><use href="#icon-chevron"/></svg></button>
+  <div class="lightbox-content">
+    <img id="lightboxImg" src="assets/placeholder.png" alt="">
+    <div class="lightbox-info">
+      <h3 id="lightboxName"></h3>
+      <p id="lightboxMeta"></p>
+    </div>
+  </div>
+  <button class="lightbox-nav next" id="lightboxNext" aria-label="التالي"><svg><use href="#icon-chevron"/></svg></button>
+</div>
+
+<!-- ===== 6. TECHNICAL SKILLS ===== -->
+<section class="section" id="skills">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-num">05</span>
+      <h2 class="section-title">المهارات التقنية</h2>
+      <p class="section-subtitle">إتقان أدوات التصميم والمحاكاة والتصنيع</p>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card fade-up">
+        <div class="skill-head"><span>SolidWorks</span><span class="skill-percent" data-target="95">0%</span></div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" data-target="95"></div></div>
+      </div>
+      <div class="skill-card fade-up">
+        <div class="skill-head"><span>AutoCAD</span><span class="skill-percent" data-target="90">0%</span></div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" data-target="90"></div></div>
+      </div>
+      <div class="skill-card fade-up">
+        <div class="skill-head"><span>CATIA</span><span class="skill-percent" data-target="85">0%</span></div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" data-target="85"></div></div>
+      </div>
+      <div class="skill-card fade-up">
+        <div class="skill-head"><span>ANSYS</span><span class="skill-percent" data-target="88">0%</span></div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" data-target="88"></div></div>
+      </div>
+      <div class="skill-card fade-up">
+        <div class="skill-head"><span>Fusion 360</span><span class="skill-percent" data-target="82">0%</span></div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" data-target="82"></div></div>
+      </div>
+      <div class="skill-card fade-up">
+        <div class="skill-head"><span>Inventor</span><span class="skill-percent" data-target="80">0%</span></div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" data-target="80"></div></div>
+      </div>
+      <div class="skill-card fade-up">
+        <div class="skill-head"><span>MATLAB</span><span class="skill-percent" data-target="75">0%</span></div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" data-target="75"></div></div>
+      </div>
+      <div class="skill-card fade-up">
+        <div class="skill-head"><span>PLC Programming</span><span class="skill-percent" data-target="78">0%</span></div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" data-target="78"></div></div>
+      </div>
+    </div>
+
+    <div class="charts-grid">
+      <div class="chart-card fade-up">
+        <h4>المشاريع حسب التخصص</h4>
+        <svg class="donut-chart" viewBox="0 0 120 120" data-values="40,30,30" data-colors="var(--color-yellow),var(--color-blue),var(--color-mint)"></svg>
+        <ul class="chart-legend">
+          <li><span class="dot-yellow"></span> تصميم</li>
+          <li><span class="dot-blue"></span> تصنيع</li>
+          <li><span class="dot-mint"></span> أتمتة</li>
+        </ul>
+      </div>
+      <div class="chart-card fade-up">
+        <h4>القطاعات الصناعية</h4>
+        <svg class="bar-chart" viewBox="0 0 200 120" data-values="90,60,75,45" data-labels="طاقة,سيارات,تصنيع,روبوتات"></svg>
+      </div>
+      <div class="chart-card fade-up">
+        <h4>إتقان البرامج</h4>
+        <svg class="donut-chart" viewBox="0 0 120 120" data-values="35,25,20,20" data-colors="var(--color-blue),var(--color-yellow),var(--color-mint),var(--color-steel)"></svg>
+        <ul class="chart-legend">
+          <li><span class="dot-blue"></span> CAD</li>
+          <li><span class="dot-yellow"></span> محاكاة</li>
+          <li><span class="dot-mint"></span> برمجة</li>
+          <li><span class="dot-steel"></span> أخرى</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 7. ENGINEERING WORKFLOW ===== -->
+<section class="section section-alt" id="workflow">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-num">06</span>
+      <h2 class="section-title">منهجية العمل الهندسي</h2>
+      <p class="section-subtitle">من الفكرة إلى التسليم عبر خطوات مدروسة</p>
+    </div>
+    <div class="workflow-timeline">
+      <div class="workflow-step"><span class="step-num">01</span><h4>تحليل المتطلبات</h4><p>فهم احتياجات العميل والقيود التقنية والتشغيلية.</p></div>
+      <div class="workflow-step"><span class="step-num">02</span><h4>التصميم</h4><p>وضع المفاهيم الهندسية الأولية والرسومات التخطيطية.</p></div>
+      <div class="workflow-step"><span class="step-num">03</span><h4>النمذجة ثلاثية الأبعاد</h4><p>بناء نماذج CAD دقيقة وقابلة للتصنيع.</p></div>
+      <div class="workflow-step"><span class="step-num">04</span><h4>المحاكاة</h4><p>اختبار الأداء والإجهادات باستخدام أدوات التحليل العددي.</p></div>
+      <div class="workflow-step"><span class="step-num">05</span><h4>التصنيع</h4><p>إشراف على عمليات التصنيع وضبط الجودة.</p></div>
+      <div class="workflow-step"><span class="step-num">06</span><h4>الاختبارات</h4><p>اختبارات ميدانية للتحقق من مطابقة الأداء للمواصفات.</p></div>
+      <div class="workflow-step"><span class="step-num">07</span><h4>التسليم</h4><p>تسليم المشروع مع التوثيق الكامل والدعم الفني.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 8. EXPERIENCE TIMELINE ===== -->
+<section class="section" id="experience">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-num">07</span>
+      <h2 class="section-title">مسيرتي المهنية</h2>
+      <p class="section-subtitle">محطات رئيسية في مسيرتي الهندسية</p>
+    </div>
+    <div class="exp-timeline">
+      <div class="exp-item fade-up">
+        <span class="exp-year">2025</span>
+        <h4>مهندس ميكانيكا أول</h4>
+        <p>قيادة فريق تصميم المنتجات الصناعية وتطوير الأنظمة الآلية لعملاء القطاع الثقيل.</p>
+      </div>
+      <div class="exp-item fade-up">
+        <span class="exp-year">2023</span>
+        <h4>مهندس تصميم ميكانيكي</h4>
+        <p>تصميم مكونات ميكانيكية دقيقة وإجراء تحليلات الإجهاد للمشاريع الصناعية.</p>
+      </div>
+      <div class="exp-item fade-up">
+        <span class="exp-year">2021</span>
+        <h4>مهندس إنتاج</h4>
+        <p>الإشراف على خطوط الإنتاج وتحسين كفاءة العمليات التصنيعية.</p>
+      </div>
+      <div class="exp-item fade-up">
+        <span class="exp-year">2019</span>
+        <h4>مهندس ميكانيكا مبتدئ</h4>
+        <p>المشاركة في مشاريع تصميم ميكانيكي تحت إشراف مهندسين أول.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 9. STATISTICS DASHBOARD ===== -->
+<section class="section section-alt stats-section" id="stats">
+  <div class="blueprint-grid" aria-hidden="true"></div>
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-num">08</span>
+      <h2 class="section-title">لوحة الإحصائيات</h2>
+      <p class="section-subtitle">أرقام تعكس حجم الخبرة والإنجاز</p>
+    </div>
+    <div class="stats-grid">
+      <div class="stat-card fade-up"><span class="counter" data-target="120" data-suffix="+">0</span><p>مشروع</p></div>
+      <div class="stat-card fade-up"><span class="counter" data-target="8000" data-suffix="+">0</span><p>ساعة تصميم</p></div>
+      <div class="stat-card fade-up"><span class="counter" data-target="35" data-suffix="+">0</span><p>عميل</p></div>
+      <div class="stat-card fade-up"><span class="counter" data-target="98" data-suffix="%">0</span><p>رضا العملاء</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 10. CERTIFICATIONS ===== -->
+<section class="section" id="certifications">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-num">09</span>
+      <h2 class="section-title">الشهادات المهنية</h2>
+      <p class="section-subtitle">اعتمادات واعتراف بالكفاءة التقنية</p>
+    </div>
+    <div class="cert-grid">
+      <div class="cert-card fade-up"><svg class="cert-icon"><use href="#icon-check"/></svg><h4>SolidWorks Professional</h4><p>Dassault Systèmes</p></div>
+      <div class="cert-card fade-up"><svg class="cert-icon"><use href="#icon-check"/></svg><h4>AutoCAD Professional</h4><p>Autodesk</p></div>
+      <div class="cert-card fade-up"><svg class="cert-icon"><use href="#icon-check"/></svg><h4>Lean Manufacturing</h4><p>معهد التصنيع الرشيق</p></div>
+      <div class="cert-card fade-up"><svg class="cert-icon"><use href="#icon-check"/></svg><h4>Six Sigma Green Belt</h4><p>ASQ</p></div>
+      <div class="cert-card fade-up"><svg class="cert-icon"><use href="#icon-check"/></svg><h4>ISO 9001</h4><p>هيئة الاعتماد الدولية</p></div>
+      <div class="cert-card fade-up"><svg class="cert-icon"><use href="#icon-check"/></svg><h4>Project Management</h4><p>PMI</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 11. EQUIPMENT & TECHNOLOGIES ===== -->
+<section class="section section-alt" id="equipment">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-num">10</span>
+      <h2 class="section-title">المعدات والتقنيات</h2>
+      <p class="section-subtitle">أدوات ومنصات أستخدمها في التصميم والتصنيع</p>
+    </div>
+    <div class="equipment-grid">
+      <div class="equipment-item fade-up"><span>CNC</span></div>
+      <div class="equipment-item fade-up"><span>3D Printing</span></div>
+      <div class="equipment-item fade-up"><span>Laser Cutting</span></div>
+      <div class="equipment-item fade-up"><span>Hydraulics</span></div>
+      <div class="equipment-item fade-up"><span>Pneumatics</span></div>
+      <div class="equipment-item fade-up"><span>PLC</span></div>
+      <div class="equipment-item fade-up"><span>Robotics</span></div>
+      <div class="equipment-item fade-up"><span>IoT</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 12. TESTIMONIALS ===== -->
+<section class="section" id="testimonials">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-num">11</span>
+      <h2 class="section-title">آراء العملاء</h2>
+      <p class="section-subtitle">ثقة بُنيت على نتائج ملموسة</p>
+    </div>
+    <div class="testimonials" id="testimonialSlider">
+      <div class="testimonial-track" id="testimonialTrack">
+        <div class="testimonial-card">
+          <p>"دقة عالية في التنفيذ والتزام كامل بالمواعيد. تصميم المضخة الجديدة رفع كفاءة خطنا الإنتاجي بشكل ملحوظ."</p>
+          <div class="testimonial-author"><img src="assets/placeholder.png" alt="صورة العميل" width="56" height="56"><div><strong>أحمد سالم</strong><span>مدير عمليات، شركة النيل الهندسية</span></div></div>
+        </div>
+        <div class="testimonial-card">
+          <p>"تعامل احترافي وفهم عميق للتحديات الصناعية. الحلول المقترحة كانت عملية وقابلة للتنفيذ فورًا."</p>
+          <div class="testimonial-author"><img src="assets/placeholder.png" alt="صورة العميل" width="56" height="56"><div><strong>سارة يوسف</strong><span>مديرة مشاريع، مصنع الدلتا للسيارات</span></div></div>
+        </div>
+        <div class="testimonial-card">
+          <p>"من أفضل من تعاملنا معهم في مجال الأتمتة الصناعية. نتائج تفوق التوقعات ودعم فني ممتاز."</p>
+          <div class="testimonial-author"><img src="assets/placeholder.png" alt="صورة العميل" width="56" height="56"><div><strong>خالد مراد</strong><span>الرئيس التنفيذي، الهيئة الوطنية للكهرباء</span></div></div>
+        </div>
+      </div>
+      <div class="testimonial-dots" id="testimonialDots"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 13. RESEARCH & PUBLICATIONS ===== -->
+<section class="section section-alt" id="research">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-num">12</span>
+      <h2 class="section-title">الأبحاث والمنشورات</h2>
+      <p class="section-subtitle">مساهمات علمية وتقنية في مجال الهندسة الميكانيكية</p>
+    </div>
+    <div class="research-grid">
+      <div class="research-card fade-up">
+        <svg class="research-icon"><use href="#icon-research"/></svg>
+        <h4>الأبحاث</h4>
+        <p>دراسة تحسين كفاءة أنظمة التبريد الصناعية باستخدام المحاكاة الحرارية.</p>
+      </div>
+      <div class="research-card fade-up">
+        <svg class="research-icon"><use href="#icon-research"/></svg>
+        <h4>المقالات</h4>
+        <p>مقالات تقنية منشورة حول اتجاهات التصنيع الذكي والأتمتة.</p>
+      </div>
+      <div class="research-card fade-up">
+        <svg class="research-icon"><use href="#icon-research"/></svg>
+        <h4>براءات الاختراع</h4>
+        <p>براءة اختراع لآلية تثبيت معيارية قابلة لإعادة الاستخدام في خطوط التجميع.</p>
+      </div>
+      <div class="research-card fade-up">
+        <svg class="research-icon"><use href="#icon-research"/></svg>
+        <h4>الأوراق العلمية</h4>
+        <p>مشاركات في مؤتمرات هندسية حول تحليل الإجهاد بالعناصر المحدودة.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 14. BLOG ===== -->
+<section class="section" id="blog">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-num">13</span>
+      <h2 class="section-title">المدونة</h2>
+      <p class="section-subtitle">أفكار ومقالات في الهندسة الميكانيكية والتصنيع</p>
+    </div>
+    <div class="blog-grid">
+      <article class="blog-card fade-up">
+        <img src="assets/placeholder.png" alt="مقال عن أساسيات التصميم الميكانيكي" loading="lazy" width="400" height="240">
+        <div class="blog-body">
+          <span class="blog-date">2026-05-12</span>
+          <h4>أساسيات التصميم الميكانيكي</h4>
+          <p>مبادئ أساسية يجب أن يتقنها كل مهندس ميكانيكا قبل البدء في أي مشروع تصميم.</p>
+        </div>
+      </article>
+      <article class="blog-card fade-up">
+        <img src="assets/placeholder.png" alt="مقال عن أفضل برامج CAD" loading="lazy" width="400" height="240">
+        <div class="blog-body">
+          <span class="blog-date">2026-03-02</span>
+          <h4>أفضل برامج CAD في 2026</h4>
+          <p>مقارنة بين أبرز برامج التصميم بمساعدة الحاسوب من حيث الأداء والاستخدام.</p>
+        </div>
+      </article>
+      <article class="blog-card fade-up">
+        <img src="assets/placeholder.png" alt="مقال عن مستقبل التصنيع الذكي" loading="lazy" width="400" height="240">
+        <div class="blog-body">
+          <span class="blog-date">2026-01-20</span>
+          <h4>مستقبل التصنيع الذكي</h4>
+          <p>كيف تُعيد إنترنت الأشياء والأتمتة تشكيل خطوط الإنتاج الحديثة.</p>
+        </div>
+      </article>
+      <article class="blog-card fade-up">
+        <img src="assets/placeholder.png" alt="مقال عن الهندسة العكسية" loading="lazy" width="400" height="240">
+        <div class="blog-body">
+          <span class="blog-date">2025-11-08</span>
+          <h4>الهندسة العكسية</h4>
+          <p>متى وكيف تُستخدم الهندسة العكسية في تطوير وتحسين المنتجات القائمة.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 15. FAQ ===== -->
+<section class="section section-alt" id="faq">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-num">14</span>
+      <h2 class="section-title">الأسئلة الشائعة</h2>
+      <p class="section-subtitle">إجابات على أكثر الأسئلة تكرارًا</p>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>ما هي الخدمات التي تقدمها؟</span>
+          <svg class="faq-icon"><use href="#icon-chevron"/></svg>
+        </button>
+        <div class="faq-answer"><p>أقدم خدمات التصميم الميكانيكي، تصميم CAD، التصنيع، تحليل الإجهاد، الأنظمة الهيدروليكية، أنظمة التبريد، الصيانة، والأتمتة الصناعية.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>هل تعمل عن بعد؟</span>
+          <svg class="faq-icon"><use href="#icon-chevron"/></svg>
+        </button>
+        <div class="faq-answer"><p>نعم، أعمل عن بعد على معظم مراحل التصميم والمحاكاة، مع زيارات ميدانية عند الحاجة لمراحل التصنيع والتركيب.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>ما البرامج التي تستخدمها؟</span>
+          <svg class="faq-icon"><use href="#icon-chevron"/></svg>
+        </button>
+        <div class="faq-answer"><p>أستخدم SolidWorks وAutoCAD وCATIA وANSYS وFusion 360 وInventor وMATLAB بالإضافة إلى برمجة PLC.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>هل تقدم استشارات هندسية؟</span>
+          <svg class="faq-icon"><use href="#icon-chevron"/></svg>
+        </button>
+        <div class="faq-answer"><p>نعم، أقدم استشارات هندسية لتقييم التصاميم القائمة واقتراح حلول لتحسين الأداء وخفض التكاليف.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 16. CONTACT ===== -->
+<section class="section contact-section" id="contact">
+  <div class="blueprint-grid" aria-hidden="true"></div>
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-num">15</span>
+      <h2 class="section-title">تواصل معي</h2>
+      <p class="section-subtitle">لديك مشروع؟ لنتحدث حول كيفية تحقيقه</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-illustration fade-right" aria-hidden="true">
+        <svg viewBox="0 0 300 300">
+          <rect x="20" y="20" width="260" height="260" fill="none" stroke="var(--color-blue)" stroke-width="1" stroke-dasharray="4 4"/>
+          <path class="draw-path" pathLength="100" d="M40 150h220M150 40v220" stroke="var(--color-yellow)" stroke-width="1.5" fill="none"/>
+          <circle class="draw-path" pathLength="100" cx="150" cy="150" r="90" fill="none" stroke="var(--color-mint)" stroke-width="1.2"/>
+        </svg>
+      </div>
+      <form class="contact-form fade-left" id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="cName">الاسم</label>
+            <input type="text" id="cName" name="name" required>
+            <span class="form-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="cEmail">البريد الإلكتروني</label>
+            <input type="email" id="cEmail" name="email" required>
+            <span class="form-error"></span>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="cCompany">الشركة</label>
+            <input type="text" id="cCompany" name="company">
+          </div>
+          <div class="form-group">
+            <label for="cType">نوع المشروع</label>
+            <select id="cType" name="type">
+              <option value="design">تصميم ميكانيكي</option>
+              <option value="manufacturing">التصنيع</option>
+              <option value="automation">الأتمتة الصناعية</option>
+              <option value="consulting">استشارات هندسية</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="cBudget">الميزانية</label>
+          <select id="cBudget" name="budget">
+            <option value="small">أقل من 50,000 جنيه</option>
+            <option value="medium">50,000 - 200,000 جنيه</option>
+            <option value="large">أكثر من 200,000 جنيه</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="cMessage">الرسالة</label>
+          <textarea id="cMessage" name="message" rows="5" required></textarea>
+          <span class="form-error"></span>
+        </div>
+        <button type="submit" class="btn btn-primary btn-submit">
+          <span class="btn-label">إرسال الطلب</span>
+          <span class="btn-spinner" aria-hidden="true"></span>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-col footer-brand">
+      <a href="#home" class="nav-logo"><span class="nav-logo-gear" aria-hidden="true"></span><span class="nav-logo-text">م. محمد أحمد</span></a>
+      <p>مهندس ميكانيكا متخصص في التصميم والتصنيع وتطوير المنتجات الصناعية.</p>
+      <div class="social-icons">
+        <a href="#" aria-label="LinkedIn"><svg><use href="#icon-linkedin"/></svg></a>
+        <a href="#" aria-label="GitHub"><svg><use href="#icon-github"/></svg></a>
+        <a href="#" aria-label="ResearchGate"><svg><use href="#icon-research"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h5>روابط سريعة</h5>
+      <a href="#about">نبذة عني</a>
+      <a href="#services">الخدمات</a>
+      <a href="#projects">المشاريع</a>
+      <a href="#experience">الخبرات</a>
+    </div>
+    <div class="footer-col">
+      <h5>الخدمات</h5>
+      <a href="#services">تصميم ميكانيكي</a>
+      <a href="#services">تصميم CAD</a>
+      <a href="#services">التصنيع</a>
+      <a href="#services">الأتمتة الصناعية</a>
+    </div>
+    <div class="footer-col">
+      <h5>تواصل</h5>
+      <a href="mailto:mohamed.emad45621@gmail.com"><svg><use href="#icon-mail"/></svg> mohamed.emad45621@gmail.com</a>
+      <a href="tel:+201000000000"><svg><use href="#icon-phone"/></svg> 010-0000-0000</a>
+      <span><svg><use href="#icon-pin"/></svg> القاهرة، مصر</span>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>© 2026 محمد أحمد. جميع الحقوق محفوظة.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Toast -->
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<!-- Custom cursor -->
+<div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+<div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+<script type="module" src="js/script.js"></script>
+
+<!-- portfolio-buy-badge:start -->
+<style>
+  #portfolio-buy-badge { position: fixed; z-index: 999999; bottom: 18px; right: 18px; direction: rtl; font-family: 'Cairo', Tahoma, Arial, sans-serif; }
+  #portfolio-buy-badge a { display: flex; align-items: center; gap: 10px; background: #14142b; color: #fff; padding: 10px 16px; border-radius: 999px; box-shadow: 0 10px 25px -8px rgba(0,0,0,.5); text-decoration: none; font-size: 14px; font-weight: 700; border: 1px solid rgba(255,255,255,.15); transition: transform .15s ease, background .15s ease; }
+  #portfolio-buy-badge a:hover { background: #312e81; transform: translateY(-2px); }
+  #portfolio-buy-badge .pbb-price { background: #4f46e5; color: #fff; padding: 4px 10px; border-radius: 999px; font-size: 13px; direction: ltr; }
+  @media (max-width: 480px) { #portfolio-buy-badge a span:not(.pbb-price) { display: none; } #portfolio-buy-badge { bottom: 12px; right: 12px; } }
+</style>
+<div id="portfolio-buy-badge">
+  <a href="../../index.html?template=eng-mech#contact">
+    <span class="pbb-price">$29</span>
+    <span>اشترِ هذا القالب</span>
+  </a>
+</div>
+<!-- portfolio-buy-badge:end -->
+</body>
+</html>

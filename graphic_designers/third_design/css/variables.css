@@ -1,0 +1,107 @@
+/* ==========================================================================
+   Design Tokens — Colors, Typography, Spacing, Shadows, Motion, Z-index
+   ========================================================================== */
+
+:root {
+  /* ---------- Colors ---------- */
+  --color-bg: #0f1115;
+  --color-bg-alt: #0b0d11;
+  --color-surface: #181c24;
+  --color-card: #222733;
+  --color-card-hover: #262c3a;
+
+  --color-text: #ffffff;
+  --color-text-muted: #b7bdc9;
+  --color-text-dim: #7d8793;
+
+  --color-accent: #f4c430;
+  --color-accent-2: #d8a84b;
+  --color-accent-gray: #7d8793;
+
+  --color-paper: #f5f3ee;
+  --color-paper-dark: #e8e4da;
+  --color-ink: #14161b;
+
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-border-strong: rgba(255, 255, 255, 0.16);
+  --color-accent-border: rgba(244, 196, 48, 0.35);
+
+  --color-overlay: rgba(15, 17, 21, 0.86);
+  --color-glow: rgba(244, 196, 48, 0.18);
+
+  /* ---------- Gradients ---------- */
+  --gradient-accent: linear-gradient(135deg, var(--color-accent), var(--color-accent-2));
+  --gradient-dark: linear-gradient(180deg, var(--color-bg) 0%, var(--color-bg-alt) 100%);
+  --gradient-fade: linear-gradient(180deg, transparent, var(--color-bg) 90%);
+
+  /* ---------- Typography ---------- */
+  --font-primary: "Alexandria", "Cairo", "IBM Plex Sans Arabic", sans-serif;
+  --font-secondary: "Cairo", "Readex Pro", sans-serif;
+  --font-display: "Marhey", "Alexandria", sans-serif;
+
+  --fs-2xs: 0.75rem;
+  --fs-xs: 0.85rem;
+  --fs-sm: 0.95rem;
+  --fs-base: 1.05rem;
+  --fs-md: 1.2rem;
+  --fs-lg: 1.5rem;
+  --fs-xl: 2rem;
+  --fs-2xl: 2.75rem;
+  --fs-3xl: 3.75rem;
+  --fs-4xl: 5rem;
+  --fs-hero: clamp(3rem, 8vw, 6.5rem);
+
+  --lh-tight: 1.1;
+  --lh-snug: 1.35;
+  --lh-normal: 1.6;
+  --lh-loose: 1.9;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-black: 800;
+
+  /* ---------- Spacing ---------- */
+  --space-2xs: 0.4rem;
+  --space-xs: 0.75rem;
+  --space-sm: 1.25rem;
+  --space-md: 2rem;
+  --space-lg: 3rem;
+  --space-xl: 5rem;
+  --space-2xl: 8rem;
+  --space-3xl: 11rem;
+
+  --container-width: 1320px;
+  --container-padding: clamp(1.25rem, 5vw, 4rem);
+
+  /* ---------- Radius ---------- */
+  --radius-sm: 6px;
+  --radius-md: 14px;
+  --radius-lg: 26px;
+  --radius-full: 999px;
+
+  /* ---------- Shadows ---------- */
+  --shadow-sm: 0 4px 14px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 12px 30px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 24px 60px rgba(0, 0, 0, 0.45);
+  --shadow-glow: 0 0 40px rgba(244, 196, 48, 0.25);
+  --shadow-paper: 0 18px 40px rgba(0, 0, 0, 0.5), 0 2px 0 rgba(255, 255, 255, 0.03) inset;
+
+  /* ---------- Motion ---------- */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --transition-fast: 0.2s var(--ease-out);
+  --transition-base: 0.4s var(--ease-out);
+  --transition-slow: 0.8s var(--ease-out);
+
+  /* ---------- Z-index ---------- */
+  --z-base: 1;
+  --z-decor: 5;
+  --z-content: 10;
+  --z-nav: 100;
+  --z-cursor: 200;
+  --z-overlay: 300;
+  --z-modal: 400;
+  --z-toast: 500;
+}

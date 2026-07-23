@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 520" role="img" aria-label="مكان صورة الطبيب">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#16224a"/>
+      <stop offset="100%" stop-color="#0b1431"/>
+    </linearGradient>
+    <linearGradient id="iconGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#39B8FF"/>
+      <stop offset="100%" stop-color="#785DFF"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="520" fill="url(#bgGrad)"/>
+  <rect x="0.5" y="0.5" width="399" height="519" fill="none" stroke="rgba(255,255,255,0.08)"/>
+  <g opacity="0.9">
+    <rect x="140" y="180" width="120" height="120" rx="20" fill="none" stroke="url(#iconGrad)" stroke-width="4"/>
+    <circle cx="174" cy="214" r="12" fill="none" stroke="url(#iconGrad)" stroke-width="4"/>
+    <path d="M140 276 L182 240 L214 268 L238 244 L260 276" fill="none" stroke="url(#iconGrad)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="200" y="332" text-anchor="middle" font-family="Tajawal, sans-serif" font-size="16" fill="#7F8FAF">صورة الطبيب</text>
+  <text x="200" y="356" text-anchor="middle" font-family="Tajawal, sans-serif" font-size="12" fill="#5a6b8c">400 × 520</text>
+</svg>

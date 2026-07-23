@@ -1,0 +1,120 @@
+/* ===================================================================
+   Animations — reveal utilities & keyframes
+   Only transform/opacity are animated for performance.
+   =================================================================== */
+
+[data-animate] {
+  opacity: 0;
+  transition: opacity var(--duration-slow) var(--ease-premium),
+              transform var(--duration-slow) var(--ease-premium);
+  transition-delay: var(--delay, 0s);
+  will-change: transform, opacity;
+}
+
+[data-animate].in-view {
+  opacity: 1;
+  transform: none !important;
+}
+
+[data-animate="fade-up"] { transform: translateY(40px); }
+[data-animate="fade-down"] { transform: translateY(-40px); }
+[data-animate="fade-left"] { transform: translateX(-40px); }
+[data-animate="fade-right"] { transform: translateX(40px); }
+[data-animate="zoom-in"] { transform: scale(0.85); }
+[data-animate="zoom-out"] { transform: scale(1.15); }
+
+/* Stagger children via inline --delay set by JS, fallback nth-child */
+.stagger > * { transition-delay: calc(var(--i, 0) * 0.08s); }
+
+/* ---------- Image reveal ---------- */
+.reveal-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.reveal-wrap::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--gradient-gold);
+  transform: scaleX(1);
+  transform-origin: left;
+  z-index: 2;
+}
+
+[dir="rtl"] .reveal-wrap::after {
+  transform-origin: right;
+}
+
+.reveal-wrap.in-view::after {
+  animation: image-reveal 1s var(--ease-premium) forwards;
+}
+
+.reveal-wrap img {
+  transform: scale(1.15);
+  transition: transform 1.2s var(--ease-premium);
+}
+
+.reveal-wrap.in-view img {
+  transform: scale(1);
+}
+
+@keyframes image-reveal {
+  0% { transform: scaleX(1); }
+  50% { transform: scaleX(0); }
+  50.1% { transform: scaleX(0); transform-origin: left; }
+  100% { transform: scaleX(0); transform-origin: left; }
+}
+
+/* ---------- Split text ---------- */
+.split-text span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(60%) rotate(4deg);
+  transition: opacity 0.6s var(--ease-premium), transform 0.6s var(--ease-premium);
+  transition-delay: calc(var(--i, 0) * 0.035s);
+}
+
+.split-text.in-view span {
+  opacity: 1;
+  transform: translateY(0) rotate(0deg);
+}
+
+/* ---------- Fade line (hero title lines) ---------- */
+.line span {
+  display: inline-block;
+  transform: translateY(110%);
+  transition: transform 0.9s var(--ease-premium);
+  transition-delay: calc(var(--i, 0) * 0.12s);
+}
+
+.hero.loaded .line span {
+  transform: translateY(0);
+}
+
+/* ---------- Card lift already handled in components; keep hooks here ---------- */
+
+/* ---------- Loading skeleton for lazy images ---------- */
+img[loading="lazy"] {
+  background: var(--color-surface);
+}
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  [data-animate],
+  .split-text span,
+  .line span,
+  .reveal-wrap img {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}

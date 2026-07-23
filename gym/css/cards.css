@@ -1,0 +1,357 @@
+/* ==========================================================================
+   Program Card
+   ========================================================================== */
+.program-card {
+  position: relative;
+  padding: var(--space-lg) var(--space-md);
+  background: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: transform var(--duration-base) var(--ease-out),
+    border-color var(--duration-base) var(--ease-out),
+    box-shadow var(--duration-base) var(--ease-out);
+}
+
+.program-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--gradient-accent);
+  opacity: 0;
+  transition: opacity var(--duration-base) var(--ease-out);
+  z-index: 0;
+}
+
+.program-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.program-card:hover {
+  transform: translateY(-8px);
+  border-color: transparent;
+  box-shadow: var(--shadow-accent);
+}
+
+.program-card:hover::before {
+  opacity: 1;
+}
+
+.program-card__icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: var(--radius-sm);
+  background: rgba(255, 90, 31, 0.12);
+  color: var(--color-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--space-md);
+  transition: background var(--duration-base) var(--ease-out), color var(--duration-base) var(--ease-out);
+}
+
+.program-card:hover .program-card__icon {
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--color-white);
+}
+
+.program-card__title {
+  font-family: var(--font-display);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-md);
+  margin-bottom: var(--space-2xs);
+}
+
+.program-card__desc {
+  font-size: var(--fs-sm);
+  line-height: var(--lh-relaxed);
+  transition: color var(--duration-base) var(--ease-out);
+}
+
+.program-card:hover .program-card__desc {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.program-card__arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  border: 1px solid var(--color-border-strong);
+  margin-top: var(--space-md);
+  transition: transform var(--duration-base) var(--ease-out), background var(--duration-base) var(--ease-out);
+}
+
+.program-card:hover .program-card__arrow {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateX(-4px);
+}
+
+/* ==========================================================================
+   Coach Card
+   ========================================================================== */
+.coach-card {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  transition: transform var(--duration-base) var(--ease-out), box-shadow var(--duration-base) var(--ease-out);
+}
+
+.coach-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-md);
+}
+
+.coach-card__image {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+}
+
+.coach-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--duration-slow) var(--ease-out);
+}
+
+.coach-card:hover .coach-card__image img {
+  transform: scale(1.06);
+}
+
+.coach-card__social {
+  position: absolute;
+  bottom: var(--space-sm);
+  right: var(--space-sm);
+  display: flex;
+  gap: var(--space-2xs);
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all var(--duration-base) var(--ease-out);
+}
+
+.coach-card:hover .coach-card__social {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.coach-card__social a {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  background: rgba(17, 17, 17, 0.75);
+  backdrop-filter: blur(6px);
+  border: 1px solid var(--color-border-strong);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+  transition: background var(--duration-fast) var(--ease-out);
+}
+
+.coach-card__social a:hover {
+  background: var(--color-accent);
+}
+
+.coach-card__body {
+  padding: var(--space-md);
+}
+
+.coach-card__name {
+  font-family: var(--font-display);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-md);
+}
+
+.coach-card__specialty {
+  color: var(--color-accent);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+  margin-top: 2px;
+}
+
+.coach-card__experience {
+  font-size: var(--fs-xs);
+  color: var(--color-gray);
+  margin-top: var(--space-2xs);
+}
+
+/* ==========================================================================
+   Pricing Card
+   ========================================================================== */
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-xl) var(--space-lg);
+  background: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  transition: transform var(--duration-base) var(--ease-out),
+    border-color var(--duration-base) var(--ease-out),
+    box-shadow var(--duration-base) var(--ease-out);
+}
+
+.pricing-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255, 90, 31, 0.35);
+}
+
+.pricing-card--featured {
+  background: linear-gradient(180deg, #241a15 0%, var(--color-bg-secondary) 40%);
+  border-color: var(--color-accent);
+  position: relative;
+  transform: scale(1.04);
+  box-shadow: var(--shadow-accent);
+}
+
+.pricing-card--featured:hover {
+  transform: scale(1.04) translateY(-6px);
+}
+
+.pricing-card__ribbon {
+  position: absolute;
+  top: -14px;
+  right: var(--space-lg);
+  background: var(--gradient-accent);
+  color: var(--color-white);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-bold);
+  padding: 0.4rem 1rem;
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-sm);
+}
+
+.pricing-card__name {
+  font-family: var(--font-display);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-lg);
+}
+
+.pricing-card__desc {
+  font-size: var(--fs-sm);
+  margin-top: var(--space-3xs);
+}
+
+.pricing-card__price {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-2xs);
+  margin-block: var(--space-lg);
+}
+
+.pricing-card__price .amount {
+  font-family: var(--font-display);
+  font-size: var(--fs-3xl);
+  font-weight: var(--fw-extrabold);
+  color: var(--color-white);
+}
+
+.pricing-card__price .currency {
+  font-size: var(--fs-md);
+  color: var(--color-accent);
+  font-weight: var(--fw-bold);
+}
+
+.pricing-card__price .period {
+  color: var(--color-gray);
+  font-size: var(--fs-sm);
+}
+
+.pricing-card__features {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-xl);
+  flex-grow: 1;
+}
+
+.pricing-card__features li {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2xs);
+  font-size: var(--fs-sm);
+}
+
+.pricing-card__features li svg {
+  color: var(--color-accent);
+  flex-shrink: 0;
+}
+
+.pricing-card__features li.is-disabled {
+  color: var(--color-gray-dark);
+  text-decoration: line-through;
+}
+
+.pricing-card__features li.is-disabled svg {
+  color: var(--color-gray-dark);
+}
+
+.pricing-card .btn {
+  width: 100%;
+}
+
+.pricing-card.is-dimmed {
+  opacity: 0.6;
+  transform: scale(0.98);
+}
+
+/* ==========================================================================
+   Testimonial Card
+   ========================================================================== */
+.testimonial-card {
+  background: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  max-width: 720px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.testimonial-card__stars {
+  color: var(--color-accent);
+  letter-spacing: 3px;
+  margin-bottom: var(--space-md);
+}
+
+.testimonial-card__quote {
+  font-size: var(--fs-lg);
+  line-height: var(--lh-relaxed);
+  color: var(--color-white);
+  font-weight: var(--fw-medium);
+  margin-bottom: var(--space-lg);
+}
+
+.testimonial-card__author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+}
+
+.testimonial-card__author img {
+  width: 3.25rem;
+  height: 3.25rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--color-accent);
+}
+
+.testimonial-card__author-info {
+  text-align: right;
+}
+
+.testimonial-card__author-info strong {
+  display: block;
+  font-family: var(--font-display);
+}
+
+.testimonial-card__author-info span {
+  font-size: var(--fs-xs);
+  color: var(--color-gray);
+}
