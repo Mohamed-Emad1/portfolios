@@ -413,7 +413,7 @@ svg { display: block; }
   transform: translateY(-4px);
 }
 
-.hero__visual { position: relative; display: flex; justify-content: center; }
+.hero__visual { position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 28px; }
 .hero__arch {
   position: relative;
   width: min(100%, 460px);
@@ -440,10 +440,9 @@ svg { display: block; }
 }
 
 .stat-card {
-  position: absolute;
-  top: -8%;
-  left: -8%;
-  width: 280px;
+  position: relative;
+  width: 100%;
+  max-width: 420px;
   background: var(--color-card);
   border-radius: var(--radius-card);
   box-shadow: var(--shadow-lift);
@@ -1009,7 +1008,7 @@ svg { display: block; }
 
   .hero__inner { grid-template-columns: 1fr; gap: 64px; }
   .hero__visual { order: -1; padding-top: 40px; }
-  .stat-card { position: static; width: 100%; max-width: 380px; margin: -60px auto 0; }
+  .stat-card { max-width: 380px; margin: 0 auto; }
   .hero__arch { margin-inline: auto; }
 
   .about__inner { grid-template-columns: 1fr; }
