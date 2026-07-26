@@ -22,26 +22,26 @@ const CATEGORY_ICONS = {
 };
 
 const TEMPLATES = [
-  { id: 'acc-1', title: 'محاسب — تصميم كلاسيكي', category: 'accountants', path: 'accountants/first_design', price: 1250, desc: 'تصميم بسيط وموثوق لصفحة واحدة للمحاسبين والمستشارين الماليين.' },
-  { id: 'acc-2', title: 'محاسب — تصميم عصري', category: 'accountants', path: 'accountants/second_design', price: 1250, desc: 'تصميم بديل عصري للمستشارين الماليين والمحاسبين القانونيين.' },
-  { id: 'doc-1', title: 'طبيب أسرة', category: 'doctors', path: 'doctors/first_design', price: 1250, desc: 'موقع دافئ وودود لأطباء طب الأسرة.' },
-  { id: 'doc-2', title: 'طبيب — تصميم 2', category: 'doctors', path: 'doctors/second design', price: 1250, desc: 'تصميم طبي بديل يحتوي أقسام الخدمات والحجز.' },
-  { id: 'doc-3', title: 'طبيب — تصميم 3', category: 'doctors', path: 'doctors/third design', price: 1450, desc: 'محفظة طبية مميزة بأقسام بصرية أكثر ثراءً.' },
-  { id: 'eng-civil', title: 'مهندس مدني', category: 'engineers', path: 'engineers/civil_eng', price: 1450, desc: 'محفظة تركز على المشاريع لمحترفي الهندسة المدنية.' },
-  { id: 'eng-elec', title: 'مهندس كهرباء', category: 'engineers', path: 'engineers/electirical_eng', price: 1450, desc: 'محفظة تقنية لمهندسي أنظمة القدرة والإلكترونيات.' },
-  { id: 'eng-mech', title: 'مهندس ميكانيكا', category: 'engineers', path: 'engineers/mechanical_eng', price: 1450, desc: 'عرض تقديمي لمهندسي التصميم والتصنيع وتطوير المنتجات.' },
-  { id: 'gfx-1', title: 'مصمم جرافيك — تصميم 1', category: 'graphic_designers', path: 'graphic_designers/first_design', price: 1450, desc: 'تصميم جريء يركز على الصور لمصممي الهوية البصرية.' },
-  { id: 'gfx-2', title: 'مصمم جرافيك — تصميم 2', category: 'graphic_designers', path: 'graphic_designers/second_design', price: 1450, desc: 'محفظة إبداعية بديلة لمصممي الجرافيك.' },
-  { id: 'gfx-3', title: 'مصمم جرافيك — تصميم 3', category: 'graphic_designers', path: 'graphic_designers/third_design', price: 1450, desc: 'تصميم يعتمد على معرض الأعمال لمحافظ الهوية البصرية.' },
-  { id: 'gym', title: 'موقع نادي ومدرب رياضي', category: 'gym', path: 'gym', price: 2950, desc: 'موقع رياضي متعدد الأقسام يشمل الأسعار والمدربين والمعرض والأسئلة الشائعة.' },
-  { id: 'int-1', title: 'مصمم ديكور داخلي — تصميم 1', category: 'interior_design', path: 'interior_design/first_design', price: 1450, desc: 'عرض أنيق لاستوديوهات التصميم الداخلي.' },
-  { id: 'int-2', title: 'استوديو تصميم داخلي فاخر', category: 'interior_design', path: 'interior_design/second_desing', price: 1450, desc: 'تصميم راقٍ لعلامات التصميم الداخلي الفاخرة.' },
-  { id: 'int-3', title: 'استوديو تصميم داخلي — عصري', category: 'interior_design', path: 'interior_design/third_design', price: 1750, desc: 'محفظة عصرية غنية بالصور لاستوديوهات التصميم.' },
-  { id: 'law-1', title: 'محامٍ ومستشار قانوني — تصميم 1', category: 'lawyers', path: 'lawyers/first_Design', price: 1250, desc: 'تصميم احترافي وموثوق للمحامين والمستشارين القانونيين.' },
-  { id: 'law-2', title: 'محامٍ ومستشار قانوني — تصميم 2', category: 'lawyers', path: 'lawyers/second_design', price: 1250, desc: 'تصميم قانوني بديل.' },
-  { id: 'pho-1', title: 'مصور فوتوغرافي — تصميم 1', category: 'photographers', path: 'photographers/first_design', price: 1250, desc: 'موقع يركز على معرض الصور للمصورين المحترفين.' },
-  { id: 'pho-2', title: 'مصور فوتوغرافي — تصميم 2', category: 'photographers', path: 'photographers/second_design', price: 1250, desc: 'تصميم بديل لمحفظة التصوير الفوتوغرافي.' },
-  { id: 'pho-3', title: 'مصور أفلام زفاف سينمائي', category: 'photographers', path: 'photographers/third_design', price: 1450, desc: 'موقع سينمائي يعتمد على الفيديو لمصوري حفلات الزفاف.' },
+  { id: 'acc-1', title: 'محاسب — تصميم كلاسيكي', category: 'accountants', path: 'accountants/first_design', price: 1500, desc: 'تصميم بسيط وموثوق لصفحة واحدة للمحاسبين والمستشارين الماليين.' },
+  { id: 'acc-2', title: 'محاسب — تصميم عصري', category: 'accountants', path: 'accountants/second_design', price: 1500, desc: 'تصميم بديل عصري للمستشارين الماليين والمحاسبين القانونيين.' },
+  { id: 'doc-1', title: 'طبيب أسرة', category: 'doctors', path: 'doctors/first_design', price: 1500, desc: 'موقع دافئ وودود لأطباء طب الأسرة.' },
+  { id: 'doc-2', title: 'طبيب — تصميم 2', category: 'doctors', path: 'doctors/second design', price: 1500, desc: 'تصميم طبي بديل يحتوي أقسام الخدمات والحجز.' },
+  { id: 'doc-3', title: 'طبيب — تصميم 3', category: 'doctors', path: 'doctors/third design', price: 1500, desc: 'محفظة طبية مميزة بأقسام بصرية أكثر ثراءً.' },
+  { id: 'eng-civil', title: 'مهندس مدني', category: 'engineers', path: 'engineers/civil_eng', price: 1500, desc: 'محفظة تركز على المشاريع لمحترفي الهندسة المدنية.' },
+  { id: 'eng-elec', title: 'مهندس كهرباء', category: 'engineers', path: 'engineers/electirical_eng', price: 1500, desc: 'محفظة تقنية لمهندسي أنظمة القدرة والإلكترونيات.' },
+  { id: 'eng-mech', title: 'مهندس ميكانيكا', category: 'engineers', path: 'engineers/mechanical_eng', price: 1500, desc: 'عرض تقديمي لمهندسي التصميم والتصنيع وتطوير المنتجات.' },
+  { id: 'gfx-1', title: 'مصمم جرافيك — تصميم 1', category: 'graphic_designers', path: 'graphic_designers/first_design', price: 1500, desc: 'تصميم جريء يركز على الصور لمصممي الهوية البصرية.' },
+  { id: 'gfx-2', title: 'مصمم جرافيك — تصميم 2', category: 'graphic_designers', path: 'graphic_designers/second_design', price: 1500, desc: 'محفظة إبداعية بديلة لمصممي الجرافيك.' },
+  { id: 'gfx-3', title: 'مصمم جرافيك — تصميم 3', category: 'graphic_designers', path: 'graphic_designers/third_design', price: 1500, desc: 'تصميم يعتمد على معرض الأعمال لمحافظ الهوية البصرية.' },
+  { id: 'gym', title: 'موقع نادي ومدرب رياضي', category: 'gym', path: 'gym', price: 1500, desc: 'موقع رياضي متعدد الأقسام يشمل الأسعار والمدربين والمعرض والأسئلة الشائعة.' },
+  { id: 'int-1', title: 'مصمم ديكور داخلي — تصميم 1', category: 'interior_design', path: 'interior_design/first_design', price: 1500, desc: 'عرض أنيق لاستوديوهات التصميم الداخلي.' },
+  { id: 'int-2', title: 'استوديو تصميم داخلي فاخر', category: 'interior_design', path: 'interior_design/second_desing', price: 1500, desc: 'تصميم راقٍ لعلامات التصميم الداخلي الفاخرة.' },
+  { id: 'int-3', title: 'استوديو تصميم داخلي — عصري', category: 'interior_design', path: 'interior_design/third_design', price: 1500, desc: 'محفظة عصرية غنية بالصور لاستوديوهات التصميم.' },
+  { id: 'law-1', title: 'محامٍ ومستشار قانوني — تصميم 1', category: 'lawyers', path: 'lawyers/first_Design', price: 1500, desc: 'تصميم احترافي وموثوق للمحامين والمستشارين القانونيين.' },
+  { id: 'law-2', title: 'محامٍ ومستشار قانوني — تصميم 2', category: 'lawyers', path: 'lawyers/second_design', price: 1500, desc: 'تصميم قانوني بديل.' },
+  { id: 'pho-1', title: 'مصور فوتوغرافي — تصميم 1', category: 'photographers', path: 'photographers/first_design', price: 1500, desc: 'موقع يركز على معرض الصور للمصورين المحترفين.' },
+  { id: 'pho-2', title: 'مصور فوتوغرافي — تصميم 2', category: 'photographers', path: 'photographers/second_design', price: 1500, desc: 'تصميم بديل لمحفظة التصوير الفوتوغرافي.' },
+  { id: 'pho-3', title: 'مصور أفلام زفاف سينمائي', category: 'photographers', path: 'photographers/third_design', price: 1500, desc: 'موقع سينمائي يعتمد على الفيديو لمصوري حفلات الزفاف.' },
 ];
 
 /* ===================== Render template grid ===================== */
@@ -66,7 +66,7 @@ function renderCards(list) {
         <span class="tpl-card__cat-tag">${CATEGORY_LABELS[tpl.category]}</span>
         <span class="tpl-card__price-tag">${tpl.price} جنيه</span>
         <span class="tpl-card__icon" aria-hidden="true">${CATEGORY_ICONS[tpl.category]}</span>
-        <a class="tpl-card__overlay" href="${href}" target="_blank" rel="noopener noreferrer" aria-label="فتح المعاينة الحية لِـ ${tpl.title}">
+        <a class="tpl-card__overlay" href="${href}" aria-label="فتح المعاينة الحية لِـ ${tpl.title}">
           <span class="btn btn--primary btn--sm">معاينة حية</span>
         </a>
       </div>
@@ -76,7 +76,7 @@ function renderCards(list) {
         <div class="tpl-card__footer">
           <span class="tpl-card__price">${tpl.price} جنيه</span>
           <div class="tpl-card__actions">
-            <a class="btn btn--outline btn--sm" href="${href}" target="_blank" rel="noopener noreferrer">معاينة</a>
+            <a class="btn btn--outline btn--sm" href="${href}">معاينة</a>
             <a class="btn btn--primary btn--sm" href="#contact" data-buy="${tpl.id}">اشترِ</a>
           </div>
         </div>

@@ -104,15 +104,16 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
   justify-content: space-between;
   padding: 14px 24px;
 }
-.brand { display: flex; align-items: center; gap: 10px; font-weight: 800; }
-.brand__mark {
-  width: 36px; height: 36px;
-  background: linear-gradient(135deg, var(--primary), var(--accent));
-  color: #fff; border-radius: 10px;
-  display: flex; align-items: center; justify-content: center;
-  font-size: 1.1rem;
+.brand { display: flex; align-items: center; gap: 12px; font-weight: 800; }
+.brand__logo-wrap {
+  display: flex;
+  align-items: center;
+  padding: 8px 14px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #1e1b4b, #3730a3);
 }
-.brand__text em { color: var(--primary); font-style: normal; }
+.brand__logo { height: 26px; width: auto; display: block; }
+.brand__slogan { font-size: .72rem; font-weight: 600; color: var(--ink-soft); }
 .main-nav { display: flex; gap: 28px; }
 .main-nav a { font-weight: 600; color: var(--ink-soft); }
 .main-nav a:hover { color: var(--primary); }
@@ -363,6 +364,30 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
 }
 .price-card .btn { margin-top: auto; }
 
+.pricing-addons {
+  max-width: 640px;
+  margin: 40px auto 0;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 26px 28px;
+  box-shadow: var(--shadow);
+}
+.pricing-addons h3 { font-size: 1.1rem; margin-bottom: 6px; }
+.pricing-addons > p { font-size: .88rem; color: var(--ink-soft); margin: 0 0 16px; }
+.pricing-addons ul { display: flex; flex-direction: column; gap: 10px; }
+.pricing-addons li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: .9rem;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed var(--border);
+}
+.pricing-addons li:last-child { border-bottom: none; padding-bottom: 0; }
+.pricing-addons li span { color: var(--ink-soft); }
+.pricing-addons li strong { color: var(--primary-dark); font-weight: 800; }
+
 /* ===================== Contact ===================== */
 .contact-section { padding: 90px 0; background: linear-gradient(160deg, #14142b, #241f4d); color: #fff; }
 .contact__inner {
@@ -431,7 +456,7 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
   flex-wrap: wrap;
   gap: 16px;
 }
-.brand--footer .brand__text { color: #fff; }
+.brand--footer .brand__slogan { color: rgba(255,255,255,.55); }
 .footer__copy { margin: 0; font-size: .85rem; color: rgba(255,255,255,.55); }
 .footer__links { display: flex; gap: 20px; }
 .footer__links a:hover { color: var(--accent); }

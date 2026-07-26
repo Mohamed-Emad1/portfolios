@@ -27,7 +27,7 @@
   <div class="container navbar__inner">
     <a href="#hero" class="brand">
       <span class="brand__mark">م</span>
-      <span>أحمد محمد</span>
+      <span data-bind="business.name">أحمد محمد</span>
     </a>
 
     <nav class="navbar__links" aria-label="التنقل الرئيسي">
@@ -73,17 +73,17 @@
   <div class="spreadsheet-decor" aria-hidden="true"></div>
   <div class="container hero__grid">
     <div class="hero__content">
-      <p class="section-eyebrow">محاسب مالي معتمد</p>
+      <p class="section-eyebrow" data-bind="business.eyebrow">محاسب مالي معتمد</p>
       <h1 class="hero__title">
-        أحمد محمد
-        <small>محاسب مالي ومستشار مالي معتمد</small>
+        <span data-bind="business.name">أحمد محمد</span>
+        <small data-bind="business.role">محاسب مالي ومستشار مالي معتمد</small>
       </h1>
-      <p class="hero__desc">
+      <p class="hero__desc" data-bind="business.heroDesc">
         أساعد الشركات ورواد الأعمال على تنظيم الحسابات، إعداد التقارير المالية، وتحسين الأداء المالي وفق أعلى المعايير المحاسبية.
       </p>
       <div class="hero__actions">
         <a href="#portfolio" class="btn btn-primary">استعرض أعمالي</a>
-        <a href="assets/placeholder.png" download class="btn btn-outline">تحميل السيرة الذاتية</a>
+        <a href="assets/placeholder.png" download class="btn btn-outline" data-bind="business.cvFile" data-bind-attr="href">تحميل السيرة الذاتية</a>
       </div>
 
       <div class="hero__stats" role="list" aria-label="إحصائيات سريعة">
@@ -107,7 +107,7 @@
     </div>
 
     <div class="hero__portrait">
-      <img src="assets/placeholder.png" alt="صورة شخصية لأحمد محمد، محاسب مالي" width="480" height="560" class="float" style="border-radius: var(--radius-xl); border:1px solid var(--border-color); box-shadow: var(--shadow-lg);">
+      <img src="assets/placeholder.png" data-bind="business.heroImage" alt="صورة شخصية لأحمد محمد، محاسب مالي" width="480" height="560" class="float" style="border-radius: var(--radius-xl); border:1px solid var(--border-color); box-shadow: var(--shadow-lg);">
     </div>
   </div>
 </section>
@@ -117,7 +117,7 @@
   <div class="container">
     <div class="grid grid-2" style="align-items:center; gap: var(--space-2xl);">
       <div data-animate="fade-right">
-        <img src="assets/placeholder.png" alt="أحمد محمد أثناء العمل على التقارير المالية" style="border-radius: var(--radius-xl); border:1px solid var(--border-color); box-shadow: var(--shadow-lg);">
+        <img src="assets/placeholder.png" data-bind="business.aboutImage" alt="أحمد محمد أثناء العمل على التقارير المالية" style="border-radius: var(--radius-xl); border:1px solid var(--border-color); box-shadow: var(--shadow-lg);">
       </div>
       <div data-animate="fade-left">
         <p class="section-eyebrow">نبذة عني</p>
@@ -921,15 +921,15 @@
       <div>
         <a href="#hero" class="brand" style="margin-bottom: var(--space-sm);">
           <span class="brand__mark">م</span>
-          <span>أحمد محمد</span>
+          <span data-bind="business.name">أحمد محمد</span>
         </a>
-        <p style="color:var(--text-muted); font-size: var(--fs-sm); line-height: var(--lh-loose); max-width:320px;">
+        <p style="color:var(--text-muted); font-size: var(--fs-sm); line-height: var(--lh-loose); max-width:320px;" data-bind="business.footerBio">
           محاسب مالي ومستشار معتمد، أقدم خدمات محاسبية ومالية دقيقة وموثوقة للشركات ورواد الأعمال.
         </p>
         <div class="social-icons" style="margin-top: var(--space-md);">
-          <a href="#" aria-label="لينكدإن"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V23h-4V8zm7.5 0h3.8v2.05h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V23h-4v-6.86c0-1.64-.03-3.75-2.29-3.75-2.29 0-2.64 1.79-2.64 3.63V23h-4V8z"/></svg></a>
-          <a href="#" aria-label="واتساب"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.2-.7.8-.8.9-.2.2-.3.2-.5.1-1.4-.7-2.3-1.3-3.2-2.9-.2-.4.2-.4.6-1.2.1-.2 0-.3 0-.5L9.4 8c-.1-.2-.5-.5-.7-.5h-.5c-.2 0-.5.1-.7.3-.2.2-.9.9-.9 2.2s1 2.6 1.1 2.8c.1.2 2 3 4.7 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.1-.3-.2-.5-.3z"/></svg></a>
-          <a href="#" aria-label="البريد الإلكتروني"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 6l10 7 10-7"/></svg></a>
+          <a href="#" data-bind="business.linkedin" data-bind-attr="href" aria-label="لينكدإن"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V23h-4V8zm7.5 0h3.8v2.05h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V23h-4v-6.86c0-1.64-.03-3.75-2.29-3.75-2.29 0-2.64 1.79-2.64 3.63V23h-4V8z"/></svg></a>
+          <a href="#" data-bind="business.whatsapp" data-bind-attr="href" aria-label="واتساب"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.2-.7.8-.8.9-.2.2-.3.2-.5.1-1.4-.7-2.3-1.3-3.2-2.9-.2-.4.2-.4.6-1.2.1-.2 0-.3 0-.5L9.4 8c-.1-.2-.5-.5-.7-.5h-.5c-.2 0-.5.1-.7.3-.2.2-.9.9-.9 2.2s1 2.6 1.1 2.8c.1.2 2 3 4.7 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.1-.3-.2-.5-.3z"/></svg></a>
+          <a href="#" data-bind="business.email" data-bind-attr="href" aria-label="البريد الإلكتروني"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 6l10 7 10-7"/></svg></a>
         </div>
       </div>
 
@@ -956,20 +956,22 @@
       <div>
         <h5 style="margin-bottom: var(--space-sm);">تواصل</h5>
         <ul style="display:flex; flex-direction:column; gap: var(--space-2xs); color:var(--text-muted); font-size:var(--fs-sm);">
-          <li>mohamed.emad45621@gmail.com</li>
-          <li>+966 5X XXX XXXX</li>
-          <li>شارع فوزي معاذ الاسكندرية</li>
+          <li data-bind="business.email">mohamed.emad45621@gmail.com</li>
+          <li data-bind="business.phone">+966 5X XXX XXXX</li>
+          <li data-bind="business.address">شارع فوزي معاذ الاسكندرية</li>
         </ul>
       </div>
     </div>
 
     <div class="footer__bottom">
-      <span>© 2026 أحمد محمد. جميع الحقوق محفوظة.</span>
-      <span>محاسب مالي ومستشار معتمد</span>
+      <span>© <span data-bind="business.year">2026</span> <span data-bind="business.name">أحمد محمد</span>. جميع الحقوق محفوظة.</span>
+      <span data-bind="business.role">محاسب مالي ومستشار معتمد</span>
     </div>
   </div>
 </footer>
 
+<script src="config.js"></script>
+<script src="assets/apply-config.js"></script>
 <script src="js/cursor.js" defer></script>
 <script src="js/navbar.js" defer></script>
 <script src="js/animations.js" defer></script>
@@ -993,7 +995,7 @@
 </style>
 <div id="portfolio-buy-badge">
   <a href="../../index.html?template=acc-1#contact">
-    <span class="pbb-price">1250 جنيه</span>
+    <span class="pbb-price">1500 جنيه</span>
     <span>اشترِ هذا القالب</span>
   </a>
 </div>

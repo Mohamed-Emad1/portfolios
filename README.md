@@ -29,10 +29,14 @@ template pre-selected.
 
 | Plan | Price |
 | --- | --- |
-| Single template | $25 – $59 (see each card) |
-| Category bundle (all designs in one profession) | $59 |
-| Full collection (all 20 templates) | $299 |
+| Single template (up to 6 sections) | 1,500 EGP flat |
+| Category bundle (all designs in one profession) | 2,950 EGP |
+| Full collection (all 20 templates) | 14,950 EGP |
 | Custom design | Contact for a quote |
+
+Add-ons (apply to any template): extra section beyond 6 — 200 EGP; color
+change — 200 EGP; font change — 100 EGP; first revision after delivery is
+free, each revision after that — 200 EGP.
 
 ## Contact / Buy
 
