@@ -419,6 +419,12 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
 }
 .pricing-showcase__main .btn { align-self: flex-start; margin-top: auto; }
 .pricing-showcase__note { font-size: .78rem; color: rgba(255,255,255,.6); margin-top: 12px; }
+.pricing-showcase__note-price {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: rgb(206,159,105);
+  letter-spacing: 0.5px;
+}
 
 .pricing-showcase__addons { padding: 44px 40px; }
 .pricing-showcase__addons h3 { font-size: 1.15rem; margin-bottom: 6px; }
