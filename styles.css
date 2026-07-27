@@ -430,6 +430,7 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
 }
 .sections-info[open] summary::after { transform: rotate(45deg); }
 .sections-info__intro { font-size: .82rem; color: rgba(255,255,255,.7); margin: 12px 0 10px; }
+.sections-info__like { font-size: 1.05rem; font-weight: 800; color: rgb(206,159,105); }
 .sections-info__list {
   display: grid;
   grid-template-columns: 1fr 1fr;
