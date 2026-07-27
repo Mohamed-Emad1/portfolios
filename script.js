@@ -45,6 +45,7 @@ const TEMPLATES = [
 ];
 
 /* ===================== Render template grid ===================== */
+const ORIGINAL_PRICE = 2000;
 const grid = document.getElementById('templatesGrid');
 const cfTemplate = document.getElementById('cf-template');
 
@@ -64,7 +65,7 @@ function renderCards(list) {
       <div class="tpl-card__thumb">
         <div class="tpl-card__thumb-chrome" aria-hidden="true"><span></span><span></span><span></span></div>
         <span class="tpl-card__cat-tag">${CATEGORY_LABELS[tpl.category]}</span>
-        <span class="tpl-card__price-tag">${tpl.price} جنيه</span>
+        <span class="tpl-card__price-tag"><s>${ORIGINAL_PRICE}</s> ${tpl.price} جنيه</span>
         <span class="tpl-card__icon" aria-hidden="true">${CATEGORY_ICONS[tpl.category]}</span>
         <a class="tpl-card__overlay" href="${href}" aria-label="فتح المعاينة الحية لِـ ${tpl.title}">
           <span class="btn btn--primary btn--sm">معاينة حية</span>
@@ -74,7 +75,7 @@ function renderCards(list) {
         <h3 class="tpl-card__title">${tpl.title}</h3>
         <p class="tpl-card__desc">${tpl.desc}</p>
         <div class="tpl-card__footer">
-          <span class="tpl-card__price">${tpl.price} جنيه</span>
+          <span class="tpl-card__price"><s class="tpl-card__price-old">${ORIGINAL_PRICE}</s> ${tpl.price} جنيه</span>
           <div class="tpl-card__actions">
             <a class="btn btn--outline btn--sm" href="${href}">معاينة</a>
             <a class="btn btn--primary btn--sm" href="#contact" data-buy="${tpl.id}">اشترِ</a>
@@ -90,7 +91,7 @@ function populateTemplateSelect() {
   TEMPLATES.forEach((tpl) => {
     const opt = document.createElement('option');
     opt.value = tpl.id;
-    opt.textContent = `${tpl.title} (${tpl.price} جنيه)`;
+    opt.textContent = `${tpl.title} (${tpl.price} جنيه بدلاً من ${ORIGINAL_PRICE})`;
     cfTemplate.appendChild(opt);
   });
 }

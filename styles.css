@@ -262,7 +262,9 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
   font-size: .82rem;
   box-shadow: 0 4px 12px rgba(0,0,0,.18);
   z-index: 2;
+  white-space: nowrap;
 }
+.tpl-card__price-tag s { font-weight: 500; font-size: .7rem; color: var(--ink-soft); opacity: .8; margin-inline-end: 3px; }
 .tpl-card__cat-tag {
   position: absolute;
   top: 40px; inset-inline-start: 12px;
@@ -292,6 +294,7 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
   margin-top: 6px;
 }
 .tpl-card__price { font-weight: 800; font-size: 1.15rem; color: var(--primary-dark); }
+.tpl-card__price-old { font-weight: 500; font-size: .85rem; color: var(--ink-soft); opacity: .75; margin-inline-end: 2px; }
 .tpl-card__actions { display: flex; gap: 8px; }
 
 /* ===================== Our Work ===================== */
@@ -397,13 +400,34 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
   border-radius: 999px;
   margin-bottom: 18px;
 }
+.pricing-showcase__price-row {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  margin: 0 0 10px;
+}
 .pricing-showcase__price {
   font-size: 3rem;
   font-weight: 800;
   line-height: 1;
-  margin: 0 0 10px;
+  margin: 0;
 }
 .pricing-showcase__price span { font-size: 1.15rem; font-weight: 700; color: rgba(255,255,255,.7); margin-inline-start: 6px; }
+.pricing-showcase__old-price {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: rgba(255,255,255,.5);
+  text-decoration: line-through;
+}
+.pricing-showcase__discount {
+  font-size: .78rem;
+  font-weight: 800;
+  color: #14142b;
+  background: rgb(206,159,105);
+  padding: 4px 10px;
+  border-radius: 999px;
+}
 .pricing-showcase__desc { font-size: .92rem; color: rgba(255,255,255,.75); margin: 0 0 22px; max-width: 40ch; }
 
 .sections-info {
