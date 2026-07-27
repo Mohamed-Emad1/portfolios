@@ -131,11 +131,34 @@ mainNav.querySelectorAll('a').forEach((a) => {
 });
 
 /* ===================== Contact form -> mailto ===================== */
+const EMAIL_REGEX = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)+$/;
+
+const cfEmail = document.getElementById('cf-email');
+const cfEmailError = document.getElementById('cf-email-error');
+
+function validateEmail() {
+  const isValid = EMAIL_REGEX.test(cfEmail.value.trim());
+  cfEmail.classList.toggle('is-invalid', !isValid);
+  cfEmailError.hidden = isValid;
+  return isValid;
+}
+
+cfEmail.addEventListener('input', () => {
+  if (cfEmail.classList.contains('is-invalid')) validateEmail();
+});
+cfEmail.addEventListener('blur', validateEmail);
+
 const contactForm = document.getElementById('contactForm');
 contactForm.addEventListener('submit', (e) => {
   e.preventDefault();
+
+  if (!validateEmail()) {
+    cfEmail.focus();
+    return;
+  }
+
   const name = document.getElementById('cf-name').value.trim();
-  const email = document.getElementById('cf-email').value.trim();
+  const email = cfEmail.value.trim();
   const message = document.getElementById('cf-message').value.trim();
   const templateId = cfTemplate.value;
   const templateLabel = templateId

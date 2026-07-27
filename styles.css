@@ -510,6 +510,11 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
 .contact-form input:focus,
 .contact-form select:focus,
 .contact-form textarea:focus { outline: 2px solid var(--primary); outline-offset: 1px; }
+.contact-form input.is-invalid,
+.contact-form textarea.is-invalid { border-color: #e11d48; }
+.contact-form input.is-invalid:focus,
+.contact-form textarea.is-invalid:focus { outline-color: #e11d48; }
+.field-error { font-size: .78rem; font-weight: 600; color: #e11d48; }
 .contact-form__note { font-size: .78rem; color: var(--ink-soft); margin: 0; text-align: center; }
 
 /* ===================== Footer ===================== */
