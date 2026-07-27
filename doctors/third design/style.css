@@ -59,6 +59,7 @@
    ========================================================= */
 *, *::before, *::after{ box-sizing: border-box; }
 html{ scroll-behavior: smooth; }
+html, body{ max-width: 100%; overflow-x: hidden; }
 body{
   margin: 0;
   font-family: var(--font-base);
@@ -722,7 +723,7 @@ svg{ width: 1.25em; height: 1.25em; }
    ========================================================= */
 @media (max-width: 1024px){
   .hero__grid{ grid-template-columns: 1fr; }
-  .hero__visual{ order: -1; max-width: 460px; margin-inline: auto; }
+  .hero__visual{ order: -1; width: 100%; max-width: 460px; margin-inline: auto; }
   .hero__content{ text-align: center; }
   .hero__actions, .feature-badges{ justify-content: center; }
   .hero__desc{ margin-inline: auto; }

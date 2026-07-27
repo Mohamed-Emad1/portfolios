@@ -1,21 +1,86 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 600" role="img" aria-label="مكان صورة الاستشارة الطبية">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 600" role="img" aria-label="رسم توضيحي لاستشارة طبية">
   <defs>
     <linearGradient id="bgGrad2" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#16224a"/>
       <stop offset="100%" stop-color="#0b1431"/>
     </linearGradient>
-    <linearGradient id="iconGrad2" x1="0" y1="0" x2="1" y2="1">
+    <linearGradient id="coatGrad2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eef4ff"/>
+      <stop offset="100%" stop-color="#d7e3fb"/>
+    </linearGradient>
+    <linearGradient id="scrubGrad2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#39B8FF"/>
+      <stop offset="100%" stop-color="#4F7BFF"/>
+    </linearGradient>
+    <linearGradient id="patientGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#785DFF"/>
+      <stop offset="100%" stop-color="#4F7BFF"/>
+    </linearGradient>
+    <linearGradient id="accentGrad2" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#39B8FF"/>
       <stop offset="100%" stop-color="#785DFF"/>
     </linearGradient>
+    <radialGradient id="glowGrad2" cx="50%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#39B8FF" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#39B8FF" stop-opacity="0"/>
+    </radialGradient>
   </defs>
+
   <rect width="640" height="600" fill="url(#bgGrad2)"/>
   <rect x="0.5" y="0.5" width="639" height="599" fill="none" stroke="rgba(255,255,255,0.08)"/>
-  <g opacity="0.9">
-    <rect x="260" y="220" width="120" height="120" rx="20" fill="none" stroke="url(#iconGrad2)" stroke-width="4"/>
-    <circle cx="294" cy="254" r="12" fill="none" stroke="url(#iconGrad2)" stroke-width="4"/>
-    <path d="M260 316 L302 280 L334 308 L358 284 L380 316" fill="none" stroke="url(#iconGrad2)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="320" cy="260" r="260" fill="url(#glowGrad2)"/>
+
+  <!-- desk -->
+  <rect x="90" y="420" width="460" height="18" rx="4" fill="rgba(255,255,255,0.06)"/>
+  <rect x="120" y="438" width="30" height="90" fill="rgba(255,255,255,0.04)"/>
+  <rect x="490" y="438" width="30" height="90" fill="rgba(255,255,255,0.04)"/>
+
+  <!-- clipboard on desk -->
+  <g>
+    <rect x="270" y="392" width="100" height="70" rx="6" fill="#0f1a3d" stroke="rgba(255,255,255,0.12)"/>
+    <rect x="284" y="378" width="72" height="16" rx="5" fill="#1b2a57"/>
+    <line x1="284" y1="412" x2="356" y2="412" stroke="rgba(255,255,255,0.25)" stroke-width="3" stroke-linecap="round"/>
+    <line x1="284" y1="426" x2="340" y2="426" stroke="rgba(255,255,255,0.18)" stroke-width="3" stroke-linecap="round"/>
+    <line x1="284" y1="440" x2="348" y2="440" stroke="rgba(255,255,255,0.18)" stroke-width="3" stroke-linecap="round"/>
   </g>
-  <text x="320" y="372" text-anchor="middle" font-family="Tajawal, sans-serif" font-size="18" fill="#7F8FAF">صورة الاستشارة الطبية</text>
-  <text x="320" y="398" text-anchor="middle" font-family="Tajawal, sans-serif" font-size="13" fill="#5a6b8c">640 × 600</text>
+
+  <!-- doctor figure (left, larger) -->
+  <g>
+    <path d="M150 420c0-64 34-104 84-104s84 40 84 104" fill="url(#coatGrad2)"/>
+    <path d="M198 336c0 0 12 12 26 12s26-12 26-12l-5 36h-42Z" fill="url(#scrubGrad2)"/>
+    <path d="M196 334 180 420M250 334 266 420" stroke="rgba(11,20,49,0.18)" stroke-width="2" stroke-linecap="round"/>
+    <path d="M178 342c0 20 9 30 24 30M266 342c0 20-9 30-24 30" fill="none" stroke="#0b1431" stroke-width="4.5" stroke-linecap="round" opacity="0.5"/>
+    <circle cx="224" cy="372" r="8" fill="none" stroke="#0b1431" stroke-width="4.5" opacity="0.5"/>
+    <rect x="210" y="308" width="28" height="26" rx="10" fill="#f2c9a1"/>
+    <circle cx="224" cy="278" r="40" fill="#f5d3ab"/>
+    <path d="M186 268c0-26 17-46 38-46s38 20 38 46c0-7-5-12-9-12-5-12-17-19-29-19s-24 7-29 19c-4 0-9 5-9 12Z" fill="#2c2440"/>
+  </g>
+
+  <!-- patient figure (right, smaller, seated) -->
+  <g opacity="0.92">
+    <path d="M392 420c0-52 26-84 66-84s66 32 66 84" fill="url(#patientGrad)" opacity="0.85"/>
+    <rect x="440" y="316" width="24" height="24" rx="9" fill="#e7b98c"/>
+    <circle cx="452" cy="292" r="32" fill="#eec49b"/>
+    <path d="M422 288c0-20 14-36 30-36s30 16 30 36c0-6-4-10-7-10-4-9-13-15-23-15s-19 6-23 15c-3 0-7 4-7 10Z" fill="#4a3a2a"/>
+  </g>
+
+  <!-- connecting chat / consult icon -->
+  <g opacity="0.9">
+    <rect x="292" y="200" width="56" height="40" rx="12" fill="rgba(255,255,255,0.06)" stroke="url(#accentGrad2)" stroke-width="1.5"/>
+    <path d="M310 240 300 254 316 240Z" fill="rgba(255,255,255,0.06)" stroke="url(#accentGrad2)" stroke-width="1.5"/>
+    <path d="M304 214h32M304 224h20" stroke="url(#accentGrad2)" stroke-width="2.4" stroke-linecap="round"/>
+  </g>
+
+  <!-- floating accents -->
+  <g opacity="0.8">
+    <circle cx="96" cy="150" r="18" fill="rgba(57,184,255,0.12)"/>
+    <path d="M96 141v18M87 150h18" stroke="url(#accentGrad2)" stroke-width="2.6" stroke-linecap="round"/>
+  </g>
+  <g opacity="0.8">
+    <circle cx="552" cy="170" r="16" fill="rgba(120,93,255,0.12)"/>
+    <path d="M544 170h16M548 163l4 13 3-8 3 5" fill="none" stroke="url(#accentGrad2)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <circle cx="320" cy="150" r="3" fill="#39B8FF" opacity="0.6"/>
+  <circle cx="150" cy="230" r="3" fill="#785DFF" opacity="0.5"/>
+  <circle cx="500" cy="250" r="3" fill="#39B8FF" opacity="0.5"/>
 </svg>
