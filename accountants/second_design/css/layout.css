@@ -16,6 +16,10 @@ body {
   position: relative;
 }
 
+body.menu-open {
+  overflow: hidden;
+}
+
 img, svg { max-width: 100%; display: block; }
 
 ul { list-style: none; margin: 0; padding: 0; }

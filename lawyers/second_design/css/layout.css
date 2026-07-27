@@ -159,6 +159,8 @@
   transform: translateY(-100%);
   transition: transform var(--transition-slow);
   visibility: hidden;
+  overflow-y: auto;
+  padding-block: 32px;
 }
 
 .mobile-drawer.is-open {

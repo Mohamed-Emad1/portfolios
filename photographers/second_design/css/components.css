@@ -228,6 +228,8 @@
   visibility: hidden;
   transform: translateY(-20px);
   transition: opacity var(--transition-base), visibility var(--transition-base), transform var(--transition-base);
+  overflow-y: auto;
+  padding-block: 32px;
 }
 
 .mobile-menu.is-open {

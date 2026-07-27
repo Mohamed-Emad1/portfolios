@@ -29,6 +29,7 @@ const Navbar = (() => {
     const open = force !== undefined ? force : !mobileMenu.classList.contains('is-open');
     mobileMenu.classList.toggle('is-open', open);
     toggle.setAttribute('aria-expanded', String(open));
+    document.body.classList.toggle('menu-open', open);
   }
 
   function init() {

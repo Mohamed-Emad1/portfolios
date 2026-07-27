@@ -383,6 +383,8 @@
   visibility: hidden;
   transform: translateY(-20px);
   transition: all var(--t-base) var(--ease-default);
+  overflow-y: auto;
+  padding-block: 32px;
 }
 
 .mobile-menu.is-open {

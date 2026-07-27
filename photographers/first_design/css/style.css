@@ -204,6 +204,8 @@ body.has-custom-cursor button {
   transition: opacity var(--dur-base) var(--ease-cinematic),
     transform var(--dur-base) var(--ease-cinematic),
     visibility var(--dur-base);
+  overflow-y: auto;
+  padding-block: 32px;
 }
 
 .mobile-menu.is-open {
