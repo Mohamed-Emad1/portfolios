@@ -136,6 +136,8 @@ body {
   opacity: 0;
   visibility: hidden;
   transition: transform var(--transition-slow), opacity var(--transition-slow), visibility 0s var(--transition-slow);
+  overflow-y: auto;
+  padding-block: 32px;
 }
 
 .mobile-menu.is-open {

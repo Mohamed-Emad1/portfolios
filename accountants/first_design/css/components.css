@@ -11,6 +11,7 @@
   font-weight: var(--fw-bold);
   font-size: var(--fs-lg);
   color: var(--text-primary);
+  white-space: nowrap;
 }
 
 .brand__mark {
@@ -1079,6 +1080,8 @@
   pointer-events: none;
   transform: translateY(-16px);
   transition: opacity var(--transition-base), transform var(--transition-base);
+  overflow-y: auto;
+  padding-block: 90px 32px;
 }
 
 .mobile-nav.is-open {

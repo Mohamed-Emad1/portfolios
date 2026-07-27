@@ -350,6 +350,8 @@ section{
   justify-content:center;
   transform: translateY(-100%);
   transition: transform 0.5s cubic-bezier(0.65,0,0.35,1);
+  overflow-y: auto;
+  padding-block: 32px;
 }
 
 .mobile-menu.active{ transform: translateY(0); }

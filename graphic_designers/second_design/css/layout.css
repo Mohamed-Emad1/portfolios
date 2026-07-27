@@ -156,6 +156,8 @@ body {
   transform: translateY(-100%);
   transition: transform var(--transition-slow);
   z-index: var(--z-nav);
+  overflow-y: auto;
+  padding-block: 32px;
 }
 
 .nav-mobile-menu.open {

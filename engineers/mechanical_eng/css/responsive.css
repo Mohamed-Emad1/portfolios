@@ -62,6 +62,8 @@
     visibility: hidden;
     transition: transform var(--duration-base) var(--ease), opacity var(--duration-base) var(--ease), visibility var(--duration-base) var(--ease);
     z-index: var(--z-nav);
+    overflow-y: auto;
+    padding-block: 32px;
   }
   .nav-menu.open {
     transform: translateY(0);

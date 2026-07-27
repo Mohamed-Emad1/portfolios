@@ -758,6 +758,7 @@ svg{ width: 1.25em; height: 1.25em; }
     transition: transform .4s var(--ease);
     z-index: 95;
     box-shadow: var(--shadow-lg);
+    overflow-y: auto;
   }
   [dir="rtl"] .nav-links{ transform: translateX(-105%); }
   .nav-links.is-open{ transform: translateX(0); }

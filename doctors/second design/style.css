@@ -884,6 +884,8 @@ svg use, svg path, svg circle, svg rect, svg line, svg polyline, svg ellipse {
     padding: 20px;
     gap: 16px;
     box-shadow: var(--glow-md);
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
   }
 }
 

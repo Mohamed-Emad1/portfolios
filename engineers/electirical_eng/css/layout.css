@@ -91,6 +91,8 @@ body {
     z-index: var(--z-overlay);
     transform: translateX(100%);
     transition: transform var(--transition-slow);
+    overflow-y: auto;
+    padding-block: 90px 32px;
   }
 
   html[dir="rtl"] .nav-links {

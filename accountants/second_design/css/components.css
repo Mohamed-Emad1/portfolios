@@ -170,6 +170,8 @@
   opacity: 0;
   transition: transform var(--transition-slow), opacity var(--transition-slow);
   pointer-events: none;
+  overflow-y: auto;
+  padding-block: 90px 32px;
 }
 
 .mobile-menu.is-open {

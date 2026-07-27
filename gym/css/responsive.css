@@ -54,6 +54,7 @@
     transition: transform var(--duration-base) var(--ease-out);
     box-shadow: var(--shadow-lg);
     z-index: var(--z-nav);
+    overflow-y: auto;
   }
 
   .navbar__menu.is-open {

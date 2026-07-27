@@ -294,6 +294,52 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
 .tpl-card__price { font-weight: 800; font-size: 1.15rem; color: var(--primary-dark); }
 .tpl-card__actions { display: flex; gap: 8px; }
 
+/* ===================== Our Work ===================== */
+.work-section { padding: 90px 0; background: var(--card); }
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 26px;
+  max-width: 980px;
+  margin: 0 auto;
+}
+.work-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.work-card:hover { transform: translateY(-6px); box-shadow: 0 20px 40px -16px rgba(20,20,43,.28); }
+.work-card__thumb {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.work-card__thumb--joo { background: linear-gradient(135deg, #1e1b4b, #b8862f); }
+.work-card__thumb--nokhba { background: linear-gradient(135deg, #6b7a45, #4a4218); }
+.work-card__icon { font-size: 4rem; filter: drop-shadow(0 8px 18px rgba(0,0,0,.35)); }
+.work-card__body { padding: 22px 24px 26px; display: flex; flex-direction: column; gap: 8px; }
+.work-card__tag {
+  align-self: flex-start;
+  background: var(--primary-light);
+  color: var(--primary-dark);
+  font-weight: 700;
+  font-size: .74rem;
+  padding: 4px 11px;
+  border-radius: 999px;
+  margin-bottom: 4px;
+}
+.work-card__body h3 { font-size: 1.15rem; margin: 0; }
+.work-card__body p { font-size: .88rem; margin: 0; }
+.work-card__link { font-weight: 700; font-size: .88rem; color: var(--primary); margin-top: 8px; }
+.work-card:hover .work-card__link { text-decoration: underline; }
+
 /* ===================== How it works ===================== */
 .steps {
   display: grid;
@@ -495,7 +541,7 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
   .header__actions .btn--sm { display: none; }
   .hero { padding: 70px 0 50px; }
   .hero__cta .btn { flex: 1; }
-  .templates-section, .how-section, .pricing-section, .contact-section { padding: 60px 0; }
+  .templates-section, .work-section, .how-section, .pricing-section, .contact-section { padding: 60px 0; }
   .pricing-showcase__main, .pricing-showcase__addons { padding: 30px 24px; }
 }
 
