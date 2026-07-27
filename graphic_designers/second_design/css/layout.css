@@ -6,11 +6,13 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   background: var(--color-bg);
   overflow-x: hidden;
+  width: 100%;
 }
 
 .container {
@@ -49,6 +51,10 @@ body {
   grid-template-columns: 0.9fr 1.1fr;
   gap: var(--space-6);
   align-items: center;
+}
+
+.hero .container > * {
+  min-width: 0;
 }
 
 .hero-portrait {

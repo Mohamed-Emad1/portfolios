@@ -159,8 +159,8 @@
   document.querySelectorAll('[data-modal]').forEach(function (link) {
     link.addEventListener('click', function (e) {
       e.preventDefault();
-      var kind = link.getAttribute('data-modal') === 'privacy' ? 'Privacy Policy' : 'Terms of Service';
-      window.alert(kind + ' content coming soon.');
+      var kind = link.getAttribute('data-modal') === 'privacy' ? 'سياسة الخصوصية' : 'الشروط والأحكام';
+      window.alert('محتوى ' + kind + ' قريبًا.');
     });
   });
 })();

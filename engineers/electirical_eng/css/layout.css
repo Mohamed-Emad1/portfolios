@@ -99,7 +99,8 @@ body {
     transform: translateX(-100%);
   }
 
-  .nav-links.is-open {
+  .nav-links.is-open,
+  html[dir="rtl"] .nav-links.is-open {
     transform: translateX(0);
   }
 

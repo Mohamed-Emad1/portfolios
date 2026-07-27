@@ -14,6 +14,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -33,6 +34,7 @@ html {
 body {
   overflow-x: hidden;
   min-height: 100vh;
+  width: 100%;
 }
 
 img,

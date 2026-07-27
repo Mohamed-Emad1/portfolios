@@ -165,6 +165,10 @@
   gap: var(--space-2xl);
 }
 
+.hero__inner > * {
+  min-width: 0;
+}
+
 .hero__content {
   display: flex;
   flex-direction: column;
