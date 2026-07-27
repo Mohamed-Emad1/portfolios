@@ -21,6 +21,8 @@
    for direct #hash navigation when JS hasn't run yet. */
 main section[id] { scroll-margin-top: 90px; }
 
+html { overflow-x: hidden; }
+
 body {
   background: var(--color-bg);
   color: var(--color-secondary);
@@ -28,6 +30,7 @@ body {
   font-size: var(--fs-base);
   line-height: var(--lh-normal);
   overflow-x: hidden;
+  width: 100%;
   -webkit-font-smoothing: antialiased;
 }
 
