@@ -8,6 +8,7 @@ const CATEGORY_LABELS = {
   interior_design: 'تصميم داخلي',
   lawyers: 'محامون',
   photographers: 'مصورون',
+  wedding_invitations: 'دعوات الفرح',
 };
 
 const CATEGORY_ICONS = {
@@ -19,6 +20,7 @@ const CATEGORY_ICONS = {
   interior_design: '🛋️',
   lawyers: '⚖️',
   photographers: '📷',
+  wedding_invitations: '💌',
 };
 
 const TEMPLATES = [
@@ -42,6 +44,7 @@ const TEMPLATES = [
   { id: 'pho-1', title: 'مصور فوتوغرافي — تصميم 1', category: 'photographers', path: 'photographers/first_design', price: 1500, desc: 'موقع يركز على معرض الصور للمصورين المحترفين.' },
   { id: 'pho-2', title: 'مصور فوتوغرافي — تصميم 2', category: 'photographers', path: 'photographers/second_design', price: 1500, desc: 'تصميم بديل لمحفظة التصوير الفوتوغرافي.' },
   { id: 'pho-3', title: 'مصور أفلام زفاف سينمائي', category: 'photographers', path: 'photographers/third_design', price: 1500, desc: 'موقع سينمائي يعتمد على الفيديو لمصوري حفلات الزفاف.' },
+  { id: 'wed-1', title: 'دعوة زفاف إلكترونية', category: 'wedding_invitations', comingSoon: true, price: 1500, desc: 'دعوة زفاف رقمية أنيقة بتفاصيل الحفل والموعد — قريبًا.' },
 ];
 
 /* ===================== Render template grid ===================== */
@@ -56,11 +59,31 @@ function encodedPath(path) {
 function renderCards(list) {
   grid.innerHTML = '';
   list.forEach((tpl) => {
-    const href = `${encodedPath(tpl.path)}/index.html`;
     const card = document.createElement('article');
-    card.className = 'tpl-card';
+    card.className = tpl.comingSoon ? 'tpl-card tpl-card--coming-soon' : 'tpl-card';
     card.dataset.category = tpl.category;
 
+    if (tpl.comingSoon) {
+      card.innerHTML = `
+        <div class="tpl-card__thumb">
+          <div class="tpl-card__thumb-chrome" aria-hidden="true"><span></span><span></span><span></span></div>
+          <span class="tpl-card__cat-tag">${CATEGORY_LABELS[tpl.category]}</span>
+          <span class="tpl-card__price-tag tpl-card__price-tag--soon">قريبًا</span>
+          <span class="tpl-card__icon" aria-hidden="true">${CATEGORY_ICONS[tpl.category]}</span>
+        </div>
+        <div class="tpl-card__body">
+          <h3 class="tpl-card__title">${tpl.title}</h3>
+          <p class="tpl-card__desc">${tpl.desc}</p>
+          <div class="tpl-card__footer">
+            <span class="tpl-card__soon-label">القالب قيد التجهيز</span>
+          </div>
+        </div>
+      `;
+      grid.appendChild(card);
+      return;
+    }
+
+    const href = `${encodedPath(tpl.path)}/index.html`;
     card.innerHTML = `
       <div class="tpl-card__thumb">
         <div class="tpl-card__thumb-chrome" aria-hidden="true"><span></span><span></span><span></span></div>
@@ -88,7 +111,7 @@ function renderCards(list) {
 }
 
 function populateTemplateSelect() {
-  TEMPLATES.forEach((tpl) => {
+  TEMPLATES.filter((tpl) => !tpl.comingSoon).forEach((tpl) => {
     const opt = document.createElement('option');
     opt.value = tpl.id;
     opt.textContent = `${tpl.title} (${tpl.price} جنيه بدلاً من ${ORIGINAL_PRICE})`;
