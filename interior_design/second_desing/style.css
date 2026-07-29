@@ -835,6 +835,7 @@ section{
   box-shadow: var(--shadow-medium);
   cursor: ew-resize;
   user-select:none;
+  container-type: inline-size;
 }
 
 .ba-after, .ba-before{
@@ -844,9 +845,8 @@ section{
 }
 
 .ba-after img, .ba-before img{
-  width:900px;
-  max-width:900px;
-  height:520px;
+  width:100cqw;
+  height:100%;
   object-fit:cover;
   position:absolute;
   left:0;

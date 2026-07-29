@@ -31,7 +31,8 @@
 
   .practice-grid,
   .industries-grid,
-  .certification-grid { grid-template-columns: repeat(2, 1fr); }
+  .certification-grid,
+  .portfolio-grid { grid-template-columns: repeat(2, 1fr); }
 
   .cases-grid { grid-template-columns: 1fr; }
 
@@ -50,6 +51,7 @@
   .practice-grid,
   .industries-grid,
   .certification-grid,
+  .portfolio-grid,
   .about-highlights { grid-template-columns: 1fr; }
 
   .timeline { padding-inline-start: var(--space-lg); }
