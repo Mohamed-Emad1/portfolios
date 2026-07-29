@@ -612,6 +612,29 @@
   gap: var(--space-3);
 }
 
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.contact-info__row {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  min-width: 0;
+}
+
+.contact-info__row svg {
+  flex-shrink: 0;
+}
+
+.contact-info__row span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
 .form-group {
   display: flex;
   flex-direction: column;

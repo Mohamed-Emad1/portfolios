@@ -521,6 +521,10 @@ html[dir="rtl"] .timeline-item {
   animation: shimmer 2.2s linear infinite;
 }
 
+#progressCircles {
+  justify-items: center;
+}
+
 .progress-circle {
   --pct: 0;
   --size: 120px;
@@ -554,6 +558,9 @@ html[dir="rtl"] .timeline-item {
 
 .progress-circle__label {
   position: absolute;
+  top: 28%;
+  left: 51%;
+  transform: translate(-50%, -50%);
   font-weight: var(--fw-bold);
   font-size: var(--fs-md);
 }

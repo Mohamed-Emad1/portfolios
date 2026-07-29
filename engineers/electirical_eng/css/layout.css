@@ -24,6 +24,7 @@ body {
 .section {
   position: relative;
   padding-block: var(--space-3xl);
+  scroll-margin-top: var(--header-height);
 }
 
 .section--tight {
@@ -42,15 +43,30 @@ body {
   top: 0;
   z-index: var(--z-nav);
   padding-block: var(--space-sm);
-  transition: background var(--transition-base), backdrop-filter var(--transition-base), box-shadow var(--transition-base), transform var(--transition-base);
+  transition: box-shadow var(--transition-base), transform var(--transition-base);
+}
+
+/* Blur/background live on a pseudo-element rather than .site-header itself:
+   backdrop-filter on the header would make it a containing block for its
+   fixed-position descendant (.nav-links), shrinking the mobile menu overlay
+   down to the header's own height instead of the full viewport. */
+.site-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  transition: background var(--transition-base), backdrop-filter var(--transition-base);
 }
 
 .site-header.is-scrolled {
+  box-shadow: var(--shadow-sm);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.site-header.is-scrolled::before {
   background: rgba(13, 17, 23, 0.72);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  box-shadow: var(--shadow-sm);
-  border-bottom: 1px solid var(--border-color);
 }
 
 .site-header.is-hidden {

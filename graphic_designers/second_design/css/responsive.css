@@ -93,6 +93,20 @@
   .nav-toggle {
     display: flex;
   }
+
+  .nav-cta {
+    display: none;
+  }
+
+  .floating-card {
+    transform: scale(0.75);
+  }
+
+  .floating-card:nth-child(1) { top: 4%; inset-inline-start: 2%; }
+  .floating-card:nth-child(2) { top: 28%; inset-inline-start: 4%; }
+  .floating-card:nth-child(3) { top: 6%; inset-inline-end: 2%; }
+  .floating-card:nth-child(4) { top: 30%; inset-inline-end: 6%; }
+  .floating-card:nth-child(5) { display: none; }
 }
 
 /* Mobile */

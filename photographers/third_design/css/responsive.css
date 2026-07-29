@@ -130,6 +130,6 @@
   .masonry-grid { columns: 1; }
   .gallery-filters { justify-content: center; }
   .instagram-grid { grid-template-columns: repeat(2, 1fr); }
-  .btn { width: 100%; justify-content: center; }
+  .btn:not(.mobile-menu-close) { width: 100%; justify-content: center; }
   .hero-actions .btn { width: 100%; }
 }

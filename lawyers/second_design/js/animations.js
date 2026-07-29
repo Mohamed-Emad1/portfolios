@@ -1,6 +1,6 @@
 function initAnimations() {
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const items = document.querySelectorAll('[data-animate]');
+  const items = document.querySelectorAll('[data-animate], .timeline-item');
 
   if (reduceMotion) {
     items.forEach((item) => item.classList.add('is-visible'));

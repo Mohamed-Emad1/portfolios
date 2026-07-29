@@ -194,16 +194,29 @@ svg{ width: 1.25em; height: 1.25em; }
   position: sticky;
   top: 0;
   z-index: 100;
+  border-bottom: 1px solid transparent;
+  transition: box-shadow .35s, border-color .35s;
+}
+/* Blur/background live on a pseudo-element rather than .navbar itself:
+   backdrop-filter on the navbar would make it a containing block for its
+   fixed-position descendant (.nav-links), shrinking the mobile menu drawer
+   down to the navbar's own height instead of the full viewport. */
+.navbar::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
   background: rgba(255,253,248,.75);
   backdrop-filter: blur(14px) saturate(1.4);
   -webkit-backdrop-filter: blur(14px) saturate(1.4);
-  border-bottom: 1px solid transparent;
-  transition: background-color .35s, box-shadow .35s, border-color .35s;
+  transition: background-color .35s;
 }
 .navbar.is-scrolled{
-  background: rgba(255,253,248,.92);
   box-shadow: var(--shadow-sm);
   border-color: var(--color-border);
+}
+.navbar.is-scrolled::before{
+  background: rgba(255,253,248,.92);
 }
 .navbar__inner{
   display: flex;

@@ -134,6 +134,16 @@
     padding-block: 110px var(--space-xl);
   }
 
+  .hero__stats {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--space-lg);
+  }
+
+  .scroll-indicator {
+    display: none;
+  }
+
   .hero__title {
     font-size: clamp(2.25rem, 9vw, 3rem);
   }
@@ -243,5 +253,9 @@
 
   .hero__stat-num {
     font-size: 1.4rem;
+  }
+
+  .hero__stats {
+    gap: var(--space-md);
   }
 }

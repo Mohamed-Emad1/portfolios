@@ -39,6 +39,11 @@
     grid-template-columns: repeat(3, 1fr);
     gap: var(--space-sm);
   }
+
+  .services-grid,
+  .education-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* ---------- Tablet (<=992) ---------- */
@@ -109,6 +114,19 @@
     grid-template-columns: 1fr 1fr;
   }
 
+  .awards-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .skills-personal {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+
+  .skills-personal__image {
+    order: -1;
+  }
+
   .footer__top {
     grid-template-columns: 1fr 1fr;
   }
@@ -144,6 +162,15 @@
 
   .portfolio-grid {
     columns: 1;
+  }
+
+  .services-grid,
+  .education-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .awards-grid {
+    grid-template-columns: 1fr;
   }
 
   .footer__top {

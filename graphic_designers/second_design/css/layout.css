@@ -217,6 +217,10 @@ body {
   align-items: center;
 }
 
+.contact-layout > * {
+  min-width: 0;
+}
+
 /* Footer */
 .footer {
   border-top: 1px solid var(--color-border);

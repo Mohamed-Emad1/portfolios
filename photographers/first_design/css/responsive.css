@@ -74,6 +74,19 @@
 
   .contact-form__row { grid-template-columns: 1fr; }
 
+  .contact__media { min-height: 420px; }
+
+  .contact__info {
+    background: linear-gradient(180deg, rgba(9, 9, 9, 0) 0%, rgba(9, 9, 9, 0.75) 45%, rgba(9, 9, 9, 0.95) 100%);
+    border-radius: var(--radius-md);
+  }
+
+  .behind-lens__content {
+    background: linear-gradient(180deg, rgba(9, 9, 9, 0) 0%, rgba(9, 9, 9, 0.6) 35%, rgba(9, 9, 9, 0.88) 100%);
+    padding: var(--space-lg);
+    border-radius: var(--radius-md);
+  }
+
   .footer__grid { grid-template-columns: 1fr; gap: var(--space-lg); }
 
   .footer__bottom { flex-direction: column; gap: var(--space-sm); text-align: center; }
