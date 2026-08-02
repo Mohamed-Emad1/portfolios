@@ -1,0 +1,89 @@
+/* ===================== Design Tokens ===================== */
+:root {
+  /* Brand colors */
+  --color-primary: #F6B41A;
+  --color-primary-rgb: 246, 180, 26;
+  --color-primary-dark: #DE9E0B;
+  --color-dark: #1F1F1F;
+  --color-dark-rgb: 31, 31, 31;
+  --color-bg: #FAFAF7;
+  --color-bg-rgb: 250, 250, 247;
+  --color-gray: #7A7A7A;
+  --color-white: #FFFFFF;
+
+  /* Surfaces */
+  --surface-0: var(--color-white);
+  --surface-1: #F3F1EA;
+  --surface-2: #ECE8DC;
+  --border-color: #E7E3D6;
+  --page-bg: var(--color-bg);
+  --page-text: var(--color-dark);
+  --heading-color: var(--color-dark);
+  --muted-text: var(--color-gray);
+
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, var(--color-primary), #FFD666);
+  --gradient-dark: linear-gradient(135deg, #1F1F1F, #3A3A3A);
+  --gradient-hero: radial-gradient(circle at 100% 0%, rgba(var(--color-primary-rgb), 0.18), transparent 55%),
+                    radial-gradient(circle at 0% 100%, rgba(var(--color-primary-rgb), 0.1), transparent 50%);
+
+  /* Typography */
+  --font-main: 'Cairo', sans-serif;
+  --font-display: 'Alexandria', sans-serif;
+  --fs-xs: 0.8rem;
+  --fs-sm: 0.9rem;
+  --fs-base: 1rem;
+  --fs-md: 1.15rem;
+  --fs-lg: 1.4rem;
+  --fs-xl: 1.9rem;
+  --fs-2xl: 2.6rem;
+  --fs-3xl: 3.8rem;
+  --fs-hero: 5.5rem;
+  --lh-tight: 1.15;
+  --lh-normal: 1.6;
+  --lh-loose: 1.9;
+
+  /* Spacing scale */
+  --space-3xs: 0.25rem;
+  --space-2xs: 0.5rem;
+  --space-xs: 0.75rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.25rem;
+  --space-xl: 3.5rem;
+  --space-2xl: 5rem;
+  --space-3xl: 7rem;
+
+  /* Layout */
+  --container-width: 1280px;
+  --radius-sm: 10px;
+  --radius-md: 20px;
+  --radius-lg: 32px;
+  --radius-full: 999px;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 10px rgba(var(--color-dark-rgb), 0.06);
+  --shadow-md: 0 14px 34px rgba(var(--color-dark-rgb), 0.08);
+  --shadow-lg: 0 26px 60px rgba(var(--color-dark-rgb), 0.12);
+  --shadow-primary: 0 16px 34px rgba(var(--color-primary-rgb), 0.35);
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-fast: 0.2s var(--ease-out);
+  --transition-base: 0.4s var(--ease-out);
+  --transition-slow: 0.7s var(--ease-out);
+
+  /* Z-index scale */
+  --z-header: 100;
+  --z-overlay: 200;
+  --z-modal: 300;
+  --z-toast: 400;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --transition-fast: 0.01s linear;
+    --transition-base: 0.01s linear;
+    --transition-slow: 0.01s linear;
+  }
+}

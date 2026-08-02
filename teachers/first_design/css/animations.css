@@ -1,0 +1,120 @@
+/* ===================== Keyframes ===================== */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(36px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeLeft {
+  from { opacity: 0; transform: translateX(-40px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes fadeRight {
+  from { opacity: 0; transform: translateX(40px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.85); }
+  to   { opacity: 1; transform: scale(1); }
+}
+@keyframes floatY {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50%      { transform: translateY(-18px) rotate(4deg); }
+}
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0) translateX(0); }
+  50%      { transform: translateY(14px) translateX(-10px); }
+}
+@keyframes pulseRing {
+  0%   { box-shadow: 0 0 0 0 rgba(var(--color-accent-rgb), 0.45); }
+  100% { box-shadow: 0 0 0 22px rgba(var(--color-accent-rgb), 0); }
+}
+@keyframes ripple {
+  from { transform: scale(0); opacity: 0.55; }
+  to   { transform: scale(2.6); opacity: 0; }
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0; }
+}
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* ===================== Reveal-on-scroll base states ===================== */
+[data-animate] {
+  opacity: 0;
+  will-change: transform, opacity;
+}
+[data-animate="fade-up"]    { transform: translateY(36px); }
+[data-animate="fade-left"]  { transform: translateX(-40px); }
+[data-animate="fade-right"] { transform: translateX(40px); }
+[data-animate="scale"]      { transform: scale(0.85); }
+
+[data-animate].is-visible {
+  opacity: 1;
+  transform: none;
+  transition: opacity 0.7s var(--ease-out), transform 0.7s var(--ease-out);
+}
+
+/* Stagger helper: children get incremental delay via inline --d custom prop */
+[data-animate].is-visible { transition-delay: var(--d, 0s); }
+
+/* ===================== Utility animation classes ===================== */
+.floating-shape { animation: floatY 7s ease-in-out infinite; }
+.floating-shape--slow { animation: floatSlow 9s ease-in-out infinite; }
+.floating-shape--delay { animation-delay: 1.4s; }
+
+.hover-lift { transition: transform var(--transition-base), box-shadow var(--transition-base); }
+.hover-lift:hover,
+.hover-lift:focus-visible {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+}
+
+.pulse-ring { animation: pulseRing 2.4s ease-out infinite; }
+
+.typing-caret::after {
+  content: '';
+  display: inline-block;
+  width: 3px;
+  height: 0.85em;
+  margin-inline-start: 4px;
+  background: var(--color-accent);
+  vertical-align: -0.1em;
+  animation: blink 0.9s step-end infinite;
+}
+
+.skeleton {
+  background: linear-gradient(90deg, var(--surface-1) 25%, var(--surface-2) 37%, var(--surface-1) 63%);
+  background-size: 400% 100%;
+  animation: shimmer 1.6s ease-in-out infinite;
+}
+
+/* Ripple effect container (buttons) */
+.btn { position: relative; overflow: hidden; }
+.btn__ripple {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.55);
+  pointer-events: none;
+  transform: scale(0);
+  animation: ripple 0.6s ease-out;
+}
+
+/* ===================== Reduced motion ===================== */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+  [data-animate] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}

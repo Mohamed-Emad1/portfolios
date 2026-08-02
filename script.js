@@ -8,6 +8,7 @@ const CATEGORY_LABELS = {
   interior_design: 'تصميم داخلي',
   lawyers: 'محامون',
   photographers: 'مصورون',
+  teachers: 'مدرسون',
   wedding_invitations: 'دعوات الفرح',
 };
 
@@ -20,6 +21,7 @@ const CATEGORY_ICONS = {
   interior_design: '🛋️',
   lawyers: '⚖️',
   photographers: '📷',
+  teachers: '👨‍🏫',
   wedding_invitations: '💌',
 };
 
@@ -44,6 +46,7 @@ const TEMPLATES = [
   { id: 'pho-1', title: 'مصور فوتوغرافي — تصميم 1', category: 'photographers', path: 'photographers/first_design', price: 1500, desc: 'موقع يركز على معرض الصور للمصورين المحترفين.' },
   { id: 'pho-2', title: 'مصور فوتوغرافي — تصميم 2', category: 'photographers', path: 'photographers/second_design', price: 1500, desc: 'تصميم بديل لمحفظة التصوير الفوتوغرافي.' },
   { id: 'pho-3', title: 'مصور أفلام زفاف سينمائي', category: 'photographers', path: 'photographers/third_design', price: 1500, desc: 'موقع سينمائي يعتمد على الفيديو لمصوري حفلات الزفاف.' },
+  { id: 'tea-1', title: 'مدرس — تصميم عصري', category: 'teachers', path: 'teachers/first_design', price: 1500, desc: 'موقع تعريفي فاخر للمدرسين يعرض الخبرات والمواد الدراسية ومعرض الأعمال وآراء الطلاب.' },
   { id: 'wed-1', title: 'دعوة زفاف إلكترونية', category: 'wedding_invitations', comingSoon: true, price: 1500, desc: 'دعوة زفاف رقمية أنيقة بتفاصيل الحفل والموعد — قريبًا.' },
 ];
 

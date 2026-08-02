@@ -1,0 +1,84 @@
+/* ===================== Reveal on scroll base states ===================== */
+[data-animate] {
+  opacity: 0;
+  transition: opacity var(--transition-slow), transform var(--transition-slow);
+  will-change: transform, opacity;
+}
+
+[data-animate].in-view {
+  opacity: 1;
+}
+
+[data-animate="fade-up"] { transform: translateY(40px); }
+[data-animate="fade-up"].in-view { transform: translateY(0); }
+
+[data-animate="fade-left"] { transform: translateX(-50px); }
+[data-animate="fade-left"].in-view { transform: translateX(0); }
+
+[data-animate="fade-right"] { transform: translateX(50px); }
+[data-animate="fade-right"].in-view { transform: translateX(0); }
+
+[data-animate="scale"] { transform: scale(0.85); }
+[data-animate="scale"].in-view { transform: scale(1); }
+
+/* Stagger helper via inline --delay custom property */
+[data-animate] {
+  transition-delay: var(--delay, 0s);
+}
+
+/* ===================== Keyframes ===================== */
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-18px) rotate(4deg); }
+}
+
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(14px); }
+}
+
+@keyframes rippleEffect {
+  to {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(var(--color-primary-rgb), 0.4); }
+  50% { box-shadow: 0 0 0 14px rgba(var(--color-primary-rgb), 0); }
+}
+
+.floating-icon {
+  animation: float 5s ease-in-out infinite;
+}
+
+.floating-icon.i2 { animation-duration: 6s; animation-delay: 0.4s; }
+.floating-icon.i3 { animation-duration: 4.5s; animation-delay: 0.8s; }
+.floating-icon.i4 { animation-duration: 5.5s; animation-delay: 1.2s; }
+.floating-icon.i5 { animation-duration: 6.5s; animation-delay: 0.2s; }
+
+.hero-shape {
+  animation: floatSlow 7s ease-in-out infinite;
+}
+
+.hero-scroll-cue .cue-line {
+  animation: pulseGlow 2s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-animate] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  .floating-icon,
+  .hero-shape,
+  .hero-scroll-cue .cue-line {
+    animation: none !important;
+  }
+}

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" role="img" aria-labelledby="avTitle">
+  <title id="avTitle">صورة شخصية مؤقتة للمعلم</title>
+  <defs>
+    <linearGradient id="avBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1E3A8A"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+    <radialGradient id="avGlow" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="600" height="750" fill="url(#avBg)"/>
+  <circle cx="300" cy="230" r="320" fill="url(#avGlow)"/>
+  <circle cx="300" cy="270" r="130" fill="#F8FAFC" opacity="0.14"/>
+  <circle cx="300" cy="245" r="90" fill="#F8FAFC" opacity="0.9"/>
+  <path d="M150 640c0-95 67-172 150-172s150 77 150 172v40H150v-40z" fill="#F8FAFC" opacity="0.9"/>
+  <circle cx="300" cy="150" r="34" fill="#F59E0B"/>
+  <rect x="266" y="150" width="68" height="8" fill="#F59E0B"/>
+  <text x="300" y="700" font-family="Cairo, sans-serif" font-size="26" fill="#F8FAFC" text-anchor="middle" opacity="0.85">صورة المعلم — قابلة للاستبدال</text>
+</svg>

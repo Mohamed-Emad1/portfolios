@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 340" width="400" height="340">
+  <rect width="400" height="340" fill="#FAFAF7"/>
+  <rect x="0" y="0" width="400" height="340" fill="none" stroke="#ECE8DC" stroke-width="2"/>
+  <g>
+    <circle cx="120" cy="120" r="50" fill="#F6B41A"/>
+    <circle cx="260" cy="90" r="34" fill="#1F1F1F"/>
+    <circle cx="300" cy="220" r="60" fill="#7A7A7A" opacity="0.5"/>
+  </g>
+  <rect x="60" y="240" width="280" height="60" rx="14" fill="#1F1F1F"/>
+  <text x="200" y="278" font-family="Cairo, sans-serif" font-size="22" fill="#F6B41A" text-anchor="middle" font-weight="700">الأنشطة</text>
+</svg>

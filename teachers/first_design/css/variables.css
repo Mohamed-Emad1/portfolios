@@ -1,0 +1,100 @@
+/* ===================== Design Tokens ===================== */
+:root {
+  /* Brand colors */
+  --color-primary: #1E3A8A;
+  --color-primary-rgb: 30, 58, 138;
+  --color-secondary: #2563EB;
+  --color-secondary-rgb: 37, 99, 235;
+  --color-accent: #F59E0B;
+  --color-accent-rgb: 245, 158, 11;
+  --color-bg: #F8FAFC;
+  --color-dark: #0F172A;
+  --color-dark-rgb: 15, 23, 42;
+  --color-text: #334155;
+  --color-white: #FFFFFF;
+
+  /* Surfaces */
+  --surface-0: var(--color-white);
+  --surface-1: #F1F5F9;
+  --surface-2: #E2E8F0;
+  --border-color: #E2E8F0;
+  --page-bg: var(--color-bg);
+  --page-text: var(--color-text);
+  --heading-color: var(--color-dark);
+  --muted-text: #64748B;
+
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  --gradient-accent: linear-gradient(135deg, var(--color-accent), #FBBF24);
+  --gradient-hero: radial-gradient(circle at 100% 0%, rgba(var(--color-accent-rgb), 0.12), transparent 55%),
+                    radial-gradient(circle at 0% 100%, rgba(var(--color-secondary-rgb), 0.12), transparent 55%);
+
+  /* Typography */
+  --font-main: 'Cairo', sans-serif;
+  --fs-xs: 0.8rem;
+  --fs-sm: 0.9rem;
+  --fs-base: 1rem;
+  --fs-md: 1.15rem;
+  --fs-lg: 1.4rem;
+  --fs-xl: 1.85rem;
+  --fs-2xl: 2.5rem;
+  --fs-3xl: 3.4rem;
+  --lh-tight: 1.2;
+  --lh-normal: 1.6;
+  --lh-loose: 1.9;
+
+  /* Spacing scale */
+  --space-3xs: 0.25rem;
+  --space-2xs: 0.5rem;
+  --space-xs: 0.75rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.25rem;
+  --space-xl: 3.5rem;
+  --space-2xl: 5rem;
+  --space-3xl: 7rem;
+
+  /* Layout */
+  --container-width: 1200px;
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-full: 999px;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(var(--color-dark-rgb), 0.06);
+  --shadow-md: 0 12px 30px rgba(var(--color-dark-rgb), 0.09);
+  --shadow-lg: 0 24px 60px rgba(var(--color-dark-rgb), 0.14);
+  --shadow-accent: 0 14px 30px rgba(var(--color-accent-rgb), 0.28);
+  --shadow-primary: 0 14px 30px rgba(var(--color-primary-rgb), 0.25);
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-fast: 0.2s var(--ease-out);
+  --transition-base: 0.35s var(--ease-out);
+  --transition-slow: 0.6s var(--ease-out);
+
+  /* Z-index scale */
+  --z-header: 100;
+  --z-overlay: 200;
+  --z-modal: 300;
+  --z-toast: 400;
+}
+
+/* ===================== Dark Mode ===================== */
+:root[data-theme="dark"] {
+  --page-bg: var(--color-dark);
+  --page-text: #CBD5E1;
+  --heading-color: #F1F5F9;
+  --surface-0: #16213E;
+  --surface-1: #1B2A4A;
+  --surface-2: #24345A;
+  --border-color: #29395C;
+  --muted-text: #94A3B8;
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 12px 30px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 24px 60px rgba(0, 0, 0, 0.5);
+}
+
+/* Light mode is the default regardless of OS preference; dark mode only
+   activates when JS explicitly sets [data-theme="dark"] (see main.js). */

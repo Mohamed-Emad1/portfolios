@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 420" width="400" height="420">
+  <rect width="400" height="420" fill="#F6B41A"/>
+  <rect x="60" y="60" width="280" height="200" rx="16" fill="#1F1F1F"/>
+  <circle cx="200" cy="150" r="55" fill="#FAFAF7"/>
+  <path d="M200 130 l14 28 -14 -6 -14 6 z" fill="#F6B41A"/>
+  <rect x="120" y="300" width="160" height="46" rx="12" fill="#1F1F1F"/>
+  <text x="200" y="330" font-family="Cairo, sans-serif" font-size="20" fill="#F6B41A" text-anchor="middle" font-weight="700">التكريم</text>
+</svg>
