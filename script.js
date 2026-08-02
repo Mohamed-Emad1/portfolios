@@ -47,6 +47,7 @@ const TEMPLATES = [
   { id: 'pho-2', title: 'مصور فوتوغرافي — تصميم 2', category: 'photographers', path: 'photographers/second_design', price: 1500, desc: 'تصميم بديل لمحفظة التصوير الفوتوغرافي.' },
   { id: 'pho-3', title: 'مصور أفلام زفاف سينمائي', category: 'photographers', path: 'photographers/third_design', price: 1500, desc: 'موقع سينمائي يعتمد على الفيديو لمصوري حفلات الزفاف.' },
   { id: 'tea-1', title: 'مدرس — تصميم عصري', category: 'teachers', path: 'teachers/first_design', price: 1500, desc: 'موقع تعريفي فاخر للمدرسين يعرض الخبرات والمواد الدراسية ومعرض الأعمال وآراء الطلاب.' },
+  { id: 'tea-2', title: 'مدرس — تصميم إبداعي', category: 'teachers', path: 'teachers/second_design', price: 1500, desc: 'تصميم مجلة تحريري فاخر لمدرسي الرياضيات يعرض المسيرة التعليمية والمهارات التدريسية والإنجازات وآراء الطلاب.' },
   { id: 'wed-1', title: 'دعوة زفاف إلكترونية', category: 'wedding_invitations', comingSoon: true, price: 1500, desc: 'دعوة زفاف رقمية أنيقة بتفاصيل الحفل والموعد — قريبًا.' },
 ];
 
